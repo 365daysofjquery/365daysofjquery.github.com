@@ -1,0 +1,7 @@
+---
+layout: layout
+title: "365 Days of jQuery"
+---
+{% for post in site.posts offset: 0 limit: 365 %}
+<a href="{{ post.url }}">{{ post.title }}</a>
+{% endfor %}

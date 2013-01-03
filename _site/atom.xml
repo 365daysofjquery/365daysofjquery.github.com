@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>365 Days of jQuery</title>
+	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
+	<link href="http://365daysofjquery.github.com/"/>
+	<updated>2013-01-03T00:20:16+00:00</updated>
+	<id>http://365daysofjquery.github.com</id>
+	<author>
+		<name>365 Days of jQuery</name>
+	</author>
+	
+	<entry>
+		<title>Day 003</title>
+		<link href="http://365daysofjquery.github.com/blog/Day-003"/>
+		<updated>2013-01-03T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/blog/Day-003</id>
+		<content type="html">&lt;div class=&quot;row&quot;&gt;   
+    &lt;div class=&quot;span9 columns&quot;&gt;
+        &lt;h2&gt;Self Invoking Anonymous Function&lt;/h2&gt;
+
+        &lt;p&gt;A handy snippet I use for Sublime Text 2.&lt;/p&gt;
+        
+        &lt;script src=&quot;https://gist.github.com/4145235.js&quot;&gt;&lt;/script&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;   
+    &lt;div class=&quot;span9 column&quot;&gt;
+            &lt;p class=&quot;pull-right&quot;&gt; &lt;a href=&quot;/blog/Day-002&quot; title=&quot;Previous Post: Day 002&quot;&gt;&lt;i class=&quot;icon-chevron-left&quot;&gt;&lt;/i&gt;&lt;/a&gt;         &lt;/p&gt;  
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;!-- Twitter --&gt;
+
+
+&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=&quot;//platform.twitter.com/widgets.js&quot;;fjs.parentNode.insertBefore(js,fjs);}}(document,&quot;script&quot;,&quot;twitter-wjs&quot;);&lt;/script&gt;
+
+
+
+
+&lt;!-- Google + --&gt;
+
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+&lt;/script&gt;
+
+</content>
+	</entry>
+	
+	<entry>
+		<title>Day 002</title>
+		<link href="http://365daysofjquery.github.com/blog/Day-002"/>
+		<updated>2013-01-02T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/blog/Day-002</id>
+		<content type="html">&lt;div class=&quot;row&quot;&gt;   
+    &lt;div class=&quot;span9 columns&quot;&gt;
+        &lt;h2&gt;Self Invoking Anonymous Function&lt;/h2&gt;
+
+        &lt;p&gt;A handy snippet I use for Sublime Text 2.&lt;/p&gt;
+        
+        &lt;script src=&quot;https://gist.github.com/4145235.js&quot;&gt;&lt;/script&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;   
+    &lt;div class=&quot;span9 column&quot;&gt;
+            &lt;p class=&quot;pull-right&quot;&gt; &lt;a href=&quot;/blog/Day-001&quot; title=&quot;Previous Post: Day 001&quot;&gt;&lt;i class=&quot;icon-chevron-left&quot;&gt;&lt;/i&gt;&lt;/a&gt;             &lt;a href=&quot;/blog/Day-003&quot; title=&quot;Next Post: Day 003&quot;&gt;&lt;i class=&quot;icon-chevron-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;    &lt;/p&gt;  
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;!-- Twitter --&gt;
+
+
+&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=&quot;//platform.twitter.com/widgets.js&quot;;fjs.parentNode.insertBefore(js,fjs);}}(document,&quot;script&quot;,&quot;twitter-wjs&quot;);&lt;/script&gt;
+
+
+
+
+&lt;!-- Google + --&gt;
+
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+&lt;/script&gt;
+
+</content>
+	</entry>
+	
+	<entry>
+		<title>Day 001</title>
+		<link href="http://365daysofjquery.github.com/blog/Day-001"/>
+		<updated>2013-01-01T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/blog/Day-001</id>
+		<content type="html">&lt;div class=&quot;row&quot;&gt;   
+    &lt;div class=&quot;span9 columns&quot;&gt;
+        &lt;h2&gt;Self Invoking Anonymous Function&lt;/h2&gt;
+
+        &lt;p&gt;A handy snippet I use for Sublime Text 2.&lt;/p&gt;
+        
+        &lt;script src=&quot;https://gist.github.com/4145235.js&quot;&gt;&lt;/script&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;   
+    &lt;div class=&quot;span9 column&quot;&gt;
+            &lt;p class=&quot;pull-right&quot;&gt;      &lt;a href=&quot;/blog/Day-002&quot; title=&quot;Next Post: Day 002&quot;&gt;&lt;i class=&quot;icon-chevron-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;    &lt;/p&gt;  
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;!-- Twitter --&gt;
+
+
+&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=&quot;//platform.twitter.com/widgets.js&quot;;fjs.parentNode.insertBefore(js,fjs);}}(document,&quot;script&quot;,&quot;twitter-wjs&quot;);&lt;/script&gt;
+
+
+
+
+&lt;!-- Google + --&gt;
+
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+&lt;/script&gt;
+
+</content>
+	</entry>
+	
+
+</feed>

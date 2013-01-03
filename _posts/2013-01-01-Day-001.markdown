@@ -1,0 +1,40 @@
+---
+layout: post
+title: Day 001
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 01
+published: true
+summary: Day 001
+---
+
+<div class="row">	
+	<div class="span9 columns">
+		<h2>Self Invoking Anonymous Function</h2>
+
+		<p>A handy snippet I use for Sublime Text 2.</p>
+		
+		<script src="https://gist.github.com/4145235.js"></script>
+
+	</div>
+</div> 
+
+<div class="row">	
+	<div class="span9 column">
+			<p class="pull-right">{% if page.previous.url %} <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"><i class="icon-chevron-left"></i></a> 	{% endif %}   {% if page.next.url %} 	<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}"><i class="icon-chevron-right"></i></a> 	{% endif %} </p>  
+	</div>
+</div>
+
+<!-- Twitter -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<!-- Google + -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
