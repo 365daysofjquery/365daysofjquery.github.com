@@ -4,7 +4,7 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-01-05T00:32:21+00:00</updated>
+	<updated>2013-01-05T01:27:41+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
@@ -53,28 +53,6 @@
     &lt;/div&gt;
 &lt;/div&gt;
 
-
-
-
-&lt;!-- Twitter --&gt;
-
-
-&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=&quot;//platform.twitter.com/widgets.js&quot;;fjs.parentNode.insertBefore(js,fjs);}}(document,&quot;script&quot;,&quot;twitter-wjs&quot;);&lt;/script&gt;
-
-
-
-
-&lt;!-- Google + --&gt;
-
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-&lt;/script&gt;
-
 </content>
 	</entry>
 	
@@ -121,28 +99,6 @@
         &lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-
-
-
-
-&lt;!-- Twitter --&gt;
-
-
-&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=&quot;//platform.twitter.com/widgets.js&quot;;fjs.parentNode.insertBefore(js,fjs);}}(document,&quot;script&quot;,&quot;twitter-wjs&quot;);&lt;/script&gt;
-
-
-
-
-&lt;!-- Google + --&gt;
-
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-&lt;/script&gt;
 
 </content>
 	</entry>
