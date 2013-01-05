@@ -4,102 +4,47 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-01-05T01:27:41+00:00</updated>
+	<updated>2013-01-05T14:07:04+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
 	</author>
 	
 	<entry>
-		<title>Day 002</title>
+		<title>Day 002 - Using Google's CDN to serve jQuery</title>
 		<link href="http://365daysofjquery.github.com/Day-002"/>
 		<updated>2013-01-01T00:00:00+00:00</updated>
 		<id>http://365daysofjquery.github.com/Day-002</id>
-		<content type="html">&lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;span9 columns&quot;&gt;
-        &lt;h2&gt;Using Google's CDN to serve jQuery&lt;/h2&gt;
-
-        &lt;script src=&quot;https://gist.github.com/4458078.js&quot;&gt;&lt;/script&gt;
-
-        &lt;p&gt;
-            Few things to note here. Firstly there's no 'http', this isn't a mistake, it's done deliberately using a 'protocol-relative URL'.
-            There's an excellent post on this over at Paul Irish's blog:
-            &lt;a href=&quot;http://paulirish.com/2010/the-protocol-relative-url/&quot;&gt;http://paulirish.com/2010/the-protocol-relative-url/&lt;/a&gt;
-            . Secondly, it's a good idea to specify the version of jQuery you're using. If you always automatically update, things may break.
-            When a new version of jQuery is released it's always worth giving things a check over before updating.
-            Third of all, on the second line we call jQuery again.
-            This is useful just in case Google's CDN version might not be available and also if you're working offline.
-        &lt;/p&gt;
-
-        &lt;p&gt;
-            Another great reason for using this approach is that if the user has already visited a site using the same version of jQuery you're using they'll most likely have it cached.
-            This means they won't need to download it again, meaning one less file to download and quicker page rendering of your site.
-        &lt;/p&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
+		<content type="html">&lt;script src=&quot;https://gist.github.com/4458078.js&quot;&gt;&lt;/script&gt;
 
 
+&lt;p&gt;Few things to note here. Firstly there's no 'http', this isn't a mistake, it's done deliberately using a 'protocol-relative URL'.
+There's an excellent post on this over at Paul Irish's blog:
+&lt;a href=&quot;http://paulirish.com/2010/the-protocol-relative-url/&quot;&gt;http://paulirish.com/2010/the-protocol-relative-url/&lt;/a&gt;.
+Secondly, it's a good idea to specify the version of jQuery you're using. If you always automatically update, things may break.
+When a new version of jQuery is released it's always worth giving things a check over before updating.
+Third of all, on the second line we call jQuery again.
+This is useful just in case Google's CDN version might not be available and also if you're working offline.&lt;/p&gt;
 
-
-&lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;span9 column&quot;&gt;
-        &lt;p class=&quot;pull-right&quot;&gt;
-            
-            &lt;a href=&quot;/Day-001&quot; title=&quot;Previous Post: Day 001&quot;&gt; &lt;i class=&quot;icon-chevron-left&quot;&gt;&lt;/i&gt;
-            &lt;/a&gt;
-               
-        &lt;/p&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
+&lt;p&gt;Another great reason for using this approach is that if the user has already visited a site using the same version of jQuery you're using they'll most likely have it cached.
+This means they won't need to download it again, meaning one less file to download and quicker page rendering of your site.&lt;/p&gt;
 </content>
 	</entry>
 	
 	<entry>
-		<title>Day 001</title>
+		<title>Day 001 - Downloading jQuery</title>
 		<link href="http://365daysofjquery.github.com/Day-001"/>
 		<updated>2013-01-01T00:00:00+00:00</updated>
 		<id>http://365daysofjquery.github.com/Day-001</id>
-		<content type="html">&lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;span9 columns&quot;&gt;
-        &lt;h2&gt;Downloading jQuery&lt;/h2&gt;
+		<content type="html">&lt;p&gt;If you go to &lt;a href=&quot;http://jquery.com&quot;&gt;http://jquery.com&lt;/a&gt; you'll see two versions of the file to download 'production' and 'development'. So what's the difference and which should you use?&lt;/p&gt;
 
-        &lt;p&gt;
-            If you go to &lt;a href=&quot;http://jquery.com&quot;&gt;http://jquery.com&lt;/a&gt; you'll see two versions of the file to download 'production' and 'development'. So what's the difference and which should you use?
-        &lt;/p&gt;
+&lt;h3&gt;Production&lt;/h3&gt;
 
-        &lt;h3&gt;
-            Production
-        &lt;/h3&gt;
-        &lt;p&gt;
-            This version is used when you come to a point where you're happy with your code and you want push it live. You can upload or deploy your code and then people will be able to access it. In this environment it's useful to use Google's CDN (more on this in &lt;a href=&quot;/day-002&quot;&gt;Day 002&lt;/a&gt;). The end goal here is to serve this file and the content to the user accessing it as quick as possible. The production file is 'minified', it takes the code from the development version and reduces it to use the least amount of characters possible. This makes it difficult when looking at the code to work out what everything's doing, but dramatically lowers the file size.
-        &lt;/p&gt;
+&lt;p&gt;This version is used when you come to a point where you're happy with your code and you want push it live. You can upload or deploy your code and then people will be able to access it. In this environment it's useful to use Google's CDN (more on this in &lt;a href=&quot;/day-002&quot;&gt;Day 002&lt;/a&gt;). The end goal here is to serve this file and the content to the user accessing it as quick as possible. The production file is 'minified', it takes the code from the development version and reduces it to use the least amount of characters possible. This makes it difficult when looking at the code to work out what everything's doing, but dramatically lowers the file size.&lt;/p&gt;
 
-        &lt;h3&gt;
-            Development
-        &lt;/h3&gt;
-        &lt;p&gt;
-            When building web sites / web apps (&lt;a href=&quot;http://stackoverflow.com/questions/8694922/whats-the-difference-between-a-web-site-and-a-web-application&quot;&gt;What's the difference between a web site and a web application&lt;/a&gt;) I'd recommend working locally, this allows you to test your code and make sure everything is working before showing it to the world. Whilst working this way it's often useful, especially whilst learning jQuery to view the development file. It's full of useful comments and generally any method can be found in the jQuery development version source by searching for it then adding &lt;code&gt;:&lt;/code&gt;. There are a few exceptions I believe, but not many.
-        &lt;/p&gt;
+&lt;h3&gt;Development&lt;/h3&gt;
 
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;span9 column&quot;&gt;
-        &lt;p class=&quot;pull-right&quot;&gt;
-               
-            &lt;a href=&quot;/Day-002&quot; title=&quot;Next Post: Day 002&quot;&gt; &lt;i class=&quot;icon-chevron-right&quot;&gt;&lt;/i&gt;
-            &lt;/a&gt;
-            
-        &lt;/p&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
+&lt;p&gt;When building web sites / web apps (&lt;a href=&quot;http://stackoverflow.com/questions/8694922/whats-the-difference-between-a-web-site-and-a-web-application&quot;&gt;What's the difference between a web site and a web application&lt;/a&gt;) I'd recommend working locally, this allows you to test your code and make sure everything is working before showing it to the world. Whilst working this way it's often useful, especially whilst learning jQuery to view the development file. It's full of useful comments and generally any method can be found in the jQuery development version source by searching for it then adding &lt;code&gt;:&lt;/code&gt;. There are a few exceptions I believe, but not many.&lt;/p&gt;
 </content>
 	</entry>
 	

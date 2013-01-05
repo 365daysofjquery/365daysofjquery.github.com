@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Day 002
+title: Day 002 - Using Google's CDN to serve jQuery
 category: Coding
 tags: jQuery
 year: 2013
@@ -9,40 +9,16 @@ day: 02
 published: true
 summary: Day 002
 ---
-<div class="row">
-	<div class="span9 columns">
-		<h2>Using Google's CDN to serve jQuery</h2>
 
-		<script src="https://gist.github.com/4458078.js"></script>
+<script src="https://gist.github.com/4458078.js"></script>
 
-		<p>
-			Few things to note here. Firstly there's no 'http', this isn't a mistake, it's done deliberately using a 'protocol-relative URL'.
-			There's an excellent post on this over at Paul Irish's blog:
-			<a href="http://paulirish.com/2010/the-protocol-relative-url/">http://paulirish.com/2010/the-protocol-relative-url/</a>
-			. Secondly, it's a good idea to specify the version of jQuery you're using. If you always automatically update, things may break.
-			When a new version of jQuery is released it's always worth giving things a check over before updating.
-			Third of all, on the second line we call jQuery again.
-			This is useful just in case Google's CDN version might not be available and also if you're working offline.
-		</p>
+Few things to note here. Firstly there's no 'http', this isn't a mistake, it's done deliberately using a 'protocol-relative URL'.
+There's an excellent post on this over at Paul Irish's blog:
+<a href="http://paulirish.com/2010/the-protocol-relative-url/">http://paulirish.com/2010/the-protocol-relative-url/</a>.
+Secondly, it's a good idea to specify the version of jQuery you're using. If you always automatically update, things may break.
+When a new version of jQuery is released it's always worth giving things a check over before updating.
+Third of all, on the second line we call jQuery again.
+This is useful just in case Google's CDN version might not be available and also if you're working offline.
 
-		<p>
-			Another great reason for using this approach is that if the user has already visited a site using the same version of jQuery you're using they'll most likely have it cached.
-			This means they won't need to download it again, meaning one less file to download and quicker page rendering of your site.
-		</p>
-
-	</div>
-</div>
-
-<div class="row">
-	<div class="span9 column">
-		<p class="pull-right">
-			{% if page.previous.url %}
-			<a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"> <i class="icon-chevron-left"></i>
-			</a>
-			{% endif %}   {% if page.next.url %}
-			<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}"> <i class="icon-chevron-right"></i>
-			</a>
-			{% endif %}
-		</p>
-	</div>
-</div>
+Another great reason for using this approach is that if the user has already visited a site using the same version of jQuery you're using they'll most likely have it cached.
+This means they won't need to download it again, meaning one less file to download and quicker page rendering of your site.
