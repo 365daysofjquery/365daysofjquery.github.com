@@ -4,11 +4,20 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-01-07T22:42:56+00:00</updated>
+	<updated>2013-01-07T22:48:17+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
 	</author>
+	
+	<entry>
+		<title>Day 007 - Tools Reading</title>
+		<link href="http://365daysofjquery.github.com/Day-007"/>
+		<updated>2013-01-07T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-007</id>
+		<content type="html">&lt;p&gt;Setting up draft posts branch to save incomplete posts before going live.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Day 006 - Tools Writing</title>

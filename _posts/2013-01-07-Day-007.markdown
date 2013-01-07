@@ -1,0 +1,13 @@
+---
+layout: post
+title: Day 007 - Tools Reading
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 07
+published: true
+summary: Day 007
+---
+
+Setting up draft posts branch to save incomplete posts before going live.
