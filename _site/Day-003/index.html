@@ -2,7 +2,7 @@
 <html class="fuelux" lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Day 001 - Downloading jQuery</title>
+	<title>Day 003 - Give me some dollar!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="365 Days of jQuery">
@@ -55,7 +55,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 001 - Downloading jQuery</h1>
+			<h1>Day 003 - Give me some dollar!</h1>
 		</p>
 	</div>
 </div>
@@ -68,8 +68,11 @@
 	</div>
 	<div class="span6 column">
 		<p class="pull-right">
+			
+			<a href="/Day-002" title="Previous Post: Day 002 - Using Google's CDN to serve jQuery"> <i class="icon-chevron-left"></i>
+			</a>
 			   
-			<a href="/Day-002" title="Next Post: Day 002 - Using Google's CDN to serve jQuery"> <i class="icon-chevron-right"></i>
+			<a href="/Day-004" title="Next Post: Day 004 - No Conflict"> <i class="icon-chevron-right"></i>
 			</a>
 			
 		</p>
@@ -82,15 +85,18 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p>If you go to <a href="http://jquery.com">http://jquery.com</a> you'll see two versions of the file to download 'production' and 'development'. So what's the difference and which should you use?</p>
+			<p>If you've looked at any jQuery code, one of the first things you'll notice is the dollar symbol <code>$</code>.</p>
 
-<h3>Production</h3>
+<p>The <code>$</code> symbol is an alias for <code>jQuery</code>.</p>
 
-<p>This version is used when you come to a point where you're happy with your code and you want push it live. You can upload or deploy your code and then people will be able to access it. In this environment it's useful to use Google's CDN (more on this in <a href="/day-002">Day 002</a>). The end goal here is to serve this file and the content to the user accessing it as quick as possible. The production file is 'minified', it takes the code from the development version and reduces it to use the least amount of characters possible. This makes it difficult when looking at the code to work out what everything's doing, but dramatically lowers the file size.</p>
+<p>This is sometimes referred to as <a href="http://en.wikipedia.org/wiki/Syntactic_sugar">Syntactic Sugar</a>.
+Whilst writing jQuery code you could write <code>jQuery(doSomething)</code> or <code>$(doSomething)</code>. This is incredibly helpful, meaning that every time you want to call the jQuery object you can simply type <code>$</code>, rather than <code>jQuery</code>.</p>
 
-<h3>Development</h3>
+<p>It's important to note that <code>$</code> isn't unique to jQuery and although <a href="http://trends.builtwith.com/javascript">it is the most popular JavaScript library</a>, there are others that use the <code>$</code> symbol as well.</p>
 
-<p>When building web sites / web apps (<a href="http://stackoverflow.com/questions/8694922/whats-the-difference-between-a-web-site-and-a-web-application">What's the difference between a web site and a web application</a>) I'd recommend working locally, this allows you to test your code and make sure everything is working before showing it to the world. Whilst working this way it's often useful, especially whilst learning jQuery to view the development file. It's full of useful comments and generally any method can be found in the jQuery development version source by searching for it then adding <code>:</code>. There are a few exceptions I believe, but not many.</p>
+<p>There's a few times, particularly when using a CMS such as WordPress or Joomla, that various plugins get installed, some of these plugins may use another JavaScript library such as MooTools. In such instances where multiple JavaScript libraries are being used the <code>$</code> symbol can then have undesired results.</p>
+
+<p>Fortunately there's <code>jQuery.noConflict()</code> which I'll elaborate on in <a href="/day-004">Day 004</a>.</p>
 
 		</div>
 	</div>
@@ -126,10 +132,12 @@
 	<footer class="footer">
 	<div class="container">
 		<p class="pull-right">
+			
+			<a href="/Day-002" title="Previous Post: Day 002 - Using Google's CDN to serve jQuery">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Day-002" title="Next Post: Day 002 - Using Google's CDN to serve jQuery">Next Blog Post &raquo;</a>
+			<a href="/Day-004" title="Next Post: Day 004 - No Conflict">Next Blog Post &raquo;</a>
 			
 		</p>
 		<p>Page last generated on January  7, 2013</p>

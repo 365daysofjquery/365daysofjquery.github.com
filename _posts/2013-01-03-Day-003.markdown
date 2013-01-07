@@ -1,0 +1,24 @@
+---
+layout: post
+title: Day 003 - Give me some dollar!
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 03
+published: true
+summary: Day 003
+---
+
+If you've looked at any jQuery code, one of the first things you'll notice is the dollar symbol `$`.
+
+The `$` symbol is an alias for `jQuery`.
+
+This is sometimes referred to as [Syntactic Sugar](http://en.wikipedia.org/wiki/Syntactic_sugar).
+Whilst writing jQuery code you could write `jQuery(doSomething)` or `$(doSomething)`. This is incredibly helpful, meaning that every time you want to call the jQuery object you can simply type `$`, rather than `jQuery`.
+
+It's important to note that `$` isn't unique to jQuery and although [it is the most popular JavaScript library](http://trends.builtwith.com/javascript), there are others that use the `$` symbol as well.
+
+There's a few times, particularly when using a CMS such as WordPress or Joomla, that various plugins get installed, some of these plugins may use another JavaScript library such as MooTools. In such instances where multiple JavaScript libraries are being used the `$` symbol can then have undesired results.
+
+Fortunately there's `jQuery.noConflict()` which I'll elaborate on in [Day 004](/day-004).

@@ -15,10 +15,11 @@ summary: Day 002
 Few things to note here. Firstly there's no 'http', this isn't a mistake, it's done deliberately using a 'protocol-relative URL'.
 There's an excellent post on this over at Paul Irish's blog:
 <a href="http://paulirish.com/2010/the-protocol-relative-url/">http://paulirish.com/2010/the-protocol-relative-url/</a>.
+
 Secondly, it's a good idea to specify the version of jQuery you're using. If you always automatically update, things may break.
 When a new version of jQuery is released it's always worth giving things a check over before updating.
+
 Third of all, on the second line we call jQuery again.
 This is useful just in case Google's CDN version might not be available and also if you're working offline.
 
-Another great reason for using this approach is that if the user has already visited a site using the same version of jQuery you're using they'll most likely have it cached.
-This means they won't need to download it again, meaning one less file to download and quicker page rendering of your site.
+Another great reason for using this approach is that if the user has already visited a site using the same version of jQuery you're using they'll most likely have it cached. This means they won't need to download it again, meaning one less file to download and quicker page rendering of your site.

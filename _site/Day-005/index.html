@@ -2,7 +2,7 @@
 <html class="fuelux" lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Day 001 - Downloading jQuery</title>
+	<title>Day 005 - Let's get ready to jQuery</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="365 Days of jQuery">
@@ -55,7 +55,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 001 - Downloading jQuery</h1>
+			<h1>Day 005 - Let's get ready to jQuery</h1>
 		</p>
 	</div>
 </div>
@@ -68,8 +68,11 @@
 	</div>
 	<div class="span6 column">
 		<p class="pull-right">
+			
+			<a href="/Day-004" title="Previous Post: Day 004 - No Conflict"> <i class="icon-chevron-left"></i>
+			</a>
 			   
-			<a href="/Day-002" title="Next Post: Day 002 - Using Google's CDN to serve jQuery"> <i class="icon-chevron-right"></i>
+			<a href="/Day-006" title="Next Post: Day 006 - Tools Writing"> <i class="icon-chevron-right"></i>
 			</a>
 			
 		</p>
@@ -82,15 +85,24 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p>If you go to <a href="http://jquery.com">http://jquery.com</a> you'll see two versions of the file to download 'production' and 'development'. So what's the difference and which should you use?</p>
+			<p>Let's head over to the H5BP <a href="https://github.com/h5bp/html5-boilerplate/blob/master/index.html">index.html</a>.</p>
 
-<h3>Production</h3>
+<p>Notice all the script tags are at the bottom? So, why is this?</p>
 
-<p>This version is used when you come to a point where you're happy with your code and you want push it live. You can upload or deploy your code and then people will be able to access it. In this environment it's useful to use Google's CDN (more on this in <a href="/day-002">Day 002</a>). The end goal here is to serve this file and the content to the user accessing it as quick as possible. The production file is 'minified', it takes the code from the development version and reduces it to use the least amount of characters possible. This makes it difficult when looking at the code to work out what everything's doing, but dramatically lowers the file size.</p>
+<p>When a page is rendered you'll be able to view the source of that page. The code generated is the Document Object Model often referred to as the <code>DOM</code>.</p>
 
-<h3>Development</h3>
+<p>When you're loading a page this code is rendered from top to bottom. If we were to render the page in slo-mo and we had all the script tags at the top the DOM would have to effectively stop whilst it grabs all the code from the scripts. Whilst it's doing this the user will be looking at a blank screen, not good. So to improve the perceived page load time it's worth keeping scripts at the bottom.</p>
 
-<p>When building web sites / web apps (<a href="http://stackoverflow.com/questions/8694922/whats-the-difference-between-a-web-site-and-a-web-application">What's the difference between a web site and a web application</a>) I'd recommend working locally, this allows you to test your code and make sure everything is working before showing it to the world. Whilst working this way it's often useful, especially whilst learning jQuery to view the development file. It's full of useful comments and generally any method can be found in the jQuery development version source by searching for it then adding <code>:</code>. There are a few exceptions I believe, but not many.</p>
+<p>However, there may be instances where you need to include a script file at the top of the DOM or where other JavaScript code is being called from a difference source, but doing this will then mean that the script isn't aware of the code that's below it as the JavaScript has already been executed.</p>
+
+<p>This is where <code>$(document).ready()</code> comes to use and will ensure that the code will only execute when the DOM is ready. The examples in <a href="/day-004">Day 004</a> take advantage of <code>$(document).ready()</code> and also show an alternative way of writing this code.</p>
+
+<p>Here's a handy snippet using the alternative way for Sublime Text 2:</p>
+
+<script src="https://gist.github.com/4479140.js"></script>
+
+
+<p>Not sure what Sublime Text 2 or a snippet is? Fear not! Head on over to <a href="/day-006">Day 006</a>.</p>
 
 		</div>
 	</div>
@@ -126,10 +138,12 @@
 	<footer class="footer">
 	<div class="container">
 		<p class="pull-right">
+			
+			<a href="/Day-004" title="Previous Post: Day 004 - No Conflict">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Day-002" title="Next Post: Day 002 - Using Google's CDN to serve jQuery">Next Blog Post &raquo;</a>
+			<a href="/Day-006" title="Next Post: Day 006 - Tools Writing">Next Blog Post &raquo;</a>
 			
 		</p>
 		<p>Page last generated on January  7, 2013</p>

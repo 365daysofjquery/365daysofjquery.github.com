@@ -2,7 +2,7 @@
 <html class="fuelux" lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Day 001 - Downloading jQuery</title>
+	<title>Day 004 - No Conflict</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="365 Days of jQuery">
@@ -55,7 +55,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 001 - Downloading jQuery</h1>
+			<h1>Day 004 - No Conflict</h1>
 		</p>
 	</div>
 </div>
@@ -68,8 +68,11 @@
 	</div>
 	<div class="span6 column">
 		<p class="pull-right">
+			
+			<a href="/Day-003" title="Previous Post: Day 003 - Give me some dollar!"> <i class="icon-chevron-left"></i>
+			</a>
 			   
-			<a href="/Day-002" title="Next Post: Day 002 - Using Google's CDN to serve jQuery"> <i class="icon-chevron-right"></i>
+			<a href="/Day-005" title="Next Post: Day 005 - Let's get ready to jQuery"> <i class="icon-chevron-right"></i>
 			</a>
 			
 		</p>
@@ -82,15 +85,31 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p>If you go to <a href="http://jquery.com">http://jquery.com</a> you'll see two versions of the file to download 'production' and 'development'. So what's the difference and which should you use?</p>
+			<p>As mentioned previously if you open up the <a href="http://code.jquery.com/jquery-1.8.3.js">development version of jQuery</a> and search for <code>:</code> plus what you're looking for, in this case <code>:noConflict</code>, you'll see:</p>
 
-<h3>Production</h3>
+<script src="https://gist.github.com/4462005.js"></script>
 
-<p>This version is used when you come to a point where you're happy with your code and you want push it live. You can upload or deploy your code and then people will be able to access it. In this environment it's useful to use Google's CDN (more on this in <a href="/day-002">Day 002</a>). The end goal here is to serve this file and the content to the user accessing it as quick as possible. The production file is 'minified', it takes the code from the development version and reduces it to use the least amount of characters possible. This makes it difficult when looking at the code to work out what everything's doing, but dramatically lowers the file size.</p>
 
-<h3>Development</h3>
+<p>It's also worth noting the jQuery API site has just had a sweet update and searching for noConflict, you'll find:
+<a href="http://api.jquery.com/jQuery.noConflict/">http://api.jquery.com/jQuery.noConflict/</a></p>
 
-<p>When building web sites / web apps (<a href="http://stackoverflow.com/questions/8694922/whats-the-difference-between-a-web-site-and-a-web-application">What's the difference between a web site and a web application</a>) I'd recommend working locally, this allows you to test your code and make sure everything is working before showing it to the world. Whilst working this way it's often useful, especially whilst learning jQuery to view the development file. It's full of useful comments and generally any method can be found in the jQuery development version source by searching for it then adding <code>:</code>. There are a few exceptions I believe, but not many.</p>
+<p>There's a few times, especially in WordPress builds where I've seen people fix multiple JavaScript libraries by constantly defining jQuery:</p>
+
+<script src="https://gist.github.com/4467382.js"></script>
+
+
+<p>This can be improved using the following code to set <code>$</code> back as an alias <code>jQuery</code>.</p>
+
+<script src="https://gist.github.com/4467391.js"></script>
+
+
+<p>Another alternative that's worth mentioning is using the following code which is essentially doing the same job.
+It is less descriptive, so not that great if you're a beginner trying to figure what is going on, but when you do, it's less code and widely used.</p>
+
+<script src="https://gist.github.com/4468045.js"></script>
+
+
+<p>More on <code>$(document).ready()</code> in <a href="/day-005">Day 005</a>.</p>
 
 		</div>
 	</div>
@@ -126,10 +145,12 @@
 	<footer class="footer">
 	<div class="container">
 		<p class="pull-right">
+			
+			<a href="/Day-003" title="Previous Post: Day 003 - Give me some dollar!">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Day-002" title="Next Post: Day 002 - Using Google's CDN to serve jQuery">Next Blog Post &raquo;</a>
+			<a href="/Day-005" title="Next Post: Day 005 - Let's get ready to jQuery">Next Blog Post &raquo;</a>
 			
 		</p>
 		<p>Page last generated on January  7, 2013</p>
