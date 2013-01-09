@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Day 006 - Tools Writing
+title: Day 006 - Tools - Writing
 category: Coding
 tags: jQuery
 year: 2013
@@ -26,6 +26,8 @@ I find it handy to keep a gist of all the packages installed:
 The main 2 packages I'd recommend for JavaScript are;
 `Bracket Highlighter`, this is useful to see where code opens and closes.
 `JSLint`, this will output helpful improvements and help debugging.
+
+As well as packages it's also possible to change the theme, I use a custom theme <https://github.com/simonowendesign/Monokai-Phoenix> fusing the beauty of the Monokai theme together with Phoenix which I find does a great job on improving the UI for Sublime Text 2.
 
 When writing code you'll most likely find yourself using sections of code on a regular basis. This is where [snippets](http://sublimetext.info/docs/en/extensibility/snippets.html) come in handy, the snippet created in [Day 005](/day-005) allows you to simply type `siaf` which will then output the code to create a Self Invoking Anonymous Function.
 

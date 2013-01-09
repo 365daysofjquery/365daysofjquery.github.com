@@ -4,23 +4,37 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-01-07T22:48:17+00:00</updated>
+	<updated>2013-01-09T20:57:44+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
 	</author>
 	
 	<entry>
-		<title>Day 007 - Tools Reading</title>
+		<title>Day 007 - Tools - Reading</title>
 		<link href="http://365daysofjquery.github.com/Day-007"/>
 		<updated>2013-01-07T00:00:00+00:00</updated>
 		<id>http://365daysofjquery.github.com/Day-007</id>
-		<content type="html">&lt;p&gt;Setting up draft posts branch to save incomplete posts before going live.&lt;/p&gt;
+		<content type="html">&lt;p&gt;Ok, so now you've gone over some of the basics, let's get a bit of code working.&lt;/p&gt;
+
+&lt;p&gt;Copy the following code:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/4496584.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Paste this code to a new and file, save this somewhere and open in Google Chrome.
+If you don't already have Google Chrome you can download it &lt;a href=&quot;http://www.google.com/chrome&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In Google Chrome we want to view the &lt;code&gt;console&lt;/code&gt;. This can be found in Google Chrome's Developer Tools &lt;code&gt;View &amp;gt; Developer &amp;gt; Developer Tools&lt;/code&gt; or use the shortcut &lt;code&gt;alt + cmd + i&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;By default the Elements tab is selected, select the &lt;code&gt;console&lt;/code&gt; tab. Now click the &lt;code&gt;button&lt;/code&gt; that's in the browser window, you should now see the text &lt;code&gt;button is clicked&lt;/code&gt; appear in the &lt;code&gt;console&lt;/code&gt;. Awesome. This will come in very handy in future posts to work out what jQuery is outputting.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;console&lt;/code&gt; and Google Chrome Dev Tools is where I spend a vast amount of time whilst developing, it's also possible to theme. I use &lt;a href=&quot;https://github.com/simonowendesign/SO-Dark-Monokai-v3&quot;&gt;https://github.com/simonowendesign/SO-Dark-Monokai-v3&lt;/a&gt;. Still needs some work, but it's getting there.&lt;/p&gt;
 </content>
 	</entry>
 	
 	<entry>
-		<title>Day 006 - Tools Writing</title>
+		<title>Day 006 - Tools - Writing</title>
 		<link href="http://365daysofjquery.github.com/Day-006"/>
 		<updated>2013-01-06T00:00:00+00:00</updated>
 		<id>http://365daysofjquery.github.com/Day-006</id>
@@ -42,6 +56,8 @@
 &lt;p&gt;The main 2 packages I'd recommend for JavaScript are;
 &lt;code&gt;Bracket Highlighter&lt;/code&gt;, this is useful to see where code opens and closes.
 &lt;code&gt;JSLint&lt;/code&gt;, this will output helpful improvements and help debugging.&lt;/p&gt;
+
+&lt;p&gt;As well as packages it's also possible to change the theme, I use a custom theme &lt;a href=&quot;https://github.com/simonowendesign/Monokai-Phoenix&quot;&gt;https://github.com/simonowendesign/Monokai-Phoenix&lt;/a&gt; fusing the beauty of the Monokai theme together with Phoenix which I find does a great job on improving the UI for Sublime Text 2.&lt;/p&gt;
 
 &lt;p&gt;When writing code you'll most likely find yourself using sections of code on a regular basis. This is where &lt;a href=&quot;http://sublimetext.info/docs/en/extensibility/snippets.html&quot;&gt;snippets&lt;/a&gt; come in handy, the snippet created in &lt;a href=&quot;/day-005&quot;&gt;Day 005&lt;/a&gt; allows you to simply type &lt;code&gt;siaf&lt;/code&gt; which will then output the code to create a Self Invoking Anonymous Function.&lt;/p&gt;
 

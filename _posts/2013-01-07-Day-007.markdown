@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Day 007 - Tools Reading
+title: Day 007 - Tools - Reading
 category: Coding
 tags: jQuery
 year: 2013
@@ -10,4 +10,16 @@ published: true
 summary: Day 007
 ---
 
-Setting up draft posts branch to save incomplete posts before going live.
+Ok, so now you've gone over some of the basics, let's get a bit of code working.
+
+Copy the following code:
+<script src="https://gist.github.com/4496584.js"></script>
+
+Paste this code to a new and file, save this somewhere and open in Google Chrome.
+If you don't already have Google Chrome you can download it [here](http://www.google.com/chrome).
+
+In Google Chrome we want to view the `console`. This can be found in Google Chrome's Developer Tools `View > Developer > Developer Tools` or use the shortcut `alt + cmd + i`.
+
+By default the Elements tab is selected, select the `console` tab. Now click the `button` that's in the browser window, you should now see the text `button is clicked` appear in the `console`. Awesome. This will come in very handy in future posts to work out what jQuery is outputting.
+
+The `console` and Google Chrome Dev Tools is where I spend a vast amount of time whilst developing, it's also possible to theme. I use <https://github.com/simonowendesign/SO-Dark-Monokai-v3>. Still needs some work, but it's getting there.
