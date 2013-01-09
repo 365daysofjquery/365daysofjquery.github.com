@@ -26,4 +26,4 @@ Another alternative that's worth mentioning is using the following code which is
 It is less descriptive, so not that great if you're a beginner trying to figure what is going on, but when you do, it's less code and widely used.
 <script src="https://gist.github.com/4468045.js"></script>
 
-More on `$(document).ready()` in [Day 005](/day-005).
+More on `$(document).ready()` in [Day 005](/Day-005).

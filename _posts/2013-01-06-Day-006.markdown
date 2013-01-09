@@ -29,9 +29,9 @@ The main 2 packages I'd recommend for JavaScript are;
 
 As well as packages it's also possible to change the theme, I use a custom theme <https://github.com/simonowendesign/Monokai-Phoenix> fusing the beauty of the Monokai theme together with Phoenix which I find does a great job on improving the UI for Sublime Text 2.
 
-When writing code you'll most likely find yourself using sections of code on a regular basis. This is where [snippets](http://sublimetext.info/docs/en/extensibility/snippets.html) come in handy, the snippet created in [Day 005](/day-005) allows you to simply type `siaf` which will then output the code to create a Self Invoking Anonymous Function.
+When writing code you'll most likely find yourself using sections of code on a regular basis. This is where [snippets](http://sublimetext.info/docs/en/extensibility/snippets.html) come in handy, the snippet created in [Day 005](/Day-005) allows you to simply type `siaf` which will then output the code to create a Self Invoking Anonymous Function.
 
 Here's another snippet that you'll find yourself using over and over again:
 <script src="https://gist.github.com/4479162.js"></script>
 
-Here `cl` creates code that allows you to `log` to the `console`. Not sure what the console is? You guessed it! Head on over to [Day 007](/day-007).
+Here `cl` creates code that allows you to `log` to the `console`. Not sure what the console is? You guessed it! Head on over to [Day 007](/Day-007).

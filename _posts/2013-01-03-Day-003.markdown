@@ -21,4 +21,4 @@ It's important to note that `$` isn't unique to jQuery and although [it is the m
 
 There's a few times, particularly when using a CMS such as WordPress or Joomla, that various plugins get installed, some of these plugins may use another JavaScript library such as MooTools. In such instances where multiple JavaScript libraries are being used the `$` symbol can then have undesired results.
 
-Fortunately there's `jQuery.noConflict()` which I'll elaborate on in [Day 004](/day-004).
+Fortunately there's `jQuery.noConflict()` which I'll elaborate on in [Day 004](/Day-004).
