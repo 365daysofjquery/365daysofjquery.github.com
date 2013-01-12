@@ -12,13 +12,13 @@ summary: Day 007
 
 Ok, so now you've gone over some of the basics, let's get a bit of code working.
 
-Copy the following code:
+Copy the following code or view the [demo](/demos/Day-007.html):
 <script src="https://gist.github.com/4496584.js"></script>
 
-Paste this code to a new and file, save this somewhere and open in Google Chrome.
+Paste this code into a new file, save this somewhere and open in Google Chrome.
 If you don't already have Google Chrome you can download it [here](http://www.google.com/chrome).
 
-In Google Chrome we want to view the `console`. This can be found in Google Chrome's Developer Tools `View > Developer > Developer Tools` or use the shortcut `alt + cmd + i`.
+In Google Chrome you want to view the `console`. This can be found in Google Chrome's Developer Tools `View > Developer > Developer Tools` or use the shortcut `alt + cmd + i`.
 
 By default the Elements tab is selected, select the `console` tab. Now click the `button` that's in the browser window, you should now see the text `button is clicked` appear in the `console`. Awesome. This will come in very handy in future posts to work out what jQuery is outputting.
 

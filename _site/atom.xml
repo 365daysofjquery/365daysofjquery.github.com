@@ -4,11 +4,36 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-01-09T21:07:28+00:00</updated>
+	<updated>2013-01-12T15:42:34+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
 	</author>
+	
+	<entry>
+		<title>Day 008 - Tools - Workflow</title>
+		<link href="http://365daysofjquery.github.com/Day-008"/>
+		<updated>2013-01-08T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-008</id>
+		<content type="html">&lt;p&gt;Whilst writing and viewing code you'll be using at least a browser and most likely a text editor.
+You'll also need a way to open and navigate the files you're working on.&lt;/p&gt;
+
+&lt;p&gt;Here's some tools you may find useful to help.&lt;/p&gt;
+
+&lt;h2&gt;Quicksilver&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://qsapp.com/&quot;&gt;http://qsapp.com/&lt;/a&gt; allows you to bring up a small popup and start typing to find things you most often use.&lt;/p&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/watch?v=d0MvL_CkmnY&amp;t=1m0s&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+
+&lt;h2&gt;Spectacle&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://spectacleapp.com/&quot;&gt;http://spectacleapp.com/&lt;/a&gt; is a real time saver, forget moving your mouse to the bottom of a window to re-size it. Setup some shortcuts and automate window re-sizing with shortcuts. Great for quickly moving your browser to the left and your text editor to the right of the screen. Here's the shortcuts I use:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://farm9.staticflickr.com/8515/8373621900_cd0ae36461_o.png&quot; alt=&quot;Spectacle Custom Shortcuts&quot;&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Day 007 - Tools - Reading</title>
@@ -17,15 +42,15 @@
 		<id>http://365daysofjquery.github.com/Day-007</id>
 		<content type="html">&lt;p&gt;Ok, so now you've gone over some of the basics, let's get a bit of code working.&lt;/p&gt;
 
-&lt;p&gt;Copy the following code:&lt;/p&gt;
+&lt;p&gt;Copy the following code or view the &lt;a href=&quot;/demos/Day-007.html&quot;&gt;demo&lt;/a&gt;:&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/4496584.js&quot;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;Paste this code to a new and file, save this somewhere and open in Google Chrome.
+&lt;p&gt;Paste this code into a new file, save this somewhere and open in Google Chrome.
 If you don't already have Google Chrome you can download it &lt;a href=&quot;http://www.google.com/chrome&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;In Google Chrome we want to view the &lt;code&gt;console&lt;/code&gt;. This can be found in Google Chrome's Developer Tools &lt;code&gt;View &amp;gt; Developer &amp;gt; Developer Tools&lt;/code&gt; or use the shortcut &lt;code&gt;alt + cmd + i&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In Google Chrome you want to view the &lt;code&gt;console&lt;/code&gt;. This can be found in Google Chrome's Developer Tools &lt;code&gt;View &amp;gt; Developer &amp;gt; Developer Tools&lt;/code&gt; or use the shortcut &lt;code&gt;alt + cmd + i&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;By default the Elements tab is selected, select the &lt;code&gt;console&lt;/code&gt; tab. Now click the &lt;code&gt;button&lt;/code&gt; that's in the browser window, you should now see the text &lt;code&gt;button is clicked&lt;/code&gt; appear in the &lt;code&gt;console&lt;/code&gt;. Awesome. This will come in very handy in future posts to work out what jQuery is outputting.&lt;/p&gt;
 
