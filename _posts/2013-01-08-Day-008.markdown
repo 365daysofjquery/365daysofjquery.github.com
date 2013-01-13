@@ -28,3 +28,8 @@ Here's some tools you may find useful to help.
 <http://spectacleapp.com/> is a real time saver, forget moving your mouse to the bottom of a window to re-size it. Setup some shortcuts and automate window re-sizing with shortcuts. Great for quickly moving your browser to the left and your text editor to the right of the screen. Here's the shortcuts I use:
 
 <img src="http://farm9.staticflickr.com/8515/8373621900_cd0ae36461_o.png" alt="Spectacle Custom Shortcuts">
+
+
+## LiveReload
+
+<http://livereload.com/> again is a great time saver, when editing code in your text editor then saving, it will automatically reload your browser for you with the changes made.
