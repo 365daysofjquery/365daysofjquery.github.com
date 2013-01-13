@@ -1,0 +1,55 @@
+---
+layout: post
+title: Day 012 - Manipulating CSS
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 12
+published: true
+summary: Day 012
+---
+
+Ok, coding time!
+
+Here you'll take some text in divs and learn how to manipulate these via CSS. Although it's possible to do this, sometimes it can be better to add or change a class name, we'll look at this in [Day 013](/Day-013).
+
+But for now take a look at this [demo](/demos/Day-012.html).
+
+
+Take the code:
+
+	$('div.red').css('color', 'red');
+
+
+Or you could also do:
+
+	$('.red').css('color', 'red');
+
+
+Although this is less code, so may seem like a good idea, performance can be improved upon by being more specific when it comes to telling jQuery what it's looking for. I'll cover this in more detail going forward, but for now let's break down the code above.
+
+First the `$` calls to jQuery, it then tells jQuery to look for a `div` element with a `class` of `red`.
+When it's found that, we want to do something with the CSS, then tell it what it needs to do to the CSS, in this case change the CSS property to red.
+
+But what if you want to change more than one property?
+
+Sure, you could do:
+
+	$('div.red').css('color', 'red');
+	$('div.red').css('font-size', '30');
+
+
+But rather than telling jQuery to keep searching for the same element and writing more code, there's a better way:
+
+	$('div.red-big-text').css({
+		'color': 'red',
+		'font-size': 30
+	});
+
+
+A few things important to note when declaring multiple properties;
+
+1. The addition of `{`, `}`.
+2. The `,` goes to the end of the line and CSS property is split with `:`.
+3. No longer need to wrap numbered values in `''`.

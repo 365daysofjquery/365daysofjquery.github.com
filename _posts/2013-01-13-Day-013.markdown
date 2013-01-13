@@ -1,0 +1,24 @@
+---
+layout: post
+title: Day 013 - Adding a Class
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 13
+published: true
+summary: Day 013
+---
+
+In [Day 012](/Day-012) you looked at how to manipulate CSS using jQuery, although it's possible to do, it's not always the best way to go about things.
+
+So let's look at how we can add a class to an element.
+
+	$('h1').addClass('this-is-a-h1');
+
+
+Here, the code, again calls jQuery, it then looks for a `h1`, then tells jQuery you'd like to add a class and lastly tells jQuery what you'd like that class to be called, in this case `this-is-a-h1`.
+
+Viewing the [demo](/demos/Day-013.html) and inspecting the h1, you'll see that although there's no class on the h1 in the original source code, jQuery adds the class name.
+
+You can now keep apply all the required styles in CSS by referencing the class name.

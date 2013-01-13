@@ -2,7 +2,7 @@
 <html class="fuelux" lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Day 006 - Tools - Writing</title>
+	<title>Day 010 - Tools - Libraries</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="365 Days of jQuery">
@@ -55,7 +55,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 006 - Tools - Writing</h1>
+			<h1>Day 010 - Tools - Libraries</h1>
 		</p>
 	</div>
 </div>
@@ -69,10 +69,10 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Day-005" title="Previous Post: Day 005 - Let's get ready to jQuery"> <i class="icon-chevron-left"></i>
+			<a href="/Day-009" title="Previous Post: Day 009 - Tools - Online"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Day-007" title="Next Post: Day 007 - Tools - Reading"> <i class="icon-chevron-right"></i>
+			<a href="/Day-011" title="Next Post: Day 011 - Recap"> <i class="icon-chevron-right"></i>
 			</a>
 			
 		</p>
@@ -85,35 +85,36 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p>Web development is getting increasingly more complicated as time goes on. Gone are the days of learning tables, then divs, then CSS properties as they are invented and introduced.</p>
+			<p>For accessibility it's important to note that people may have styles and, or JavaScript disabled, when writing any code you should always bear this in mind. Unfortunately not everyone in the world uses a modern browser taking advantage of all the great stuff that can be accomplished with HTML5 and CSS3, so depending on your project it's worth thinking about what browsers you're going to support.</p>
 
-<p>Nowadays there's a <code>Fucking Shitload of Stuff</code> (Yes, that is a technical term in case you were wondering) with a multitude of various platforms, browsers and devices to test on. Luckily there's some great tools out there to help out with your workflow.</p>
+<h2>Modernizr</h2>
 
-<p>This topic could warrant its own site in itself, there's so much going on (If you're interested I've done a few <a href="http://www.youtube.com/user/simonowendesign/videos">screencasts</a>), but for now let's concentrate on some JavaScript helpers.</p>
+<p>Modernizr is a great JavaScript library that can help out with these issues by detecting features and adding classes to the <code>html</code> element. Here's an example:</p>
 
-<p>First thing you're going to want is a Text Editor, there's a few out there, I'd recommend <a href="http://www.sublimetext.com/2">Sublime Text 2</a>. Then you'll want to get <a href="http://wbond.net/sublime_packages/package_control">Package Control</a>. Once you've installed this,  package installations are a piece of cake.</p>
+<pre><code>&lt;html lang="en" dir="ltr" id="modernizrcom" class="js no-touch postmessage history multiplebgs boxshadow opacity cssanimations csscolumns cssgradients csstransforms csstransitions fontface localstorage sessionstorage svg inlinesvg no-blobbuilder blob bloburls download formdata wf-proximanova1proximanova2-n4-active wf-proximanova1proximanova2-i4-active wf-proximanova1proximanova2-n7-active wf-proximanova1proximanova2-i7-active wf-proximanovacondensed1proximanovacondensed2-n6-active wf-athelas1athelas2-n4-active wf-active"&gt;&lt;head&gt;
+</code></pre>
 
-<p>Open up Sublime Text 2, then press <code>cmd + shift + p</code>, you should see a new window open. You can then start typing and it will filter down, if you start typing <code>package</code> you can see all the package options that are available, we're after <code>Package Control: Install Package</code> when you have this selected hit <code>Enter</code>. This will now go and grab all the latest packages and again you can start typing for the package you'd like to install and it will filter down.</p>
+<p>To find out how to get started with Modernizr and a full list of feature detections please visit <a href="http://modernizr.com/">http://modernizr.com/</a>.</p>
 
-<p>I find it handy to keep a gist of all the packages installed:</p>
+<h2>Selectivizr</h2>
 
-<script src="https://gist.github.com/3293504.js"></script>
+<p>As mentioned previously not everyone uses a modern browser, Internet Explorer is a prime culprit that many users will have installed on their Windows PC and not be aware that it's possible to download another browser or upgrade and so keep on using it.</p>
 
+<p>Personally I'm not a fan of going back to support older browsers and adding extra code that will then have a negative impact on those using modern browsers. I opt to use the <code>chromeframe</code> as seen in <a href="https://github.com/h5bp/html5-boilerplate/blob/master/index.html">h5bp</a>, where possible in order to help move the web forwards.</p>
 
-<p>The main 2 packages I'd recommend for JavaScript are;
-<code>Bracket Highlighter</code>, this is useful to see where code opens and closes.
-<code>JSLint</code>, this will output helpful improvements and help debugging.</p>
+<p> <code>chromeframe</code> adds a message to the top of the page for people using older browsers to go to <a href="http://browsehappy.com/">http://browsehappy.com/</a> where they can upgrade to a modern browser.</p>
 
-<p>As well as packages it's also possible to change the theme, I use a custom theme <a href="https://github.com/simonowendesign/Monokai-Phoenix">https://github.com/simonowendesign/Monokai-Phoenix</a> fusing the beauty of the Monokai theme together with Phoenix which I find does a great job on improving the UI for Sublime Text 2.</p>
+<p>However, most of us have bills to pay and if we're working on a project where the client's requirement is to support older browsers selectivizr can help out by doing a great job at providing CSS3 selectors for Internet Explorer 6-8.</p>
 
-<p>When writing code you'll most likely find yourself using sections of code on a regular basis. This is where <a href="http://sublimetext.info/docs/en/extensibility/snippets.html">snippets</a> come in handy, the snippet created in <a href="/Day-005">Day 005</a> allows you to simply type <code>siaf</code> which will then output the code to create a Self Invoking Anonymous Function.</p>
+<p>To find out more visit <a href="http://selectivizr.com/">http://selectivizr.com/</a>.</p>
 
-<p>Here's another snippet that you'll find yourself using over and over again:</p>
+<h2>Zepto</h2>
 
-<script src="https://gist.github.com/4479162.js"></script>
+<p>Zepto, Zepto, Zepto... Ok, this one's a bit different as in certain circumstances it can be used as a replacement for jQuery.</p>
 
+<p>Zepto is less than a quarter the size of jQuery in file size, it does this by focusing on only modern browsers. So if you've assessed your project's requirements and know that older browsers aren't an issue (looking at IE8 and below) you'll most likely find that you can switch to Zepto.</p>
 
-<p>Here <code>cl</code> creates code that allows you to <code>log</code> to the <code>console</code>. Not sure what the console is? You guessed it! Head on over to <a href="/Day-007">Day 007</a>.</p>
+<p><a href="http://zeptojs.com/">http://zeptojs.com/</a></p>
 
 		</div>
 	</div>
@@ -123,11 +124,11 @@
 	<div class="container">
 		<p class="pull-right">
 			
-			<a href="/Day-005" title="Previous Post: Day 005 - Let's get ready to jQuery">&laquo; Previous Blog Post</a>
+			<a href="/Day-009" title="Previous Post: Day 009 - Tools - Online">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Day-007" title="Next Post: Day 007 - Tools - Reading">Next Blog Post &raquo;</a>
+			<a href="/Day-011" title="Next Post: Day 011 - Recap">Next Blog Post &raquo;</a>
 			
 		</p>
 		<p>Page last generated on January 13, 2013</p>

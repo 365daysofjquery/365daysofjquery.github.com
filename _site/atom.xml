@@ -4,11 +4,166 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-01-12T15:48:33+00:00</updated>
+	<updated>2013-01-13T20:30:35+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
 	</author>
+	
+	<entry>
+		<title>Day 013 - Adding a Class</title>
+		<link href="http://365daysofjquery.github.com/Day-013"/>
+		<updated>2013-01-13T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-013</id>
+		<content type="html">&lt;p&gt;In &lt;a href=&quot;/Day-012&quot;&gt;Day 012&lt;/a&gt; you looked at how to manipulate CSS using jQuery, although it's possible to do, it's not always the best way to go about things.&lt;/p&gt;
+
+&lt;p&gt;So let's look at how we can add a class to an element.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('h1').addClass('this-is-a-h1');
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here, the code, again calls jQuery, it then looks for a &lt;code&gt;h1&lt;/code&gt;, then tells jQuery you'd like to add a class and lastly tells jQuery what you'd like that class to be called, in this case &lt;code&gt;this-is-a-h1&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Viewing the &lt;a href=&quot;/demos/Day-013.html&quot;&gt;demo&lt;/a&gt; and inspecting the h1, you'll see that although there's no class on the h1 in the original source code, jQuery adds the class name.&lt;/p&gt;
+
+&lt;p&gt;You can now keep apply all the required styles in CSS by referencing the class name.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Day 012 - Manipulating CSS</title>
+		<link href="http://365daysofjquery.github.com/Day-012"/>
+		<updated>2013-01-12T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-012</id>
+		<content type="html">&lt;p&gt;Ok, coding time!&lt;/p&gt;
+
+&lt;p&gt;Here you'll take some text in divs and learn how to manipulate these via CSS. Although it's possible to do this, sometimes it can be better to add or change a class name, we'll look at this in &lt;a href=&quot;/Day-013&quot;&gt;Day 013&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But for now take a look at this &lt;a href=&quot;/demos/Day-012.html&quot;&gt;demo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Take the code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('div.red').css('color', 'red');
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Or you could also do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('.red').css('color', 'red');
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Although this is less code, so may seem like a good idea, performance can be improved upon by being more specific when it comes to telling jQuery what it's looking for. I'll cover this in more detail going forward, but for now let's break down the code above.&lt;/p&gt;
+
+&lt;p&gt;First the &lt;code&gt;$&lt;/code&gt; calls to jQuery, it then tells jQuery to look for a &lt;code&gt;div&lt;/code&gt; element with a &lt;code&gt;class&lt;/code&gt; of &lt;code&gt;red&lt;/code&gt;.
+When it's found that, we want to do something with the CSS, then tell it what it needs to do to the CSS, in this case change the CSS property to red.&lt;/p&gt;
+
+&lt;p&gt;But what if you want to change more than one property?&lt;/p&gt;
+
+&lt;p&gt;Sure, you could do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('div.red').css('color', 'red');
+$('div.red').css('font-size', '30');
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But rather than telling jQuery to keep searching for the same element and writing more code, there's a better way:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('div.red-big-text').css({
+    'color': 'red',
+    'font-size': 30
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A few things important to note when declaring multiple properties;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The addition of &lt;code&gt;{&lt;/code&gt;, &lt;code&gt;}&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;,&lt;/code&gt; goes to the end of the line and CSS property is split with &lt;code&gt;:&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;No longer need to wrap numbered values in &lt;code&gt;''&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+	</entry>
+	
+	<entry>
+		<title>Day 011 - Recap</title>
+		<link href="http://365daysofjquery.github.com/Day-011"/>
+		<updated>2013-01-11T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-011</id>
+		<content type="html">&lt;p&gt;Right! You still with me?!&lt;/p&gt;
+
+&lt;p&gt;Let's have a quick recap to remind yourself (myself) what you've done so far.&lt;/p&gt;
+
+&lt;p&gt;So now, you should know how to download jQuery, how Google's CDN can help load jQuery, the difference between using &lt;code&gt;$&lt;/code&gt; and &lt;code&gt;jQuery&lt;/code&gt;, how to avoid conflicts with other libraries and have some idea of tools that can help you out.&lt;/p&gt;
+
+&lt;p&gt;Ok, so now you've covered the basics, now let's get stuck into some code in &lt;a href=&quot;/Day-012&quot;&gt;Day 012&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Day 010 - Tools - Libraries</title>
+		<link href="http://365daysofjquery.github.com/Day-010"/>
+		<updated>2013-01-10T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-010</id>
+		<content type="html">&lt;p&gt;For accessibility it's important to note that people may have styles and, or JavaScript disabled, when writing any code you should always bear this in mind. Unfortunately not everyone in the world uses a modern browser taking advantage of all the great stuff that can be accomplished with HTML5 and CSS3, so depending on your project it's worth thinking about what browsers you're going to support.&lt;/p&gt;
+
+&lt;h2&gt;Modernizr&lt;/h2&gt;
+
+&lt;p&gt;Modernizr is a great JavaScript library that can help out with these issues by detecting features and adding classes to the &lt;code&gt;html&lt;/code&gt; element. Here's an example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;html lang=&quot;en&quot; dir=&quot;ltr&quot; id=&quot;modernizrcom&quot; class=&quot;js no-touch postmessage history multiplebgs boxshadow opacity cssanimations csscolumns cssgradients csstransforms csstransitions fontface localstorage sessionstorage svg inlinesvg no-blobbuilder blob bloburls download formdata wf-proximanova1proximanova2-n4-active wf-proximanova1proximanova2-i4-active wf-proximanova1proximanova2-n7-active wf-proximanova1proximanova2-i7-active wf-proximanovacondensed1proximanovacondensed2-n6-active wf-athelas1athelas2-n4-active wf-active&quot;&amp;gt;&amp;lt;head&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To find out how to get started with Modernizr and a full list of feature detections please visit &lt;a href=&quot;http://modernizr.com/&quot;&gt;http://modernizr.com/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Selectivizr&lt;/h2&gt;
+
+&lt;p&gt;As mentioned previously not everyone uses a modern browser, Internet Explorer is a prime culprit that many users will have installed on their Windows PC and not be aware that it's possible to download another browser or upgrade and so keep on using it.&lt;/p&gt;
+
+&lt;p&gt;Personally I'm not a fan of going back to support older browsers and adding extra code that will then have a negative impact on those using modern browsers. I opt to use the &lt;code&gt;chromeframe&lt;/code&gt; as seen in &lt;a href=&quot;https://github.com/h5bp/html5-boilerplate/blob/master/index.html&quot;&gt;h5bp&lt;/a&gt;, where possible in order to help move the web forwards.&lt;/p&gt;
+
+&lt;p&gt; &lt;code&gt;chromeframe&lt;/code&gt; adds a message to the top of the page for people using older browsers to go to &lt;a href=&quot;http://browsehappy.com/&quot;&gt;http://browsehappy.com/&lt;/a&gt; where they can upgrade to a modern browser.&lt;/p&gt;
+
+&lt;p&gt;However, most of us have bills to pay and if we're working on a project where the client's requirement is to support older browsers selectivizr can help out by doing a great job at providing CSS3 selectors for Internet Explorer 6-8.&lt;/p&gt;
+
+&lt;p&gt;To find out more visit &lt;a href=&quot;http://selectivizr.com/&quot;&gt;http://selectivizr.com/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Zepto&lt;/h2&gt;
+
+&lt;p&gt;Zepto, Zepto, Zepto... Ok, this one's a bit different as in certain circumstances it can be used as a replacement for jQuery.&lt;/p&gt;
+
+&lt;p&gt;Zepto is less than a quarter the size of jQuery in file size, it does this by focusing on only modern browsers. So if you've assessed your project's requirements and know that older browsers aren't an issue (looking at IE8 and below) you'll most likely find that you can switch to Zepto.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://zeptojs.com/&quot;&gt;http://zeptojs.com/&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Day 009 - Tools - Online</title>
+		<link href="http://365daysofjquery.github.com/Day-009"/>
+		<updated>2013-01-09T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-009</id>
+		<content type="html">&lt;p&gt;When working on bigger projects that may contain hundreds or thousands of lines of code and you're working on something that's not quite working the way you want it, a great approach is to create a 'reduced test case'.&lt;/p&gt;
+
+&lt;p&gt;Some awesome people have created the following sites that make it great to quickly create a reduced test case and even better, allow you to save, edit and share your code.&lt;/p&gt;
+
+&lt;p&gt;They're also great for trying out new techniques and playing about with code that's new or you're not familiar with.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://codepen.io/&quot;&gt;http://codepen.io/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://cssdesk.com/&quot;&gt;http://cssdesk.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://dabblet.com/&quot;&gt;http://dabblet.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jsbin.com/&quot;&gt;http://jsbin.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jsfiddle.net/&quot;&gt;http://jsfiddle.net/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://tinkerbin.com/&quot;&gt;http://tinkerbin.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://tinker.io/&quot;&gt;http://tinker.io/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Day 008 - Tools - Workflow</title>
@@ -32,6 +187,10 @@ You'll also need a way to open and navigate the files you're working on.&lt;/p&g
 &lt;p&gt;&lt;a href=&quot;http://spectacleapp.com/&quot;&gt;http://spectacleapp.com/&lt;/a&gt; is a real time saver, forget moving your mouse to the bottom of a window to re-size it. Setup some shortcuts and automate window re-sizing with shortcuts. Great for quickly moving your browser to the left and your text editor to the right of the screen. Here's the shortcuts I use:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://farm9.staticflickr.com/8515/8373621900_cd0ae36461_o.png&quot; alt=&quot;Spectacle Custom Shortcuts&quot;&gt;&lt;/p&gt;
+
+&lt;h2&gt;LiveReload&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://livereload.com/&quot;&gt;http://livereload.com/&lt;/a&gt; again is a great time saver, when editing code in your text editor then saving, it will automatically reload your browser for you with the changes made.&lt;/p&gt;
 </content>
 	</entry>
 	
@@ -203,11 +362,11 @@ This is useful just in case Google's CDN version might not be available and also
 		<id>http://365daysofjquery.github.com/Day-001</id>
 		<content type="html">&lt;p&gt;If you go to &lt;a href=&quot;http://jquery.com&quot;&gt;http://jquery.com&lt;/a&gt; you'll see two versions of the file to download 'production' and 'development'. So what's the difference and which should you use?&lt;/p&gt;
 
-&lt;h3&gt;Production&lt;/h3&gt;
+&lt;h2&gt;Production&lt;/h2&gt;
 
 &lt;p&gt;This version is used when you come to a point where you're happy with your code and you want push it live. You can upload or deploy your code and then people will be able to access it. In this environment it's useful to use Google's CDN (more on this in &lt;a href=&quot;/day-002&quot;&gt;Day 002&lt;/a&gt;). The end goal here is to serve this file and the content to the user accessing it as quick as possible. The production file is 'minified', it takes the code from the development version and reduces it to use the least amount of characters possible. This makes it difficult when looking at the code to work out what everything's doing, but dramatically lowers the file size.&lt;/p&gt;
 
-&lt;h3&gt;Development&lt;/h3&gt;
+&lt;h2&gt;Development&lt;/h2&gt;
 
 &lt;p&gt;When building web sites / web apps (&lt;a href=&quot;http://stackoverflow.com/questions/8694922/whats-the-difference-between-a-web-site-and-a-web-application&quot;&gt;What's the difference between a web site and a web application&lt;/a&gt;) I'd recommend working locally, this allows you to test your code and make sure everything is working before showing it to the world. Whilst working this way it's often useful, especially whilst learning jQuery to view the development file. It's full of useful comments and generally any method can be found in the jQuery development version source by searching for it then adding &lt;code&gt;:&lt;/code&gt;. There are a few exceptions I believe, but not many.&lt;/p&gt;
 </content>

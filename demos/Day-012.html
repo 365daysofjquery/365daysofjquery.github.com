@@ -1,0 +1,58 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Manipulating CSS</title>
+</head>
+<body>
+
+	<div class="red">
+		This text is red.
+	</div>
+
+	<div class="blue">
+		This text is blue.
+	</div>
+
+	<div class="small-text">
+		This text has a font-size of 11px.
+	</div>
+
+	<div class="big-text">
+		This text has a font-size of 30px.
+	</div>
+
+	<div class="red-big-text">
+		This text is red and has a font-size of 30px.
+	</div>
+
+	<div class="blue-big-text-margin">
+		This text is blue, has a font-size of 30px and a margin of 10px.
+	</div>
+
+<!-- jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+
+<script>
+
+	$('div.red').css('color', 'red');
+	$('div.blue').css('color', 'blue');
+
+	$('div.small-text').css('font-size', '11');
+	$('div.big-text').css('font-size', '30');
+
+	$('div.red-big-text').css({
+		'color': 'red',
+		'font-size': 30
+	});
+
+	$('div.blue-big-text-margin').css({
+		'color': 'blue',
+		'font-size': 30,
+		'margin': 10
+	});
+
+</script>
+
+</body>
+</html>

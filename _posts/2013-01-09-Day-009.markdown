@@ -1,0 +1,33 @@
+---
+layout: post
+title: Day 009 - Tools - Online
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 09
+published: true
+summary: Day 009
+---
+
+When working on bigger projects that may contain hundreds or thousands of lines of code and you're working on something that's not quite working the way you want it, a great approach is to create a 'reduced test case'.
+
+Some awesome people have created the following sites that make it great to quickly create a reduced test case and even better, allow you to save, edit and share your code.
+
+They're also great for trying out new techniques and playing about with code that's new or you're not familiar with.
+
+<http://codepen.io/>
+
+<http://cssdesk.com/>
+
+<http://dabblet.com/>
+
+<http://jsbin.com/>
+
+<http://jsfiddle.net/>
+
+<http://tinkerbin.com/>
+
+<http://tinker.io/>
+
+Enjoy!

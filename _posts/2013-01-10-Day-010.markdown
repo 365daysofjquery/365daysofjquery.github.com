@@ -1,0 +1,44 @@
+---
+layout: post
+title: Day 010 - Tools - Libraries
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 10
+published: true
+summary: Day 010
+---
+
+For accessibility it's important to note that people may have styles and, or JavaScript disabled, when writing any code you should always bear this in mind. Unfortunately not everyone in the world uses a modern browser taking advantage of all the great stuff that can be accomplished with HTML5 and CSS3, so depending on your project it's worth thinking about what browsers you're going to support.
+
+
+## Modernizr
+
+Modernizr is a great JavaScript library that can help out with these issues by detecting features and adding classes to the `html` element. Here's an example:
+
+	<html lang="en" dir="ltr" id="modernizrcom" class="js no-touch postmessage history multiplebgs boxshadow opacity cssanimations csscolumns cssgradients csstransforms csstransitions fontface localstorage sessionstorage svg inlinesvg no-blobbuilder blob bloburls download formdata wf-proximanova1proximanova2-n4-active wf-proximanova1proximanova2-i4-active wf-proximanova1proximanova2-n7-active wf-proximanova1proximanova2-i7-active wf-proximanovacondensed1proximanovacondensed2-n6-active wf-athelas1athelas2-n4-active wf-active"><head>
+
+To find out how to get started with Modernizr and a full list of feature detections please visit <http://modernizr.com/>.
+
+
+## Selectivizr
+
+As mentioned previously not everyone uses a modern browser, Internet Explorer is a prime culprit that many users will have installed on their Windows PC and not be aware that it's possible to download another browser or upgrade and so keep on using it.
+
+Personally I'm not a fan of going back to support older browsers and adding extra code that will then have a negative impact on those using modern browsers. I opt to use the `chromeframe` as seen in [h5bp](https://github.com/h5bp/html5-boilerplate/blob/master/index.html), where possible in order to help move the web forwards.
+
+ `chromeframe` adds a message to the top of the page for people using older browsers to go to <http://browsehappy.com/> where they can upgrade to a modern browser.
+
+However, most of us have bills to pay and if we're working on a project where the client's requirement is to support older browsers selectivizr can help out by doing a great job at providing CSS3 selectors for Internet Explorer 6-8.
+
+To find out more visit <http://selectivizr.com/>.
+
+
+## Zepto
+
+Zepto, Zepto, Zepto... Ok, this one's a bit different as in certain circumstances it can be used as a replacement for jQuery.
+
+Zepto is less than a quarter the size of jQuery in file size, it does this by focusing on only modern browsers. So if you've assessed your project's requirements and know that older browsers aren't an issue (looking at IE8 and below) you'll most likely find that you can switch to Zepto.
+
+<http://zeptojs.com/>
