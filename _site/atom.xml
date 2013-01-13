@@ -4,7 +4,7 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-01-13T20:30:35+00:00</updated>
+	<updated>2013-01-13T22:05:25+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
@@ -285,7 +285,7 @@ If you don't already have Google Chrome you can download it &lt;a href=&quot;htt
 		<link href="http://365daysofjquery.github.com/Day-004"/>
 		<updated>2013-01-04T00:00:00+00:00</updated>
 		<id>http://365daysofjquery.github.com/Day-004</id>
-		<content type="html">&lt;p&gt;As mentioned previously if you open up the &lt;a href=&quot;http://code.jquery.com/jquery-1.8.3.js&quot;&gt;development version of jQuery&lt;/a&gt; and search for &lt;code&gt;:&lt;/code&gt; plus what you're looking for, in this case &lt;code&gt;:noConflict&lt;/code&gt;, you'll see:&lt;/p&gt;
+		<content type="html">&lt;p&gt;As mentioned previously if you open up the &lt;a href=&quot;http://code.jquery.com/jquery-1.8.3.js&quot;&gt;development version of jQuery&lt;/a&gt; and search for &lt;code&gt;:&lt;/code&gt; plus what you're looking for, in this case &lt;code&gt;noConflict:&lt;/code&gt;, you'll see:&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/4462005.js&quot;&gt;&lt;/script&gt;
 
