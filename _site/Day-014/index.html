@@ -2,7 +2,7 @@
 <html class="fuelux" lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Day 010 - Tools - Libraries</title>
+	<title>Day 014 - camelCase</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="365 Days of jQuery">
@@ -55,7 +55,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 010 - Tools - Libraries</h1>
+			<h1>Day 014 - camelCase</h1>
 		</p>
 	</div>
 </div>
@@ -69,12 +69,9 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Day-009" title="Previous Post: Day 009 - Tools - Online"> <i class="icon-chevron-left"></i>
+			<a href="/Day-013" title="Previous Post: Day 013 - Adding a Class"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Day-011" title="Next Post: Day 011 - Recap"> <i class="icon-chevron-right"></i>
-			</a>
-			
 		</p>
 	</div>
 </div>
@@ -85,36 +82,33 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p>For accessibility it's important to note that people may have styles and, or JavaScript disabled, when writing any code you should always bear this in mind. Unfortunately not everyone in the world uses a modern browser taking advantage of all the great stuff that can be accomplished with HTML5 and CSS3, so depending on your project it's worth thinking about what browsers you're going to support.</p>
+			<p><code>camelCase</code> is a consistent naming convention used throughout jQuery.</p>
 
-<h2>Modernizr</h2>
+<p>Starting with a lowercase letter and adding a capital to each word thereafter makes things a lot easier to read.</p>
 
-<p>Modernizr is a great JavaScript library that can help out with these issues by detecting features and adding classes to the <code>html</code> element. Here's an example:</p>
+<p>Here's some examples without camel case:</p>
 
-<pre><code>&lt;html lang="en" dir="ltr" id="modernizrcom" class="js no-touch postmessage history multiplebgs boxshadow opacity cssanimations csscolumns cssgradients csstransforms csstransitions fontface localstorage sessionstorage svg inlinesvg no-blobbuilder blob bloburls download formdata wf-proximanova1proximanova2-n4-active wf-proximanova1proximanova2-i4-active wf-proximanova1proximanova2-n7-active wf-proximanova1proximanova2-i7-active wf-proximanovacondensed1proximanovacondensed2-n6-active wf-athelas1athelas2-n4-active wf-active"&gt;&lt;head&gt;
-</code></pre>
+<ul>
+<li>getsetattribute</li>
+<li>inlineblockneedslayout</li>
+<li>shrinkwrapblocks</li>
+<li>setattributenode</li>
+<li>scrollleft</li>
+</ul>
 
-<p>To find out how to get started with Modernizr and a full list of feature detections please visit <a href="http://modernizr.com/">http://modernizr.com/</a>.</p>
 
-<h2>Selectivizr</h2>
+<p>Now again with camel case:</p>
 
-<p>As mentioned previously not everyone uses a modern browser, Internet Explorer is a prime culprit that many users will have installed on their Windows PC and not be aware that it's possible to download another browser or upgrade and so keep on using it.</p>
+<ul>
+<li>getSetAttribute</li>
+<li>inlineBlockNeedsLayout</li>
+<li>shrinkWrapBlocks</li>
+<li>setAttributeNode</li>
+<li>scrollLeft</li>
+</ul>
 
-<p>Personally I'm not a fan of going back to support older browsers and adding extra code that will then have a negative impact on those using modern browsers. I opt to use the <code>chromeframe</code> as seen in <a href="https://github.com/h5bp/html5-boilerplate/blob/master/index.html">h5bp</a>, where possible in order to help move the web forwards.</p>
 
-<p> <code>chromeframe</code> adds a message to the top of the page for people using older browsers to go to <a href="http://browsehappy.com/">http://browsehappy.com/</a> where they can upgrade to a modern browser.</p>
-
-<p>However, most of us have bills to pay and if we're working on a project where the client's requirement is to support older browsers selectivizr can help out by doing a great job at providing CSS3 selectors for Internet Explorer 6-8.</p>
-
-<p>To find out more visit <a href="http://selectivizr.com/">http://selectivizr.com/</a>.</p>
-
-<h2>Zepto</h2>
-
-<p>Zepto, Zepto, Zepto... Ok, this one's a bit different as in certain circumstances it can be used as a replacement for jQuery.</p>
-
-<p>Zepto is less than a quarter the size of jQuery in file size, it does this by focusing on only modern browsers. So if you've assessed your project's requirements and know that older browsers aren't an issue (looking at IE8 and below) you'll most likely find that you can switch to Zepto.</p>
-
-<p><a href="http://zeptojs.com/">http://zeptojs.com/</a></p>
+<p>Much easier to read :D</p>
 
 		</div>
 	</div>
@@ -124,12 +118,10 @@
 	<div class="container">
 		<p class="pull-right">
 			
-			<a href="/Day-009" title="Previous Post: Day 009 - Tools - Online">&laquo; Previous Blog Post</a>
+			<a href="/Day-013" title="Previous Post: Day 013 - Adding a Class">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Day-011" title="Next Post: Day 011 - Recap">Next Blog Post &raquo;</a>
-			
 		</p>
 		<p>Page last generated on January 14, 2013</p>
 	</div>

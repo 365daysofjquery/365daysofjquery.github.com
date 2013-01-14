@@ -1,0 +1,34 @@
+---
+layout: post
+title: Day 014 - camelCase
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 14
+published: true
+summary: Day 014
+---
+
+`camelCase` is a consistent naming convention used throughout jQuery.
+
+Starting with a lowercase letter and adding a capital to each word thereafter makes things a lot easier to read.
+
+Here's some examples without camel case:
+
+*   getsetattribute
+*   inlineblockneedslayout
+*   shrinkwrapblocks
+*   setattributenode
+*   scrollleft
+
+
+Now again with camel case:
+
+*   getSetAttribute
+*   inlineBlockNeedsLayout
+*   shrinkWrapBlocks
+*   setAttributeNode
+*   scrollLeft
+
+Much easier to read :D
