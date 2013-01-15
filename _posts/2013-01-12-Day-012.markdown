@@ -19,19 +19,14 @@ But for now take a look at this [demo](/demos/Day-012.html).
 
 Take the code:
 
-<pre class="language-javascript">
-	<code>
-		$('div.red').css('color', 'red');
-	</code>
-</pre>
+<!-- language: lang-js -->
+	$('div.red').css('color', 'red');
 
 Or you could also do:
 
-<pre class="language-javascript">
-	<code>
-		$('.red').css('color', 'red');
-	</code>
-</pre>
+```.language-javascript
+$('.red').css('color', 'red');
+```
 
 Although this is less code, so may seem like a good idea, performance can be improved upon by being more specific when it comes to telling jQuery what it's looking for. I'll cover this in more detail going forward, but for now let's break down the code above.
 
@@ -42,23 +37,19 @@ But what if you want to change more than one property?
 
 Sure, you could do:
 
-<pre class="language-javascript">
-	<code>
-		$('div.red').css('color', 'red');
-		$('div.red').css('font-size', '30');
-	</code>
-</pre>
+~~~~.language-javascript
+$('div.red').css('color', 'red');
+$('div.red').css('font-size', '30');
+~~~~
 
 But rather than telling jQuery to keep searching for the same element and writing more code, there's a better way:
 
-<pre class="language-javascript">
-	<code>
-		$('div.red-big-text').css({
-			'color': 'red',
-			'font-size': 30
-		});
-	</code>
-</pre>
+~~~~.js
+$('div.red-big-text').css({
+	'color': 'red',
+	'font-size': 30
+});
+~~~~
 
 A few things important to note when declaring multiple properties;
 
