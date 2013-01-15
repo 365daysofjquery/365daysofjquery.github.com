@@ -4,7 +4,7 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-01-14T22:57:38+00:00</updated>
+	<updated>2013-01-15T18:16:50+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
@@ -78,13 +78,21 @@
 
 &lt;p&gt;Take the code:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$('div.red').css('color', 'red');
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-javascript&quot;&gt;
+    &lt;code&gt;
+        $('div.red').css('color', 'red');
+    &lt;/code&gt;
+&lt;/pre&gt;
+
 
 &lt;p&gt;Or you could also do:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$('.red').css('color', 'red');
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-javascript&quot;&gt;
+    &lt;code&gt;
+        $('.red').css('color', 'red');
+    &lt;/code&gt;
+&lt;/pre&gt;
+
 
 &lt;p&gt;Although this is less code, so may seem like a good idea, performance can be improved upon by being more specific when it comes to telling jQuery what it's looking for. I'll cover this in more detail going forward, but for now let's break down the code above.&lt;/p&gt;
 
@@ -95,17 +103,25 @@ When it's found that, we want to do something with the CSS, then tell it what it
 
 &lt;p&gt;Sure, you could do:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$('div.red').css('color', 'red');
-$('div.red').css('font-size', '30');
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-javascript&quot;&gt;
+    &lt;code&gt;
+        $('div.red').css('color', 'red');
+        $('div.red').css('font-size', '30');
+    &lt;/code&gt;
+&lt;/pre&gt;
+
 
 &lt;p&gt;But rather than telling jQuery to keep searching for the same element and writing more code, there's a better way:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$('div.red-big-text').css({
-    'color': 'red',
-    'font-size': 30
-});
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-javascript&quot;&gt;
+    &lt;code&gt;
+        $('div.red-big-text').css({
+            'color': 'red',
+            'font-size': 30
+        });
+    &lt;/code&gt;
+&lt;/pre&gt;
+
 
 &lt;p&gt;A few things important to note when declaring multiple properties;&lt;/p&gt;
 
