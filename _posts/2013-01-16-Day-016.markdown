@@ -14,14 +14,29 @@ Notice in the [previous day](/Day-015) we wrapped the text we wanted to display 
 
 This code won't work:
 
-	$('h1').text('here's some text');
+<pre class="language-javascript">
+	<code>
+		$('h1').text('here's some text');
+	</code>
+</pre>
 
 
 Because the jQuery will look for the first `'` to start and `'` to end, viewing this code in the console you'll get:
 
-	Uncaught SyntaxError: Unexpected identifier
+<pre class="language-javascript">
+	<code>
+		Uncaught SyntaxError: Unexpected identifier
+	</code>
+</pre>
 
 
 To rectify this and display the `'` as text you can add `\` before like so:
 
-	$('h1').text('here\'s some text');
+<pre class="language-javascript">
+	<code>
+		$('h1').text('here\'s some text');
+	</code>
+</pre>
+
+
+[demo](/demos/Day-016.html)

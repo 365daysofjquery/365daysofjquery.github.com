@@ -14,4 +14,11 @@ Most of the time text will come from HTML content, but on some occassions you mi
 
 Here, we call jQuery, search for a h1 tag and add some text into it.
 
-	$('h1').text('here is some text');
+<pre class="language-javascript">
+	<code>
+		$('h1').text('here is some text');
+	</code>
+</pre>
+
+
+View [demo](/demos/Day-015.html)

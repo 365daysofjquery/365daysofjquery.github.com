@@ -87,18 +87,32 @@
 
 <p>This code won't work:</p>
 
-<pre><code>$('h1').text('here's some text');
-</code></pre>
+<pre class="language-javascript">
+    <code>
+        $('h1').text('here's some text');
+    </code>
+</pre>
+
 
 <p>Because the jQuery will look for the first <code>'</code> to start and <code>'</code> to end, viewing this code in the console you'll get:</p>
 
-<pre><code>Uncaught SyntaxError: Unexpected identifier
-</code></pre>
+<pre class="language-javascript">
+    <code>
+        Uncaught SyntaxError: Unexpected identifier
+    </code>
+</pre>
+
 
 <p>To rectify this and display the <code>'</code> as text you can add <code>\</code> before like so:</p>
 
-<pre><code>$('h1').text('here\'s some text');
-</code></pre>
+<pre class="language-javascript">
+    <code>
+        $('h1').text('here\'s some text');
+    </code>
+</pre>
+
+
+<p><a href="/demos/Day-016.html">demo</a></p>
 
 		</div>
 	</div>
