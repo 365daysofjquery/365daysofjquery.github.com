@@ -1,0 +1,27 @@
+---
+layout: post
+title: Day 016 - Adding Text - Apostrophe
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 16
+published: true
+summary: Day 016
+---
+
+Notice in the [previous day](/Day-015) we wrapped the text we wanted to display in `'`, but what if you need to use `'` to be displayed in your text?
+
+This code won't work:
+
+	$('h1').text('here's some text');
+
+
+Because the jQuery will look for the first `'` to start and `'` to end, viewing this code in the console you'll get:
+
+	Uncaught SyntaxError: Unexpected identifier
+
+
+To rectify this and display the `'` as text you can add `\` before like so:
+
+	$('h1').text('here\'s some text');

@@ -2,7 +2,7 @@
 <html class="fuelux" lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Day 014 - camelCase</title>
+	<title>Day 016 - Adding Text - Apostrophe</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="365 Days of jQuery">
@@ -56,7 +56,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 014 - camelCase</h1>
+			<h1>Day 016 - Adding Text - Apostrophe</h1>
 		</p>
 	</div>
 </div>
@@ -70,12 +70,9 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Day-013" title="Previous Post: Day 013 - Adding a Class"> <i class="icon-chevron-left"></i>
+			<a href="/Day-015" title="Previous Post: Day 015 - Adding Text"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Day-015" title="Next Post: Day 015 - Adding Text"> <i class="icon-chevron-right"></i>
-			</a>
-			
 		</p>
 	</div>
 </div>
@@ -86,33 +83,22 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p><code>camelCase</code> is a consistent naming convention used throughout jQuery.</p>
+			<p>Notice in the <a href="/Day-015">previous day</a> we wrapped the text we wanted to display in <code>'</code>, but what if you need to use <code>'</code> to be displayed in your text?</p>
 
-<p>Starting with a lowercase letter and adding a capital to each word thereafter makes things a lot easier to read.</p>
+<p>This code won't work:</p>
 
-<p>Here's some examples without camel case:</p>
+<pre><code>$('h1').text('here's some text');
+</code></pre>
 
-<ul>
-<li>getsetattribute</li>
-<li>inlineblockneedslayout</li>
-<li>shrinkwrapblocks</li>
-<li>setattributenode</li>
-<li>scrollleft</li>
-</ul>
+<p>Because the jQuery will look for the first <code>'</code> to start and <code>'</code> to end, viewing this code in the console you'll get:</p>
 
+<pre><code>Uncaught SyntaxError: Unexpected identifier
+</code></pre>
 
-<p>Now again with camel case:</p>
+<p>To rectify this and display the <code>'</code> as text you can add <code>\</code> before like so:</p>
 
-<ul>
-<li>getSetAttribute</li>
-<li>inlineBlockNeedsLayout</li>
-<li>shrinkWrapBlocks</li>
-<li>setAttributeNode</li>
-<li>scrollLeft</li>
-</ul>
-
-
-<p>Much easier to read :D</p>
+<pre><code>$('h1').text('here\'s some text');
+</code></pre>
 
 		</div>
 	</div>
@@ -122,12 +108,10 @@
 	<div class="container">
 		<p class="pull-right">
 			
-			<a href="/Day-013" title="Previous Post: Day 013 - Adding a Class">&laquo; Previous Blog Post</a>
+			<a href="/Day-015" title="Previous Post: Day 015 - Adding Text">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Day-015" title="Next Post: Day 015 - Adding Text">Next Blog Post &raquo;</a>
-			
 		</p>
 		<p>Page last generated on January 16, 2013</p>
 	</div>

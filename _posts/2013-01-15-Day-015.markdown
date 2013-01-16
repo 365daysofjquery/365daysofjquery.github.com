@@ -1,0 +1,17 @@
+---
+layout: post
+title: Day 015 - Adding Text
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 15
+published: true
+summary: Day 015
+---
+
+Most of the time text will come from HTML content, but on some occassions you might find it handy to write something in jQuery.
+
+Here, we call jQuery, search for a h1 tag and add some text into it.
+
+	$('h1').text('here is some text');

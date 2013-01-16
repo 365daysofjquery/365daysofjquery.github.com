@@ -4,11 +4,49 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-01-15T20:38:43+00:00</updated>
+	<updated>2013-01-16T22:28:29+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
 	</author>
+	
+	<entry>
+		<title>Day 016 - Adding Text - Apostrophe</title>
+		<link href="http://365daysofjquery.github.com/Day-016"/>
+		<updated>2013-01-16T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-016</id>
+		<content type="html">&lt;p&gt;Notice in the &lt;a href=&quot;/Day-015&quot;&gt;previous day&lt;/a&gt; we wrapped the text we wanted to display in &lt;code&gt;'&lt;/code&gt;, but what if you need to use &lt;code&gt;'&lt;/code&gt; to be displayed in your text?&lt;/p&gt;
+
+&lt;p&gt;This code won't work:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('h1').text('here's some text');
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Because the jQuery will look for the first &lt;code&gt;'&lt;/code&gt; to start and &lt;code&gt;'&lt;/code&gt; to end, viewing this code in the console you'll get:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Uncaught SyntaxError: Unexpected identifier
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To rectify this and display the &lt;code&gt;'&lt;/code&gt; as text you can add &lt;code&gt;\&lt;/code&gt; before like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('h1').text('here\'s some text');
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Day 015 - Adding Text</title>
+		<link href="http://365daysofjquery.github.com/Day-015"/>
+		<updated>2013-01-15T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-015</id>
+		<content type="html">&lt;p&gt;Most of the time text will come from HTML content, but on some occassions you might find it handy to write something in jQuery.&lt;/p&gt;
+
+&lt;p&gt;Here, we call jQuery, search for a h1 tag and add some text into it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('h1').text('here is some text');
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Day 014 - camelCase</title>
@@ -70,33 +108,67 @@
 		<link href="http://365daysofjquery.github.com/Day-012"/>
 		<updated>2013-01-12T00:00:00+00:00</updated>
 		<id>http://365daysofjquery.github.com/Day-012</id>
-		<content type="html">&lt;p&gt;Trying:
-http://packages.python.org/Markdown/extensions/fenced_code_blocks.html&lt;/p&gt;
+		<content type="html">&lt;p&gt;Ok, coding time!&lt;/p&gt;
 
-&lt;p&gt;And also:
-http://github.github.com/github-flavored-markdown/&lt;/p&gt;
+&lt;p&gt;Here you'll take some text in divs and learn how to manipulate these via CSS. Although it's possible to do this, sometimes it can be better to add or change a class name, we'll look at this in &lt;a href=&quot;/Day-013&quot;&gt;Day 013&lt;/a&gt;.&lt;/p&gt;
 
-&lt;!-- language: lang-js --&gt;
+&lt;p&gt;But for now take a look at this &lt;a href=&quot;/demos/Day-012.html&quot;&gt;demo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Take the code:&lt;/p&gt;
+
+&lt;pre class=&quot;language-javascript&quot;&gt;
+    &lt;code&gt;
+        $('div.red').css('color', 'red');
+    &lt;/code&gt;
+&lt;/pre&gt;
 
 
-&lt;pre&gt;&lt;code&gt;$('div.red').css('color', 'red');
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or you could also do:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;.language-javascript
-$('div.red').css('color', 'red');
-&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&quot;language-javascript&quot;&gt;
+    &lt;code&gt;
+        $('.red').css('color', 'red');
+    &lt;/code&gt;
+&lt;/pre&gt;
 
-&lt;p&gt;&lt;code&gt;
-$('div.red').css('color', 'red');
-&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;javascript
-$('div.red').css('color', 'red');
-&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Although this is less code, so may seem like a good idea, performance can be improved upon by being more specific when it comes to telling jQuery what it's looking for. I'll cover this in more detail going forward, but for now let's break down the code above.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;js
-$('div.red').css('color', 'red');
-&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;First the &lt;code&gt;$&lt;/code&gt; calls to jQuery, it then tells jQuery to look for a &lt;code&gt;div&lt;/code&gt; element with a &lt;code&gt;class&lt;/code&gt; of &lt;code&gt;red&lt;/code&gt;.
+When it's found that, we want to do something with the CSS, then tell it what it needs to do to the CSS, in this case change the CSS property to red.&lt;/p&gt;
+
+&lt;p&gt;But what if you want to change more than one property?&lt;/p&gt;
+
+&lt;p&gt;Sure, you could do:&lt;/p&gt;
+
+&lt;pre class=&quot;language-javascript&quot;&gt;
+    &lt;code&gt;
+        $('div.red').css('color', 'red');
+        $('div.red').css('font-size', '30');
+    &lt;/code&gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;But rather than telling jQuery to keep searching for the same element and writing more code, there's a better way:&lt;/p&gt;
+
+&lt;pre class=&quot;language-javascript&quot;&gt;
+    &lt;code&gt;
+        $('div.red-big-text').css({
+            'color': 'red',
+            'font-size': 30
+        });
+    &lt;/code&gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;A few things important to note when declaring multiple properties;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The addition of &lt;code&gt;{&lt;/code&gt;, &lt;code&gt;}&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;,&lt;/code&gt; goes to the end of the line and CSS property is split with &lt;code&gt;:&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;No longer need to wrap numbered values in &lt;code&gt;''&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
 </content>
 	</entry>
 	

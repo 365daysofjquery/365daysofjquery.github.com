@@ -86,33 +86,67 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p>Trying:
-http://packages.python.org/Markdown/extensions/fenced_code_blocks.html</p>
+			<p>Ok, coding time!</p>
 
-<p>And also:
-http://github.github.com/github-flavored-markdown/</p>
+<p>Here you'll take some text in divs and learn how to manipulate these via CSS. Although it's possible to do this, sometimes it can be better to add or change a class name, we'll look at this in <a href="/Day-013">Day 013</a>.</p>
 
-<!-- language: lang-js -->
+<p>But for now take a look at this <a href="/demos/Day-012.html">demo</a>.</p>
+
+<p>Take the code:</p>
+
+<pre class="language-javascript">
+    <code>
+        $('div.red').css('color', 'red');
+    </code>
+</pre>
 
 
-<pre><code>$('div.red').css('color', 'red');
-</code></pre>
+<p>Or you could also do:</p>
 
-<p><code>.language-javascript
-$('div.red').css('color', 'red');
-</code></p>
+<pre class="language-javascript">
+    <code>
+        $('.red').css('color', 'red');
+    </code>
+</pre>
 
-<p><code>
-$('div.red').css('color', 'red');
-</code></p>
 
-<p><code>javascript
-$('div.red').css('color', 'red');
-</code></p>
+<p>Although this is less code, so may seem like a good idea, performance can be improved upon by being more specific when it comes to telling jQuery what it's looking for. I'll cover this in more detail going forward, but for now let's break down the code above.</p>
 
-<p><code>js
-$('div.red').css('color', 'red');
-</code></p>
+<p>First the <code>$</code> calls to jQuery, it then tells jQuery to look for a <code>div</code> element with a <code>class</code> of <code>red</code>.
+When it's found that, we want to do something with the CSS, then tell it what it needs to do to the CSS, in this case change the CSS property to red.</p>
+
+<p>But what if you want to change more than one property?</p>
+
+<p>Sure, you could do:</p>
+
+<pre class="language-javascript">
+    <code>
+        $('div.red').css('color', 'red');
+        $('div.red').css('font-size', '30');
+    </code>
+</pre>
+
+
+<p>But rather than telling jQuery to keep searching for the same element and writing more code, there's a better way:</p>
+
+<pre class="language-javascript">
+    <code>
+        $('div.red-big-text').css({
+            'color': 'red',
+            'font-size': 30
+        });
+    </code>
+</pre>
+
+
+<p>A few things important to note when declaring multiple properties;</p>
+
+<ol>
+<li>The addition of <code>{</code>, <code>}</code>.</li>
+<li>The <code>,</code> goes to the end of the line and CSS property is split with <code>:</code>.</li>
+<li>No longer need to wrap numbered values in <code>''</code>.</li>
+</ol>
+
 
 		</div>
 	</div>
@@ -129,7 +163,7 @@ $('div.red').css('color', 'red');
 			<a href="/Day-013" title="Next Post: Day 013 - Adding a Class">Next Blog Post &raquo;</a>
 			
 		</p>
-		<p>Page last generated on January 15, 2013</p>
+		<p>Page last generated on January 16, 2013</p>
 	</div>
 </footer>
 
