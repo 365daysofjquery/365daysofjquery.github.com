@@ -31,7 +31,7 @@
 
 </head>
 
-<body data-spy="scroll" data-target=".subnav" data-offset="50">
+<body class="language-javascript" data-spy="scroll" data-target=".subnav" data-offset="50">
 
 	<div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
@@ -103,21 +103,13 @@
 
 <p>Take the code:</p>
 
-<pre class="language-javascript">
-    <code>
-        $('div.red').css('color', 'red');
-    </code>
-</pre>
-
+<pre><code>$('div.red').css('color', 'red');
+</code></pre>
 
 <p>Or you could also do:</p>
 
-<pre class="language-javascript">
-    <code>
-        $('.red').css('color', 'red');
-    </code>
-</pre>
-
+<pre><code>$('.red').css('color', 'red');
+</code></pre>
 
 <p>Although this is less code, so may seem like a good idea, performance can be improved upon by being more specific when it comes to telling jQuery what it's looking for. I'll cover this in more detail going forward, but for now let's break down the code above.</p>
 
@@ -128,25 +120,17 @@ When it's found that, we want to do something with the CSS, then tell it what it
 
 <p>Sure, you could do:</p>
 
-<pre class="language-javascript">
-    <code>
-        $('div.red').css('color', 'red');
-        $('div.red').css('font-size', '30');
-    </code>
-</pre>
-
+<pre><code>$('div.red').css('color', 'red');
+$('div.red').css('font-size', '30');
+</code></pre>
 
 <p>But rather than telling jQuery to keep searching for the same element and writing more code, there's a better way:</p>
 
-<pre class="language-javascript">
-    <code>
-        $('div.red-big-text').css({
-            'color': 'red',
-            'font-size': 30
-        });
-    </code>
-</pre>
-
+<pre><code>$('div.red-big-text').css({
+    'color': 'red',
+    'font-size': 30
+});
+</code></pre>
 
 <p>A few things important to note when declaring multiple properties;</p>
 
@@ -172,7 +156,7 @@ When it's found that, we want to do something with the CSS, then tell it what it
 			<a href="/Day-013" title="Next Post: Day 013 - Adding a Class">Next Blog Post &raquo;</a>
 			
 		</p>
-		<p>Page last generated on January 17, 2013</p>
+		<p>Page last generated on January 18, 2013</p>
 	</div>
 </footer>
 

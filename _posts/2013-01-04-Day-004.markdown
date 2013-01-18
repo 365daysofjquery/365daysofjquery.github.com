@@ -11,19 +11,51 @@ summary: Day 004
 ---
 
 As mentioned previously if you open up the [development version of jQuery](http://code.jquery.com/jquery-1.8.3.js) and search for `:` plus what you're looking for, in this case `noConflict:`, you'll see:
-<script src="https://gist.github.com/4462005.js"></script>
+
+	noConflict: function( deep ) {
+		if ( window.$ === jQuery ) {
+			window.$ = _$;
+		}
+
+		if ( deep && window.jQuery === jQuery ) {
+			window.jQuery = _jQuery;
+		}
+
+		return jQuery;
+	}
+
 
 It's also worth noting the jQuery API site has just had a sweet update and searching for noConflict, you'll find:
 <http://api.jquery.com/jQuery.noConflict/>
 
 There's a few times, especially in WordPress builds where I've seen people fix multiple JavaScript libraries by constantly defining jQuery:
-<script src="https://gist.github.com/4467382.js"></script>
+
+	jQuery.noConflict();
+	jQuery(function() {
+		// more code referencing jQuery
+	});
+
 
 This can be improved using the following code to set `$` back as an alias `jQuery`.
-<script src="https://gist.github.com/4467391.js"></script>
+
+	jQuery.noConflict();
+	// setting $ to alias to jQuery again
+	jQuery(document).ready(function($){
+		$(function() {
+			// now you can continue to use $ as an alias to jQuery
+		});
+	});
+
 
 Another alternative that's worth mentioning is using the following code which is essentially doing the same job.
 It is less descriptive, so not that great if you're a beginner trying to figure what is going on, but when you do, it's less code and widely used.
-<script src="https://gist.github.com/4468045.js"></script>
+
+	jQuery.noConflict();
+	(function($) {
+		$(function() {
+			// now you can continue to use $ as an alias to jQuery
+		});
+	})(jQuery);
+
 
 More on `$(document).ready()` in [Day 005](/Day-005).

@@ -21,7 +21,26 @@ First thing you're going to want is a Text Editor, there's a few out there, I'd 
 Open up Sublime Text 2, then press `cmd + shift + p`, you should see a new window open. You can then start typing and it will filter down, if you start typing `package` you can see all the package options that are available, we're after `Package Control: Install Package` when you have this selected hit `Enter`. This will now go and grab all the latest packages and again you can start typing for the package you'd like to install and it will filter down.
 
 I find it handy to keep a gist of all the packages installed:
-<script src="https://gist.github.com/3293504.js"></script>
+
+	Bracket Highlighter
+	CSScomb
+	Dotfiles Syntax Highlighting
+	FileDiffs
+	JsFormat
+	JSLint
+	Package Control
+	Prefixr
+	SFTP
+	Side Bar
+	Closure Linter (Google) https://developers.google.com/closure/utilities/
+	SublimeLinter
+	Tag
+
+	Emmet (previously ZenCoding)
+	EditorConfig
+
+	Theme - Phoenix
+
 
 The main 2 packages I'd recommend for JavaScript are;
 `Bracket Highlighter`, this is useful to see where code opens and closes.
@@ -32,6 +51,15 @@ As well as packages it's also possible to change the theme, I use a custom theme
 When writing code you'll most likely find yourself using sections of code on a regular basis. This is where [snippets](http://sublimetext.info/docs/en/extensibility/snippets.html) come in handy, the snippet created in [Day 005](/Day-005) allows you to simply type `siaf` which will then output the code to create a Self Invoking Anonymous Function.
 
 Here's another snippet that you'll find yourself using over and over again:
-<script src="https://gist.github.com/4479162.js"></script>
+
+	# Console Log Snippet for Sublime Text 2:
+
+	<snippet>
+		<content><![CDATA[console.log($1);$0]]></content>
+		<tabTrigger>cl</tabTrigger>
+		<scope>source.js,source.js.embedded.html</scope>
+		<description>console.log()</description>
+	</snippet>
+
 
 Here `cl` creates code that allows you to `log` to the `console`. Not sure what the console is? You guessed it! Head on over to [Day 007](/Day-007).

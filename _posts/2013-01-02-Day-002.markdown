@@ -10,7 +10,8 @@ published: true
 summary: Day 002
 ---
 
-<script src="https://gist.github.com/4458078.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
 
 Few things to note here. Firstly there's no 'http', this isn't a mistake, it's done deliberately using a 'protocol-relative URL'.
 There's an excellent post on this over at Paul Irish's blog:

@@ -31,7 +31,7 @@
 
 </head>
 
-<body data-spy="scroll" data-target=".subnav" data-offset="50">
+<body class="language-javascript" data-spy="scroll" data-target=".subnav" data-offset="50">
 
 	<div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
@@ -96,32 +96,20 @@
 
 <p>This code won't work:</p>
 
-<pre class="language-javascript">
-    <code>
-        $('h1').text('here's some text');
-    </code>
-</pre>
-
+<pre><code>$('h1').text('here's some text');
+</code></pre>
 
 <p>Because the jQuery will look for the first <code>'</code> to start and <code>'</code> to end, viewing this code in the console you'll get:</p>
 
-<pre class="language-javascript">
-    <code>
-        Uncaught SyntaxError: Unexpected identifier
-    </code>
-</pre>
-
+<pre><code>Uncaught SyntaxError: Unexpected identifier
+</code></pre>
 
 <p>To rectify this and display the <code>'</code> as text you can add <code>\</code> before like so:</p>
 
-<pre class="language-javascript">
-    <code>
-        $('h1').text('here\'s some text');
-    </code>
-</pre>
+<pre><code>$('h1').text('here\'s some text');
+</code></pre>
 
-
-<p><a href="/demos/Day-016.html">demo</a></p>
+<p><a href="/demos/Day-016.html">Demo</a></p>
 
 		</div>
 	</div>
@@ -136,7 +124,7 @@
 			<a href="#">Back to top</a>
 			|  
 		</p>
-		<p>Page last generated on January 17, 2013</p>
+		<p>Page last generated on January 18, 2013</p>
 	</div>
 </footer>
 

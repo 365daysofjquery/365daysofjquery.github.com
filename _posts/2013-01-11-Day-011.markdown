@@ -17,4 +17,3 @@ Let's have a quick recap to remind yourself (myself) what you've done so far.
 So now, you should know how to download jQuery, how Google's CDN can help load jQuery, the difference between using `$` and `jQuery`, how to avoid conflicts with other libraries and have some idea of tools that can help you out.
 
 Ok, so now you've covered the basics, now let's get stuck into some code in [Day 012](/Day-012).
-

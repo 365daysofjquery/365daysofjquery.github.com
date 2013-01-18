@@ -31,7 +31,7 @@
 
 </head>
 
-<body data-spy="scroll" data-target=".subnav" data-offset="50">
+<body class="language-javascript" data-spy="scroll" data-target=".subnav" data-offset="50">
 
 	<div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
@@ -99,8 +99,31 @@
 
 <p>Copy the following code or view the <a href="/demos/Day-007.html">demo</a>:</p>
 
-<script src="https://gist.github.com/4496584.js"></script>
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Console Log&lt;/title&gt;
+&lt;/head&gt;
 
+&lt;body&gt;
+
+&lt;button&gt;Button&lt;/button&gt;
+
+&lt;!-- jQuery --&gt;
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;window.jQuery || document.write('&lt;script src="js/jquery-1.8.3.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;
+
+&lt;script&gt;
+
+    $('button').click(function(){
+        console.log('button is clicked');
+    });
+
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 
 <p>Paste this code into a new file, save this somewhere and open in Google Chrome.
 If you don't already have Google Chrome you can download it <a href="http://www.google.com/chrome">here</a>.</p>
@@ -126,7 +149,7 @@ If you don't already have Google Chrome you can download it <a href="http://www.
 			<a href="/Day-008" title="Next Post: Day 008 - Tools - Workflow">Next Blog Post &raquo;</a>
 			
 		</p>
-		<p>Page last generated on January 17, 2013</p>
+		<p>Page last generated on January 18, 2013</p>
 	</div>
 </footer>
 

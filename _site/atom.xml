@@ -4,7 +4,7 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-01-17T21:01:10+00:00</updated>
+	<updated>2013-01-18T19:30:55+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
@@ -19,32 +19,20 @@
 
 &lt;p&gt;This code won't work:&lt;/p&gt;
 
-&lt;pre class=&quot;language-javascript&quot;&gt;
-    &lt;code&gt;
-        $('h1').text('here's some text');
-    &lt;/code&gt;
-&lt;/pre&gt;
-
+&lt;pre&gt;&lt;code&gt;$('h1').text('here's some text');
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Because the jQuery will look for the first &lt;code&gt;'&lt;/code&gt; to start and &lt;code&gt;'&lt;/code&gt; to end, viewing this code in the console you'll get:&lt;/p&gt;
 
-&lt;pre class=&quot;language-javascript&quot;&gt;
-    &lt;code&gt;
-        Uncaught SyntaxError: Unexpected identifier
-    &lt;/code&gt;
-&lt;/pre&gt;
-
+&lt;pre&gt;&lt;code&gt;Uncaught SyntaxError: Unexpected identifier
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;To rectify this and display the &lt;code&gt;'&lt;/code&gt; as text you can add &lt;code&gt;\&lt;/code&gt; before like so:&lt;/p&gt;
 
-&lt;pre class=&quot;language-javascript&quot;&gt;
-    &lt;code&gt;
-        $('h1').text('here\'s some text');
-    &lt;/code&gt;
-&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;$('h1').text('here\'s some text');
+&lt;/code&gt;&lt;/pre&gt;
 
-
-&lt;p&gt;&lt;a href=&quot;/demos/Day-016.html&quot;&gt;demo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/demos/Day-016.html&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
 </content>
 	</entry>
 	
@@ -57,14 +45,10 @@
 
 &lt;p&gt;Here, we call jQuery, search for a h1 tag and add some text into it.&lt;/p&gt;
 
-&lt;pre class=&quot;language-javascript&quot;&gt;
-    &lt;code&gt;
-        $('h1').text('here is some text');
-    &lt;/code&gt;
-&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;$('h1').text('here is some text');
+&lt;/code&gt;&lt;/pre&gt;
 
-
-&lt;p&gt;View &lt;a href=&quot;/demos/Day-015.html&quot;&gt;demo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/demos/Day-015.html&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
 </content>
 	</entry>
 	
@@ -136,21 +120,13 @@
 
 &lt;p&gt;Take the code:&lt;/p&gt;
 
-&lt;pre class=&quot;language-javascript&quot;&gt;
-    &lt;code&gt;
-        $('div.red').css('color', 'red');
-    &lt;/code&gt;
-&lt;/pre&gt;
-
+&lt;pre&gt;&lt;code&gt;$('div.red').css('color', 'red');
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Or you could also do:&lt;/p&gt;
 
-&lt;pre class=&quot;language-javascript&quot;&gt;
-    &lt;code&gt;
-        $('.red').css('color', 'red');
-    &lt;/code&gt;
-&lt;/pre&gt;
-
+&lt;pre&gt;&lt;code&gt;$('.red').css('color', 'red');
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Although this is less code, so may seem like a good idea, performance can be improved upon by being more specific when it comes to telling jQuery what it's looking for. I'll cover this in more detail going forward, but for now let's break down the code above.&lt;/p&gt;
 
@@ -161,25 +137,17 @@ When it's found that, we want to do something with the CSS, then tell it what it
 
 &lt;p&gt;Sure, you could do:&lt;/p&gt;
 
-&lt;pre class=&quot;language-javascript&quot;&gt;
-    &lt;code&gt;
-        $('div.red').css('color', 'red');
-        $('div.red').css('font-size', '30');
-    &lt;/code&gt;
-&lt;/pre&gt;
-
+&lt;pre&gt;&lt;code&gt;$('div.red').css('color', 'red');
+$('div.red').css('font-size', '30');
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;But rather than telling jQuery to keep searching for the same element and writing more code, there's a better way:&lt;/p&gt;
 
-&lt;pre class=&quot;language-javascript&quot;&gt;
-    &lt;code&gt;
-        $('div.red-big-text').css({
-            'color': 'red',
-            'font-size': 30
-        });
-    &lt;/code&gt;
-&lt;/pre&gt;
-
+&lt;pre&gt;&lt;code&gt;$('div.red-big-text').css({
+    'color': 'red',
+    'font-size': 30
+});
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;A few things important to note when declaring multiple properties;&lt;/p&gt;
 
@@ -312,8 +280,31 @@ You'll also need a way to open and navigate the files you're working on.&lt;/p&g
 
 &lt;p&gt;Copy the following code or view the &lt;a href=&quot;/demos/Day-007.html&quot;&gt;demo&lt;/a&gt;:&lt;/p&gt;
 
-&lt;script src=&quot;https://gist.github.com/4496584.js&quot;&gt;&lt;/script&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&quot;utf-8&quot;&amp;gt;
+    &amp;lt;title&amp;gt;Console Log&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
 
+&amp;lt;body&amp;gt;
+
+&amp;lt;button&amp;gt;Button&amp;lt;/button&amp;gt;
+
+&amp;lt;!-- jQuery --&amp;gt;
+&amp;lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;window.jQuery || document.write('&amp;lt;script src=&quot;js/jquery-1.8.3.min.js&quot;&amp;gt;&amp;lt;\/script&amp;gt;')&amp;lt;/script&amp;gt;
+
+&amp;lt;script&amp;gt;
+
+    $('button').click(function(){
+        console.log('button is clicked');
+    });
+
+&amp;lt;/script&amp;gt;
+
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Paste this code into a new file, save this somewhere and open in Google Chrome.
 If you don't already have Google Chrome you can download it &lt;a href=&quot;http://www.google.com/chrome&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -343,8 +334,25 @@ If you don't already have Google Chrome you can download it &lt;a href=&quot;htt
 
 &lt;p&gt;I find it handy to keep a gist of all the packages installed:&lt;/p&gt;
 
-&lt;script src=&quot;https://gist.github.com/3293504.js&quot;&gt;&lt;/script&gt;
+&lt;pre&gt;&lt;code&gt;Bracket Highlighter
+CSScomb
+Dotfiles Syntax Highlighting
+FileDiffs
+JsFormat
+JSLint
+Package Control
+Prefixr
+SFTP
+Side Bar
+Closure Linter (Google) https://developers.google.com/closure/utilities/
+SublimeLinter
+Tag
 
+Emmet (previously ZenCoding)
+EditorConfig
+
+Theme - Phoenix
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;The main 2 packages I'd recommend for JavaScript are;
 &lt;code&gt;Bracket Highlighter&lt;/code&gt;, this is useful to see where code opens and closes.
@@ -356,8 +364,15 @@ If you don't already have Google Chrome you can download it &lt;a href=&quot;htt
 
 &lt;p&gt;Here's another snippet that you'll find yourself using over and over again:&lt;/p&gt;
 
-&lt;script src=&quot;https://gist.github.com/4479162.js&quot;&gt;&lt;/script&gt;
+&lt;pre&gt;&lt;code&gt;# Console Log Snippet for Sublime Text 2:
 
+&amp;lt;snippet&amp;gt;
+    &amp;lt;content&amp;gt;&amp;lt;![CDATA[console.log($1);$0]]&amp;gt;&amp;lt;/content&amp;gt;
+    &amp;lt;tabTrigger&amp;gt;cl&amp;lt;/tabTrigger&amp;gt;
+    &amp;lt;scope&amp;gt;source.js,source.js.embedded.html&amp;lt;/scope&amp;gt;
+    &amp;lt;description&amp;gt;console.log()&amp;lt;/description&amp;gt;
+&amp;lt;/snippet&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Here &lt;code&gt;cl&lt;/code&gt; creates code that allows you to &lt;code&gt;log&lt;/code&gt; to the &lt;code&gt;console&lt;/code&gt;. Not sure what the console is? You guessed it! Head on over to &lt;a href=&quot;/Day-007&quot;&gt;Day 007&lt;/a&gt;.&lt;/p&gt;
 </content>
@@ -382,8 +397,17 @@ If you don't already have Google Chrome you can download it &lt;a href=&quot;htt
 
 &lt;p&gt;Here's a handy snippet using the alternative way for Sublime Text 2:&lt;/p&gt;
 
-&lt;script src=&quot;https://gist.github.com/4479140.js&quot;&gt;&lt;/script&gt;
+&lt;pre&gt;&lt;code&gt;# Self Invoking Anonymous Function Snippet for Sublime Text 2:
 
+&amp;lt;snippet&amp;gt;
+    &amp;lt;content&amp;gt;&amp;lt;![CDATA[(function() \{
+    $0
+\})();]]&amp;gt;&amp;lt;/content&amp;gt;
+    &amp;lt;tabTrigger&amp;gt;siaf&amp;lt;/tabTrigger&amp;gt;
+    &amp;lt;scope&amp;gt;source.js,source.js.embedded.html&amp;lt;/scope&amp;gt;
+    &amp;lt;description&amp;gt;Self Invoking Anonymous Function&amp;lt;/description&amp;gt;
+&amp;lt;/snippet&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Not sure what Sublime Text 2 or a snippet is? Fear not! Head on over to &lt;a href=&quot;/Day-006&quot;&gt;Day 006&lt;/a&gt;.&lt;/p&gt;
 </content>
@@ -396,27 +420,51 @@ If you don't already have Google Chrome you can download it &lt;a href=&quot;htt
 		<id>http://365daysofjquery.github.com/Day-004</id>
 		<content type="html">&lt;p&gt;As mentioned previously if you open up the &lt;a href=&quot;http://code.jquery.com/jquery-1.8.3.js&quot;&gt;development version of jQuery&lt;/a&gt; and search for &lt;code&gt;:&lt;/code&gt; plus what you're looking for, in this case &lt;code&gt;noConflict:&lt;/code&gt;, you'll see:&lt;/p&gt;
 
-&lt;script src=&quot;https://gist.github.com/4462005.js&quot;&gt;&lt;/script&gt;
+&lt;pre&gt;&lt;code&gt;noConflict: function( deep ) {
+    if ( window.$ === jQuery ) {
+        window.$ = _$;
+    }
 
+    if ( deep &amp;amp;&amp;amp; window.jQuery === jQuery ) {
+        window.jQuery = _jQuery;
+    }
+
+    return jQuery;
+}
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;It's also worth noting the jQuery API site has just had a sweet update and searching for noConflict, you'll find:
 &lt;a href=&quot;http://api.jquery.com/jQuery.noConflict/&quot;&gt;http://api.jquery.com/jQuery.noConflict/&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;There's a few times, especially in WordPress builds where I've seen people fix multiple JavaScript libraries by constantly defining jQuery:&lt;/p&gt;
 
-&lt;script src=&quot;https://gist.github.com/4467382.js&quot;&gt;&lt;/script&gt;
-
+&lt;pre&gt;&lt;code&gt;jQuery.noConflict();
+jQuery(function() {
+    // more code referencing jQuery
+});
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This can be improved using the following code to set &lt;code&gt;$&lt;/code&gt; back as an alias &lt;code&gt;jQuery&lt;/code&gt;.&lt;/p&gt;
 
-&lt;script src=&quot;https://gist.github.com/4467391.js&quot;&gt;&lt;/script&gt;
-
+&lt;pre&gt;&lt;code&gt;jQuery.noConflict();
+// setting $ to alias to jQuery again
+jQuery(document).ready(function($){
+    $(function() {
+        // now you can continue to use $ as an alias to jQuery
+    });
+});
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Another alternative that's worth mentioning is using the following code which is essentially doing the same job.
 It is less descriptive, so not that great if you're a beginner trying to figure what is going on, but when you do, it's less code and widely used.&lt;/p&gt;
 
-&lt;script src=&quot;https://gist.github.com/4468045.js&quot;&gt;&lt;/script&gt;
-
+&lt;pre&gt;&lt;code&gt;jQuery.noConflict();
+(function($) {
+    $(function() {
+        // now you can continue to use $ as an alias to jQuery
+    });
+})(jQuery);
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;More on &lt;code&gt;$(document).ready()&lt;/code&gt; in &lt;a href=&quot;/Day-005&quot;&gt;Day 005&lt;/a&gt;.&lt;/p&gt;
 </content>
@@ -447,8 +495,9 @@ Whilst writing jQuery code you could write &lt;code&gt;jQuery(doSomething)&lt;/c
 		<link href="http://365daysofjquery.github.com/Day-002"/>
 		<updated>2013-01-02T00:00:00+00:00</updated>
 		<id>http://365daysofjquery.github.com/Day-002</id>
-		<content type="html">&lt;script src=&quot;https://gist.github.com/4458078.js&quot;&gt;&lt;/script&gt;
-
+		<content type="html">&lt;pre&gt;&lt;code&gt;&amp;lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;window.jQuery || document.write('&amp;lt;script src=&quot;js/vendor/jquery-1.8.3.min.js&quot;&amp;gt;&amp;lt;\/script&amp;gt;')&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Few things to note here. Firstly there's no 'http', this isn't a mistake, it's done deliberately using a 'protocol-relative URL'.
 There's an excellent post on this over at Paul Irish's blog:

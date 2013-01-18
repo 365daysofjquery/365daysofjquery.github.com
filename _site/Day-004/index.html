@@ -31,7 +31,7 @@
 
 </head>
 
-<body data-spy="scroll" data-target=".subnav" data-offset="50">
+<body class="language-javascript" data-spy="scroll" data-target=".subnav" data-offset="50">
 
 	<div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
@@ -97,27 +97,51 @@
 		<div class="span9 columns">
 			<p>As mentioned previously if you open up the <a href="http://code.jquery.com/jquery-1.8.3.js">development version of jQuery</a> and search for <code>:</code> plus what you're looking for, in this case <code>noConflict:</code>, you'll see:</p>
 
-<script src="https://gist.github.com/4462005.js"></script>
+<pre><code>noConflict: function( deep ) {
+    if ( window.$ === jQuery ) {
+        window.$ = _$;
+    }
 
+    if ( deep &amp;&amp; window.jQuery === jQuery ) {
+        window.jQuery = _jQuery;
+    }
+
+    return jQuery;
+}
+</code></pre>
 
 <p>It's also worth noting the jQuery API site has just had a sweet update and searching for noConflict, you'll find:
 <a href="http://api.jquery.com/jQuery.noConflict/">http://api.jquery.com/jQuery.noConflict/</a></p>
 
 <p>There's a few times, especially in WordPress builds where I've seen people fix multiple JavaScript libraries by constantly defining jQuery:</p>
 
-<script src="https://gist.github.com/4467382.js"></script>
-
+<pre><code>jQuery.noConflict();
+jQuery(function() {
+    // more code referencing jQuery
+});
+</code></pre>
 
 <p>This can be improved using the following code to set <code>$</code> back as an alias <code>jQuery</code>.</p>
 
-<script src="https://gist.github.com/4467391.js"></script>
-
+<pre><code>jQuery.noConflict();
+// setting $ to alias to jQuery again
+jQuery(document).ready(function($){
+    $(function() {
+        // now you can continue to use $ as an alias to jQuery
+    });
+});
+</code></pre>
 
 <p>Another alternative that's worth mentioning is using the following code which is essentially doing the same job.
 It is less descriptive, so not that great if you're a beginner trying to figure what is going on, but when you do, it's less code and widely used.</p>
 
-<script src="https://gist.github.com/4468045.js"></script>
-
+<pre><code>jQuery.noConflict();
+(function($) {
+    $(function() {
+        // now you can continue to use $ as an alias to jQuery
+    });
+})(jQuery);
+</code></pre>
 
 <p>More on <code>$(document).ready()</code> in <a href="/Day-005">Day 005</a>.</p>
 
@@ -136,7 +160,7 @@ It is less descriptive, so not that great if you're a beginner trying to figure 
 			<a href="/Day-005" title="Next Post: Day 005 - Let's get ready to jQuery">Next Blog Post &raquo;</a>
 			
 		</p>
-		<p>Page last generated on January 17, 2013</p>
+		<p>Page last generated on January 18, 2013</p>
 	</div>
 </footer>
 
