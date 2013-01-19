@@ -4,11 +4,30 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-01-19T10:10:01+00:00</updated>
+	<updated>2013-01-19T19:24:28+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
 	</author>
+	
+	<entry>
+		<title>Day 017 - Adding HTML</title>
+		<link href="http://365daysofjquery.github.com/Day-017"/>
+		<updated>2013-01-17T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-017</id>
+		<content type="html">&lt;p&gt;Much the same as adding text in jQuery you can also add HTML like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('body').html('&amp;lt;h1&amp;gt;Here Is Some HTML&amp;lt;/h1&amp;gt;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Similarly when using &lt;code&gt;'&lt;/code&gt; you'll need to add a &lt;code&gt;\&lt;/code&gt; before it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('body').html('&amp;lt;h1&amp;gt;Here\'s Some HTML&amp;lt;h1&amp;gt;');
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&quot;/demos/Day-017.html&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Day 016 - Adding Text - Apostrophe</title>

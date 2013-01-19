@@ -1,0 +1,23 @@
+---
+layout: post
+title: Day 017 - Adding HTML
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 17
+published: true
+summary: Day 017
+---
+
+Much the same as adding text in jQuery you can also add HTML like this:
+
+	$('body').html('<h1>Here Is Some HTML</h1>);
+
+
+Similarly when using `'` you'll need to add a `\` before it.
+
+	$('body').html('<h1>Here\'s Some HTML<h1>');
+
+
+[Demo](/demos/Day-017.html)

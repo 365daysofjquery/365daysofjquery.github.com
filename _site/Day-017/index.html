@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Day 002 - Using Google's CDN to serve jQuery</title>
+	<title>Day 017 - Adding HTML</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="365 Days of jQuery">
@@ -69,7 +69,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 002 - Using Google's CDN to serve jQuery</h1>
+			<h1>Day 017 - Adding HTML</h1>
 		</p>
 	</div>
 </div>
@@ -83,12 +83,9 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Day-001" title="Previous Post: Day 001 - Downloading jQuery"> <i class="icon-chevron-left"></i>
+			<a href="/Day-016" title="Previous Post: Day 016 - Adding Text - Apostrophe"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Day-003" title="Next Post: Day 003 - Give me some dollar!"> <i class="icon-chevron-right"></i>
-			</a>
-			
 		</p>
 	</div>
 </div>
@@ -99,21 +96,17 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<pre><code>&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"&gt;&lt;/script&gt;
-&lt;script&gt;window.jQuery || document.write('&lt;script src="js/vendor/jquery-1.8.3.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;
+			<p>Much the same as adding text in jQuery you can also add HTML like this:</p>
+
+<pre><code>$('body').html('&lt;h1&gt;Here Is Some HTML&lt;/h1&gt;);
 </code></pre>
 
-<p>Few things to note here. Firstly there's no 'http', this isn't a mistake, it's done deliberately using a 'protocol-relative URL'.
-There's an excellent post on this over at Paul Irish's blog:
-<a href="http://paulirish.com/2010/the-protocol-relative-url/">http://paulirish.com/2010/the-protocol-relative-url/</a>.</p>
+<p>Similarly when using <code>'</code> you'll need to add a <code>\</code> before it.</p>
 
-<p>Secondly, it's a good idea to specify the version of jQuery you're using. If you always automatically update, things may break.
-When a new version of jQuery is released it's always worth giving things a check over before updating.</p>
+<pre><code>$('body').html('&lt;h1&gt;Here\'s Some HTML&lt;h1&gt;');
+</code></pre>
 
-<p>Third of all, on the second line we call jQuery again.
-This is useful just in case Google's CDN version might not be available and also if you're working offline.</p>
-
-<p>Another great reason for using this approach is that if the user has already visited a site using the same version of jQuery you're using they'll most likely have it cached. This means they won't need to download it again, meaning one less file to download and quicker page rendering of your site.</p>
+<p><a href="/demos/Day-017.html">Demo</a></p>
 
 		</div>
 	</div>
@@ -124,12 +117,10 @@ This is useful just in case Google's CDN version might not be available and also
 	<div class="container">
 		<p class="pull-right">
 			
-			<a href="/Day-001" title="Previous Post: Day 001 - Downloading jQuery">&laquo; Previous Blog Post</a>
+			<a href="/Day-016" title="Previous Post: Day 016 - Adding Text - Apostrophe">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Day-003" title="Next Post: Day 003 - Give me some dollar!">Next Blog Post &raquo;</a>
-			
 		</p>
 		<p>Page last generated on January 19, 2013</p>
 	</div>
