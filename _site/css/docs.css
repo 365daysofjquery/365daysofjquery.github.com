@@ -1,113 +1,90 @@
-/* Add additional stylesheets below
--------------------------------------------------- */
-/*
-  Bootstrap's documentation styles
-  Special styles for presenting Bootstrap's documentation and examples
-*/
-
-
-/* Body and structure
+/*	Body and structure
 -------------------------------------------------- */
 body {
-  position: relative;
-  padding-top: 80px;
-  background: #fff;
+	position: relative;
+	padding-top: 80px;
+	background: #fff;
 }
 
-/* Footer
+/*	Footer
 -------------------------------------------------- */
 .footer {
-  margin-top: 45px;
-  padding: 35px 0 36px;
-  border-top: 1px solid #e5e5e5;
-  background-color: #f9f9f9;
+	margin-top: 45px;
+	padding: 35px 0 36px;
+	border-top: 1px solid #e5e5e5;
+	background-color: #f9f9f9;
 }
 .footer p {
-  margin-bottom: 0;
-  color: #555;
+	margin-bottom: 0;
+	color: #555;
 }
 
-/* Responsive Docs
+/*	Responsive Docs
 -------------------------------------------------- */
 
 @media (max-width: 768px) {
 
-  /* Unfloat the back to top link in footer */
-  .footer .pull-right {
-    float: none;
-  }
-  .footer p {
-    margin-bottom: 9px;
-  }
+	/* Unfloat the back to top link in footer */
+	.footer .pull-right {
+		float: none;
+	}
+	.footer p {
+		margin-bottom: 9px;
+	}
 
 }
 
 @media (max-width: 980px) {
 
-  body {
-    padding-top: 0;
-  }
+	body {
+		padding-top: 0;
+	}
 
 }
 
-/* Cherry Picked from http://rubynaut.net/ */
+/*	Cherry Picked from http://rubynaut.net/
+-------------------------------------------------- */
 
 ul.buttons li {
-    margin: 0; padding: 0; list-style: none; display: inline; float:left;
-    }
+	margin: 0; padding: 0; list-style: none; display: inline; float:left;
+}
 
 a.social {
-  display: block;
-  width:  34px;
-  height: 34px;
-  background: url(/img/social_icons.png);
-  margin: 3px;
+	display: block;
+	width:  34px;
+	height: 34px;
+	background: url(/img/social_icons.png);
+	margin: 3px;
 }
 
 a.social.github {
-  background: url(/img/social_icons.png) -68px 0px no-repeat;
+	background: url(/img/social_icons.png) -68px 0px no-repeat;
 }
 
 a.social.github:hover {
-  background: url(/img/social_icons.png) -68px -34px no-repeat;
-}
-
-a.social.linkedin {
-  background: url(/img/social_icons.png) -102px 0px no-repeat;
-}
-
-a.social.linkedin:hover {
-  background: url(/img/social_icons.png) -102px -34px no-repeat;
+	background: url(/img/social_icons.png) -68px -34px no-repeat;
 }
 
 a.social.twitter {
-  background: url(/img/social_icons.png) 0 0px no-repeat;
+	background: url(/img/social_icons.png) 0 0px no-repeat;
 }
 
 a.social.twitter:hover {
-  background: url(/img/social_icons.png) 0px -34px no-repeat;
+	background: url(/img/social_icons.png) 0px -34px no-repeat;
 }
 
 a.social.rss {
-  background: url(/img/social_icons.png) -34px 0px no-repeat;
+	background: url(/img/social_icons.png) -34px 0px no-repeat;
 }
 
 a.social.rss:hover {
-  background: url(/img/social_icons.png) -34px -34px no-repeat;
+	background: url(/img/social_icons.png) -34px -34px no-repeat;
 }
 
 a.social.mail {
-  background: url(/img/social_icons.png) -136px 0px no-repeat;
+	background: url(/img/social_icons.png) -136px 0px no-repeat;
 }
 
 a.social.mail:hover {
-  background: url(/img/social_icons.png) -136px -34px no-repeat;
-}
-
-a.social.gplus {
-  background: url(/img/social_icons.png) -170px 0px no-repeat;
-}
-
-a.social.gplus:hover {
-  background: url(/img/social_icons.png) -170px -34px no-repeat;
+	background: url(/img/social_icons.png) -136px -34px no-repeat;
 }
