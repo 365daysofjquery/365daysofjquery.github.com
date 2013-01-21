@@ -6,6 +6,21 @@ body {
 	background: #fff;
 }
 
+/*	Larger arrow buttons
+-------------------------------------------------- */
+.icon-chevron-left,
+.icon-chevron-right {
+	width: 20px;
+	height: 28px;
+	background-image: url(../img/arrows.png);
+	background-position: 0 0;
+	margin: 0 5px;
+}
+
+.icon-chevron-right {
+	background-position: right 0;
+}
+
 /*	Footer
 -------------------------------------------------- */
 .footer {
