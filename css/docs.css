@@ -21,6 +21,10 @@ body {
 	background-position: right 0;
 }
 
+.pull-right a {
+	display: inline-block;
+}
+
 /*	Footer
 -------------------------------------------------- */
 .footer {
