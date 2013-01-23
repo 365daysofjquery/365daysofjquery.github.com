@@ -10,7 +10,7 @@ published: true
 summary: Day 004
 ---
 
-As mentioned previously if you open up the [development version of jQuery](http://code.jquery.com/jquery-1.8.3.js) and search for `:` plus what you're looking for, in this case `noConflict:`, you'll see:
+As mentioned previously if you open up the [development version of jQuery](http://code.jquery.com/jquery-1.9.0.js) and search for `:` plus what you're looking for, in this case `noConflict:`, you'll see:
 
 	noConflict: function( deep ) {
 		if ( window.$ === jQuery ) {

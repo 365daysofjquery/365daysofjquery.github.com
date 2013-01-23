@@ -1,0 +1,32 @@
+---
+layout: post
+title: Day 018 - Children
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 18
+published: true
+summary: Day 018
+---
+
+In previous days you've added some text to a h1.
+
+	$('h1').text('here is some text');
+
+
+You've also added HTML content to the body.
+
+	$('body').html('<h1>Here Is Some HTML</h1>);
+
+
+This is great, but what if things are little more complicated? You've got two `ul`, but you only want to manipulate one of the lists.
+
+Take a look at this code.
+
+	$('ul.one').children('li').css('color', 'blue');
+
+
+This will search for a `ul` which has a class of `one`, then any `li` that are direct children, will have the CSS value changed to blue.
+
+For a closer look, you can open up this [demo](/demos/Day-018.html) and inspect the code.

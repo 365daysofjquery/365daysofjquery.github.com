@@ -4,11 +4,72 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-01-21T21:28:08+00:00</updated>
+	<updated>2013-01-22T20:28:40+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
 	</author>
+	
+	<entry>
+		<title>Day 019 - jQuery 1.9</title>
+		<link href="http://365daysofjquery.github.com/Day-019"/>
+		<updated>2013-01-19T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-019</id>
+		<content type="html">&lt;p&gt;Hold the page! &lt;a href=&quot;http://code.jquery.com/jquery-1.9.0.js&quot;&gt;jQuery 1.9.0&lt;/a&gt; has been released!&lt;/p&gt;
+
+&lt;h2&gt;What Does This Mean?&lt;/h2&gt;
+
+&lt;p&gt;It means lots of awesome people have done lots of awesome work and made jQuery even more awesome.&lt;/p&gt;
+
+&lt;h2&gt;Should I Upgrade?&lt;/h2&gt;
+
+&lt;p&gt;Yup! But be careful!&lt;/p&gt;
+
+&lt;h2&gt;Why Should I Be Careful?&lt;/h2&gt;
+
+&lt;p&gt;Check out the upgrade guide on the jQuery site &lt;a href=&quot;http://jquery.com/upgrade-guide/1.9/#changes-of-note-in-jquery-1-9&quot;&gt;http://jquery.com/upgrade-guide/1.9/#changes-of-note-in-jquery-1-9&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you're a beginner don't worry too much if none of that seems to make sense. We'll go over it in later days.&lt;/p&gt;
+
+&lt;p&gt;There's been quite a few significant changes in this release and it's important to note that certain things have been deprecated. This means upgrading could potentially break you previous code.&lt;/p&gt;
+
+&lt;p&gt;As well as the upgrade to jQuery itself, there's also a 'jQuery Migrate' project &lt;a href=&quot;https://github.com/jquery/jquery-migrate&quot;&gt;https://github.com/jquery/jquery-migrate&lt;/a&gt;. The project is great for testing.&lt;/p&gt;
+
+&lt;p&gt;&quot;This project can be used to detect and restore APIs, features or functionality that have been deprecated in jQuery and removed as of version 1.9.&quot; - taken from &lt;a href=&quot;https://github.com/jquery/jquery-migrate&quot;&gt;https://github.com/jquery/jquery-migrate&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you now test over your code and keep an eye on your console logs any code that has been deprecated will be logged. You can then reevaluate your code and change accordingly to be fully jQuery 1.9.0 compatible.&lt;/p&gt;
+
+&lt;p&gt;Of course after you've done this, I'd always recommend checking over everything again locally before pushing live.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Day 018 - Children</title>
+		<link href="http://365daysofjquery.github.com/Day-018"/>
+		<updated>2013-01-18T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-018</id>
+		<content type="html">&lt;p&gt;In previous days you've added some text to a h1.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('h1').text('here is some text');
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You've also added HTML content to the body.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('body').html('&amp;lt;h1&amp;gt;Here Is Some HTML&amp;lt;/h1&amp;gt;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is great, but what if things are little more complicated? You've got two &lt;code&gt;ul&lt;/code&gt;, but you only want to manipulate one of the lists.&lt;/p&gt;
+
+&lt;p&gt;Take a look at this code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('ul.one').children('li').css('color', 'blue');
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will search for a &lt;code&gt;ul&lt;/code&gt; which has a class of &lt;code&gt;one&lt;/code&gt;, then any &lt;code&gt;li&lt;/code&gt; that are direct children, will have the CSS value changed to blue.&lt;/p&gt;
+
+&lt;p&gt;For a closer look, you can open up this &lt;a href=&quot;/demos/Day-018.html&quot;&gt;demo&lt;/a&gt; and inspect the code.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Day 017 - Adding HTML</title>
@@ -310,8 +371,8 @@ You'll also need a way to open and navigate the files you're working on.&lt;/p&g
 &amp;lt;button&amp;gt;Button&amp;lt;/button&amp;gt;
 
 &amp;lt;!-- jQuery --&amp;gt;
-&amp;lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;script&amp;gt;window.jQuery || document.write('&amp;lt;script src=&quot;js/jquery-1.8.3.min.js&quot;&amp;gt;&amp;lt;\/script&amp;gt;')&amp;lt;/script&amp;gt;
+&amp;lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;window.jQuery || document.write('&amp;lt;script src=&quot;js/jquery-1.9.0.min.js&quot;&amp;gt;&amp;lt;\/script&amp;gt;')&amp;lt;/script&amp;gt;
 
 &amp;lt;script&amp;gt;
 
@@ -437,7 +498,7 @@ Theme - Phoenix
 		<link href="http://365daysofjquery.github.com/Day-004"/>
 		<updated>2013-01-04T00:00:00+00:00</updated>
 		<id>http://365daysofjquery.github.com/Day-004</id>
-		<content type="html">&lt;p&gt;As mentioned previously if you open up the &lt;a href=&quot;http://code.jquery.com/jquery-1.8.3.js&quot;&gt;development version of jQuery&lt;/a&gt; and search for &lt;code&gt;:&lt;/code&gt; plus what you're looking for, in this case &lt;code&gt;noConflict:&lt;/code&gt;, you'll see:&lt;/p&gt;
+		<content type="html">&lt;p&gt;As mentioned previously if you open up the &lt;a href=&quot;http://code.jquery.com/jquery-1.9.0.js&quot;&gt;development version of jQuery&lt;/a&gt; and search for &lt;code&gt;:&lt;/code&gt; plus what you're looking for, in this case &lt;code&gt;noConflict:&lt;/code&gt;, you'll see:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;noConflict: function( deep ) {
     if ( window.$ === jQuery ) {
@@ -514,8 +575,8 @@ Whilst writing jQuery code you could write &lt;code&gt;jQuery(doSomething)&lt;/c
 		<link href="http://365daysofjquery.github.com/Day-002"/>
 		<updated>2013-01-02T00:00:00+00:00</updated>
 		<id>http://365daysofjquery.github.com/Day-002</id>
-		<content type="html">&lt;pre&gt;&lt;code&gt;&amp;lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;script&amp;gt;window.jQuery || document.write('&amp;lt;script src=&quot;js/vendor/jquery-1.8.3.min.js&quot;&amp;gt;&amp;lt;\/script&amp;gt;')&amp;lt;/script&amp;gt;
+		<content type="html">&lt;pre&gt;&lt;code&gt;&amp;lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;window.jQuery || document.write('&amp;lt;script src=&quot;js/vendor/jquery-1.9.0.min.js&quot;&amp;gt;&amp;lt;\/script&amp;gt;')&amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Few things to note here. Firstly there's no 'http', this isn't a mistake, it's done deliberately using a 'protocol-relative URL'.

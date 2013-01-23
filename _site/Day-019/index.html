@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Day 012 - Manipulating CSS</title>
+	<title>Day 019 - jQuery 1.9</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="365 Days of jQuery">
@@ -72,7 +72,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 012 - Manipulating CSS</h1>
+			<h1>Day 019 - jQuery 1.9</h1>
 		</p>
 	</div>
 </div>
@@ -86,12 +86,9 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Day-011" title="Previous Post: Day 011 - Recap"> <i class="icon-chevron-left"></i>
+			<a href="/Day-018" title="Previous Post: Day 018 - Children"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Day-013" title="Next Post: Day 013 - Adding a Class"> <i class="icon-chevron-right"></i>
-			</a>
-			
 		</p>
 	</div>
 </div>
@@ -102,51 +99,31 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p>Ok, coding time!</p>
+			<p>Hold the page! <a href="http://code.jquery.com/jquery-1.9.0.js">jQuery 1.9.0</a> has been released!</p>
 
-<p>Here you'll take some text in divs and learn how to manipulate these via CSS. Although it's possible to do this, sometimes it can be better to add or change a class name, we'll look at this in <a href="/Day-013">Day 013</a>.</p>
+<h2>What Does This Mean?</h2>
 
-<p>But for now take a look at this <a href="/demos/Day-012.html">demo</a>.</p>
+<p>It means lots of awesome people have done lots of awesome work and made jQuery even more awesome.</p>
 
-<p>Take the code:</p>
+<h2>Should I Upgrade?</h2>
 
-<pre><code>$('div.red').css('color', 'red');
-</code></pre>
+<p>Yup! But be careful!</p>
 
-<p>Or you could also do:</p>
+<h2>Why Should I Be Careful?</h2>
 
-<pre><code>$('.red').css('color', 'red');
-</code></pre>
+<p>Check out the upgrade guide on the jQuery site <a href="http://jquery.com/upgrade-guide/1.9/#changes-of-note-in-jquery-1-9">http://jquery.com/upgrade-guide/1.9/#changes-of-note-in-jquery-1-9</a>.</p>
 
-<p>Although this is less code, so may seem like a good idea, performance can be improved upon by being more specific when it comes to telling jQuery what it's looking for. I'll cover this in more detail going forward, but for now let's break down the code above.</p>
+<p>If you're a beginner don't worry too much if none of that seems to make sense. We'll go over it in later days.</p>
 
-<p>First the <code>$</code> calls to jQuery, it then tells jQuery to look for a <code>div</code> element with a <code>class</code> of <code>red</code>.
-When it's found that, we want to do something with the CSS, then tell it what it needs to do to the CSS, in this case change the CSS property to red.</p>
+<p>There's been quite a few significant changes in this release and it's important to note that certain things have been deprecated. This means upgrading could potentially break you previous code.</p>
 
-<p>But what if you want to change more than one property?</p>
+<p>As well as the upgrade to jQuery itself, there's also a 'jQuery Migrate' project <a href="https://github.com/jquery/jquery-migrate">https://github.com/jquery/jquery-migrate</a>. The project is great for testing.</p>
 
-<p>Sure, you could do:</p>
+<p>"This project can be used to detect and restore APIs, features or functionality that have been deprecated in jQuery and removed as of version 1.9." - taken from <a href="https://github.com/jquery/jquery-migrate">https://github.com/jquery/jquery-migrate</a></p>
 
-<pre><code>$('div.red').css('color', 'red');
-$('div.red').css('font-size', '30');
-</code></pre>
+<p>If you now test over your code and keep an eye on your console logs any code that has been deprecated will be logged. You can then reevaluate your code and change accordingly to be fully jQuery 1.9.0 compatible.</p>
 
-<p>But rather than telling jQuery to keep searching for the same element and writing more code, there's a better way:</p>
-
-<pre><code>$('div.red-big-text').css({
-    'color': 'red',
-    'font-size': 30
-});
-</code></pre>
-
-<p>A few things important to note when declaring multiple properties;</p>
-
-<ol>
-<li>The addition of <code>{</code>, <code>}</code>.</li>
-<li>The <code>,</code> goes to the end of the line and CSS property is split with <code>:</code>.</li>
-<li>No longer need to wrap numbered values in <code>''</code>.</li>
-</ol>
-
+<p>Of course after you've done this, I'd always recommend checking over everything again locally before pushing live.</p>
 
 		</div>
 	</div>
@@ -157,12 +134,10 @@ $('div.red').css('font-size', '30');
 	<div class="container">
 		<p class="pull-right">
 			
-			<a href="/Day-011" title="Previous Post: Day 011 - Recap">&laquo; Previous Blog Post</a>
+			<a href="/Day-018" title="Previous Post: Day 018 - Children">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Day-013" title="Next Post: Day 013 - Adding a Class">Next Blog Post &raquo;</a>
-			
 		</p>
 		<p>Page last generated on January 22, 2013</p>
 	</div>

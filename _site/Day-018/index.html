@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Day 012 - Manipulating CSS</title>
+	<title>Day 018 - Children</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="365 Days of jQuery">
@@ -72,7 +72,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 012 - Manipulating CSS</h1>
+			<h1>Day 018 - Children</h1>
 		</p>
 	</div>
 </div>
@@ -86,10 +86,10 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Day-011" title="Previous Post: Day 011 - Recap"> <i class="icon-chevron-left"></i>
+			<a href="/Day-017" title="Previous Post: Day 017 - Adding HTML"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Day-013" title="Next Post: Day 013 - Adding a Class"> <i class="icon-chevron-right"></i>
+			<a href="/Day-019" title="Next Post: Day 019 - jQuery 1.9"> <i class="icon-chevron-right"></i>
 			</a>
 			
 		</p>
@@ -102,51 +102,26 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p>Ok, coding time!</p>
+			<p>In previous days you've added some text to a h1.</p>
 
-<p>Here you'll take some text in divs and learn how to manipulate these via CSS. Although it's possible to do this, sometimes it can be better to add or change a class name, we'll look at this in <a href="/Day-013">Day 013</a>.</p>
-
-<p>But for now take a look at this <a href="/demos/Day-012.html">demo</a>.</p>
-
-<p>Take the code:</p>
-
-<pre><code>$('div.red').css('color', 'red');
+<pre><code>$('h1').text('here is some text');
 </code></pre>
 
-<p>Or you could also do:</p>
+<p>You've also added HTML content to the body.</p>
 
-<pre><code>$('.red').css('color', 'red');
+<pre><code>$('body').html('&lt;h1&gt;Here Is Some HTML&lt;/h1&gt;);
 </code></pre>
 
-<p>Although this is less code, so may seem like a good idea, performance can be improved upon by being more specific when it comes to telling jQuery what it's looking for. I'll cover this in more detail going forward, but for now let's break down the code above.</p>
+<p>This is great, but what if things are little more complicated? You've got two <code>ul</code>, but you only want to manipulate one of the lists.</p>
 
-<p>First the <code>$</code> calls to jQuery, it then tells jQuery to look for a <code>div</code> element with a <code>class</code> of <code>red</code>.
-When it's found that, we want to do something with the CSS, then tell it what it needs to do to the CSS, in this case change the CSS property to red.</p>
+<p>Take a look at this code.</p>
 
-<p>But what if you want to change more than one property?</p>
-
-<p>Sure, you could do:</p>
-
-<pre><code>$('div.red').css('color', 'red');
-$('div.red').css('font-size', '30');
+<pre><code>$('ul.one').children('li').css('color', 'blue');
 </code></pre>
 
-<p>But rather than telling jQuery to keep searching for the same element and writing more code, there's a better way:</p>
+<p>This will search for a <code>ul</code> which has a class of <code>one</code>, then any <code>li</code> that are direct children, will have the CSS value changed to blue.</p>
 
-<pre><code>$('div.red-big-text').css({
-    'color': 'red',
-    'font-size': 30
-});
-</code></pre>
-
-<p>A few things important to note when declaring multiple properties;</p>
-
-<ol>
-<li>The addition of <code>{</code>, <code>}</code>.</li>
-<li>The <code>,</code> goes to the end of the line and CSS property is split with <code>:</code>.</li>
-<li>No longer need to wrap numbered values in <code>''</code>.</li>
-</ol>
-
+<p>For a closer look, you can open up this <a href="/demos/Day-018.html">demo</a> and inspect the code.</p>
 
 		</div>
 	</div>
@@ -157,11 +132,11 @@ $('div.red').css('font-size', '30');
 	<div class="container">
 		<p class="pull-right">
 			
-			<a href="/Day-011" title="Previous Post: Day 011 - Recap">&laquo; Previous Blog Post</a>
+			<a href="/Day-017" title="Previous Post: Day 017 - Adding HTML">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Day-013" title="Next Post: Day 013 - Adding a Class">Next Blog Post &raquo;</a>
+			<a href="/Day-019" title="Next Post: Day 019 - jQuery 1.9">Next Blog Post &raquo;</a>
 			
 		</p>
 		<p>Page last generated on January 22, 2013</p>

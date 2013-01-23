@@ -1,0 +1,39 @@
+---
+layout: post
+title: Day 019 - jQuery 1.9
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 19
+published: true
+summary: Day 019
+---
+
+Hold the page! [jQuery 1.9.0](http://code.jquery.com/jquery-1.9.0.js) has been released!
+
+## What Does This Mean?
+
+It means lots of awesome people have done lots of awesome work and made jQuery even more awesome.
+
+
+## Should I Upgrade?
+
+Yup! But be careful!
+
+
+## Why Should I Be Careful?
+
+Check out the upgrade guide on the jQuery site <http://jquery.com/upgrade-guide/1.9/#changes-of-note-in-jquery-1-9>.
+
+If you're a beginner don't worry too much if none of that seems to make sense. We'll go over it in later days.
+
+There's been quite a few significant changes in this release and it's important to note that certain things have been deprecated. This means upgrading could potentially break you previous code.
+
+As well as the upgrade to jQuery itself, there's also a 'jQuery Migrate' project <https://github.com/jquery/jquery-migrate>. The project is great for testing.
+
+"This project can be used to detect and restore APIs, features or functionality that have been deprecated in jQuery and removed as of version 1.9." - taken from <https://github.com/jquery/jquery-migrate>
+
+If you now test over your code and keep an eye on your console logs any code that has been deprecated will be logged. You can then reevaluate your code and change accordingly to be fully jQuery 1.9.0 compatible.
+
+Of course after you've done this, I'd always recommend checking over everything again locally before pushing live.
