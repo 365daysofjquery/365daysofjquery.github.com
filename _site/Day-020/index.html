@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Day 016 - Adding Text - Apostrophe</title>
+	<title>Day 020 - Find</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="365 Days of jQuery">
@@ -72,7 +72,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 016 - Adding Text - Apostrophe</h1>
+			<h1>Day 020 - Find</h1>
 		</p>
 	</div>
 </div>
@@ -86,12 +86,9 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Day-015" title="Previous Post: Day 015 - Adding Text"> <i class="icon-chevron-left"></i>
+			<a href="/Day-019" title="Previous Post: Day 019 - jQuery 1.9"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Day-017" title="Next Post: Day 017 - Adding HTML"> <i class="icon-chevron-right"></i>
-			</a>
-			
 		</p>
 	</div>
 </div>
@@ -102,24 +99,22 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p>Notice in the <a href="/Day-015">previous day</a> we wrapped the text we wanted to display in <code>'</code>, but what if you need to use <code>'</code> to be displayed in your text?</p>
+			<p>In <a href="/Day-018">Day-18</a>, you looked at how to select children, but what if you wanted to select all specific elements?</p>
 
-<p>This code won't work:</p>
+<p>In this instance the <code>.find</code> method comes in handy.</p>
 
-<pre><code>$('h1').text('here's some text');
+<p>Take this example:</p>
+
+<pre><code>$('ul.three').find('li').css('color', 'fuchsia');
 </code></pre>
 
-<p>Because the jQuery will look for the first <code>'</code> to start and <code>'</code> to end, viewing this code in the console you'll get:</p>
+<p>Here, you'll call jQuery, search for a <code>ul</code> with a class of <code>three</code>, then find all the <code>li</code> elements and apply a CSS colour value.</p>
 
-<pre><code>Uncaught SyntaxError: Unexpected identifier
-</code></pre>
+<p>If you take a look at this <a href="/demos/Day-020.html">demo</a>.
+Using the <code>children</code> method, CSS only gets applied to the children.
+Using <code>find</code>, the CSS gets applied to all the <code>li</code>.</p>
 
-<p>To rectify this and display the <code>'</code> as text you can add <code>\</code> before like so:</p>
-
-<pre><code>$('h1').text('here\'s some text');
-</code></pre>
-
-<p><a href="/demos/Day-016.html">Demo</a></p>
+<p>Hoorar!</p>
 
 		</div>
 	</div>
@@ -130,12 +125,10 @@
 	<div class="container">
 		<p class="pull-right">
 			
-			<a href="/Day-015" title="Previous Post: Day 015 - Adding Text">&laquo; Previous Blog Post</a>
+			<a href="/Day-019" title="Previous Post: Day 019 - jQuery 1.9">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Day-017" title="Next Post: Day 017 - Adding HTML">Next Blog Post &raquo;</a>
-			
 		</p>
 		<p>Page last generated on January 23, 2013</p>
 	</div>

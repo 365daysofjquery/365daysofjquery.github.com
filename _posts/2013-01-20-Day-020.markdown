@@ -1,0 +1,28 @@
+---
+layout: post
+title: Day 020 - Find
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 20
+published: true
+summary: Day 020
+---
+
+In [Day-18](/Day-018), you looked at how to select children, but what if you wanted to select all specific elements?
+
+In this instance the `.find` method comes in handy.
+
+Take this example:
+
+	$('ul.three').find('li').css('color', 'fuchsia');
+
+
+Here, you'll call jQuery, search for a `ul` with a class of `three`, then find all the `li` elements and apply a CSS colour value.
+
+If you take a look at this [demo](/demos/Day-020.html).
+Using the `children` method, CSS only gets applied to the children.
+Using `find`, the CSS gets applied to all the `li`.
+
+Hoorar!

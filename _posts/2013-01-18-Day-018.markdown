@@ -20,7 +20,7 @@ You've also added HTML content to the body.
 	$('body').html('<h1>Here Is Some HTML</h1>);
 
 
-This is great, but what if things are little more complicated? You've got two `ul`, but you only want to manipulate one of the lists.
+This is great, but what if things are a little more complicated? You've got two `ul`, but you only want to manipulate one of the lists.
 
 Take a look at this code.
 
