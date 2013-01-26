@@ -1,0 +1,24 @@
+---
+layout: post
+title: Day 023 - Next and Previous
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 23
+published: true
+summary: Day 023
+---
+
+Here you'll learn how it's possible to use `.next` and `.prev` to select elements.
+
+Take the following example:
+
+	$('ul li:first-child').next().css('color', 'crimson');
+
+
+Here you look for the first `li` element then using the `.next` method, select the next element.
+
+Similarly, it's possible to use `.prev` to select the previous element.
+
+Take a look at this [demo](/demos/Day-023.html) and inspect the elements for a closer look.

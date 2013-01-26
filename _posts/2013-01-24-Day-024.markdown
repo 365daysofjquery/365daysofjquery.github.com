@@ -1,0 +1,25 @@
+---
+layout: post
+title: Day 024 - Arithmetic Operators
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 24
+published: true
+summary: Day 024
+---
+
+In [Day-21](/Day-021), you used an `integer` to select a specific `li`.
+
+With an `integer` it's possible to use 'Arithmetic Operators'.
+
+	var addition = 5 + 5;
+	$('span.addition').text(addition);
+
+
+In the above code, you set a `variable` (I'll cover this in more depth in a further day).
+
+The `variable` will be equal to the result of the 5 + 5. You then call jQuery, look for a `.span` element in the DOM with a class of `addition`. Then use the `.text` method to add the variable answer to that element.
+
+[Demo](/demos/Day-022.html).

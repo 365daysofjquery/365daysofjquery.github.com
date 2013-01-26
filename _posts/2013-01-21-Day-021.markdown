@@ -1,0 +1,33 @@
+---
+layout: post
+title: Day 021 - Ground Zero
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 21
+published: true
+summary: Day 021
+---
+
+JavaScript is a 'zero based language'.
+
+This means that if you have 5 elements, JavaScript counts them as 0, 1, 2, 3, 4.
+
+So, if you wanted to select the first `li` in a `ul` you could do the following:
+
+	$('ul li').eq(0).css('color', 'red');
+
+
+This will search for the first `li` and apply a CSS colour value of red.
+
+To select 'four' you'd do:
+
+	$('ul li').eq(3).css('color', 'green');
+
+
+Notice here, you don't wrap the number in `'`.
+
+This is something that can take a while to get to grips with. In this instance the number added to the `.eq` method is an `integer`. Rather than passing a `selector` that jQuery can search the DOM for, here the `.eq` method requires an integer as a 'plain Number type'.
+
+[Demo](/demos/Day-021.html).

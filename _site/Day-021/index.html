@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Day 004 - No Conflict</title>
+	<title>Day 021 - Ground Zero</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="365 Days of jQuery">
@@ -72,7 +72,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 004 - No Conflict</h1>
+			<h1>Day 021 - Ground Zero</h1>
 		</p>
 	</div>
 </div>
@@ -86,10 +86,10 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Day-003" title="Previous Post: Day 003 - Give me some dollar!"> <i class="icon-chevron-left"></i>
+			<a href="/Day-020" title="Previous Post: Day 020 - Find"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Day-005" title="Next Post: Day 005 - Let's get ready to jQuery"> <i class="icon-chevron-right"></i>
+			<a href="/Day-022" title="Next Post: Day 022 - Selecting with CSS"> <i class="icon-chevron-right"></i>
 			</a>
 			
 		</p>
@@ -102,55 +102,27 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p>As mentioned previously if you open up the <a href="http://code.jquery.com/jquery-1.9.0.js">development version of jQuery</a> and search for <code>:</code> plus what you're looking for, in this case <code>noConflict:</code>, you'll see:</p>
+			<p>JavaScript is a 'zero based language'.</p>
 
-<pre><code>noConflict: function( deep ) {
-    if ( window.$ === jQuery ) {
-        window.$ = _$;
-    }
+<p>This means that if you have 5 elements, JavaScript counts them as 0, 1, 2, 3, 4.</p>
 
-    if ( deep &amp;&amp; window.jQuery === jQuery ) {
-        window.jQuery = _jQuery;
-    }
+<p>So, if you wanted to select the first <code>li</code> in a <code>ul</code> you could do the following:</p>
 
-    return jQuery;
-}
+<pre><code>$('ul li').eq(0).css('color', 'red');
 </code></pre>
 
-<p>It's also worth noting the jQuery API site has just had a sweet update and searching for noConflict, you'll find:
-<a href="http://api.jquery.com/jQuery.noConflict/">http://api.jquery.com/jQuery.noConflict/</a></p>
+<p>This will search for the first <code>li</code> and apply a CSS colour value of red.</p>
 
-<p>There's a few times, especially in WordPress builds where I've seen people fix multiple JavaScript libraries by constantly defining jQuery:</p>
+<p>To select 'four' you'd do:</p>
 
-<pre><code>jQuery.noConflict();
-jQuery(function() {
-    // more code referencing jQuery
-});
+<pre><code>$('ul li').eq(3).css('color', 'green');
 </code></pre>
 
-<p>This can be improved using the following code to set <code>$</code> back as an alias <code>jQuery</code>.</p>
+<p>Notice here, you don't wrap the number in <code>'</code>.</p>
 
-<pre><code>jQuery.noConflict();
-// setting $ to alias to jQuery again
-jQuery(document).ready(function($){
-    $(function() {
-        // now you can continue to use $ as an alias to jQuery
-    });
-});
-</code></pre>
+<p>This is something that can take a while to get to grips with. In this instance the number added to the <code>.eq</code> method is an <code>integer</code>. Rather than passing a <code>selector</code> that jQuery can search the DOM for, here the <code>.eq</code> method requires an integer as a 'plain Number type'.</p>
 
-<p>Another alternative that's worth mentioning is using the following code which is essentially doing the same job.
-It is less descriptive, so not that great if you're a beginner trying to figure what is going on, but when you do, it's less code and widely used.</p>
-
-<pre><code>jQuery.noConflict();
-(function($) {
-    $(function() {
-        // now you can continue to use $ as an alias to jQuery
-    });
-})(jQuery);
-</code></pre>
-
-<p>More on <code>$(document).ready()</code> in <a href="/Day-005">Day 005</a>.</p>
+<p><a href="/demos/Day-021.html">Demo</a>.</p>
 
 		</div>
 	</div>
@@ -161,11 +133,11 @@ It is less descriptive, so not that great if you're a beginner trying to figure 
 	<div class="container">
 		<p class="pull-right">
 			
-			<a href="/Day-003" title="Previous Post: Day 003 - Give me some dollar!">&laquo; Previous Blog Post</a>
+			<a href="/Day-020" title="Previous Post: Day 020 - Find">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Day-005" title="Next Post: Day 005 - Let's get ready to jQuery">Next Blog Post &raquo;</a>
+			<a href="/Day-022" title="Next Post: Day 022 - Selecting with CSS">Next Blog Post &raquo;</a>
 			
 		</p>
 		<p>Page last generated on January 26, 2013</p>

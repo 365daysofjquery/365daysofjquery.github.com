@@ -4,11 +4,102 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-01-23T21:40:53+00:00</updated>
+	<updated>2013-01-26T15:41:13+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
 	</author>
+	
+	<entry>
+		<title>Day 024 - Arithmetic Operators</title>
+		<link href="http://365daysofjquery.github.com/Day-024"/>
+		<updated>2013-01-24T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-024</id>
+		<content type="html">&lt;p&gt;In &lt;a href=&quot;/Day-021&quot;&gt;Day-21&lt;/a&gt;, you used an &lt;code&gt;integer&lt;/code&gt; to select a specific &lt;code&gt;li&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;With an &lt;code&gt;integer&lt;/code&gt; it's possible to use 'Arithmetic Operators'.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var addition = 5 + 5;
+$('span.addition').text(addition);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the above code, you set a &lt;code&gt;variable&lt;/code&gt; (I'll cover this in more depth in a further day).&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;variable&lt;/code&gt; will be equal to the result of the 5 + 5. You then call jQuery, look for a &lt;code&gt;.span&lt;/code&gt; element in the DOM with a class of &lt;code&gt;addition&lt;/code&gt;. Then use the &lt;code&gt;.text&lt;/code&gt; method to add the variable answer to that element.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/demos/Day-022.html&quot;&gt;Demo&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Day 023 - Next and Previous</title>
+		<link href="http://365daysofjquery.github.com/Day-023"/>
+		<updated>2013-01-23T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-023</id>
+		<content type="html">&lt;p&gt;Here you'll learn how it's possible to use &lt;code&gt;.next&lt;/code&gt; and &lt;code&gt;.prev&lt;/code&gt; to select elements.&lt;/p&gt;
+
+&lt;p&gt;Take the following example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('ul li:first-child').next().css('color', 'crimson');
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here you look for the first &lt;code&gt;li&lt;/code&gt; element then using the &lt;code&gt;.next&lt;/code&gt; method, select the next element.&lt;/p&gt;
+
+&lt;p&gt;Similarly, it's possible to use &lt;code&gt;.prev&lt;/code&gt; to select the previous element.&lt;/p&gt;
+
+&lt;p&gt;Take a look at this &lt;a href=&quot;/demos/Day-023.html&quot;&gt;demo&lt;/a&gt; and inspect the elements for a closer look.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Day 022 - Selecting with CSS</title>
+		<link href="http://365daysofjquery.github.com/Day-022"/>
+		<updated>2013-01-22T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-022</id>
+		<content type="html">&lt;p&gt;This example shows how you can take advantage of using CSS3 selectors.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('ul li:first-child').css('color', 'crimson');
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Although it's possible to do this in JavaScript using:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('ul li:first').css('color', 'crimson');
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will be slower, however it will also work in older browsers such as IE6 if this is a requirement.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/demos/Day-022.html&quot;&gt;Demo&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Day 021 - Ground Zero</title>
+		<link href="http://365daysofjquery.github.com/Day-021"/>
+		<updated>2013-01-21T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-021</id>
+		<content type="html">&lt;p&gt;JavaScript is a 'zero based language'.&lt;/p&gt;
+
+&lt;p&gt;This means that if you have 5 elements, JavaScript counts them as 0, 1, 2, 3, 4.&lt;/p&gt;
+
+&lt;p&gt;So, if you wanted to select the first &lt;code&gt;li&lt;/code&gt; in a &lt;code&gt;ul&lt;/code&gt; you could do the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('ul li').eq(0).css('color', 'red');
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will search for the first &lt;code&gt;li&lt;/code&gt; and apply a CSS colour value of red.&lt;/p&gt;
+
+&lt;p&gt;To select 'four' you'd do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('ul li').eq(3).css('color', 'green');
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Notice here, you don't wrap the number in &lt;code&gt;'&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is something that can take a while to get to grips with. In this instance the number added to the &lt;code&gt;.eq&lt;/code&gt; method is an &lt;code&gt;integer&lt;/code&gt;. Rather than passing a &lt;code&gt;selector&lt;/code&gt; that jQuery can search the DOM for, here the &lt;code&gt;.eq&lt;/code&gt; method requires an integer as a 'plain Number type'.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/demos/Day-021.html&quot;&gt;Demo&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Day 020 - Find</title>

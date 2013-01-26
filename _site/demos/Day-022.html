@@ -1,0 +1,34 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Selecting with CSS</title>
+</head>
+<body>
+
+	<ul class="one">
+		<li>One</li>
+		<li>Two</li>
+		<li>Three</li>
+		<ul class="two">
+			<li>One</li>
+			<li>Two</li>
+			<li>Three</li>
+			<li>Four</li>
+			<li>Five</li>
+		</ul>
+		<li>Four</li>
+		<li>Five</li>
+	</ul>
+
+<!-- jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.9.0.min.js"><\/script>')</script>
+
+<script>
+
+	$('ul li:first-child').css('color', 'crimson');
+
+</script>
+
+</body>
+</html>

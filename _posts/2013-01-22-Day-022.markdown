@@ -1,0 +1,25 @@
+---
+layout: post
+title: Day 022 - Selecting with CSS
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 22
+published: true
+summary: Day 022
+---
+
+This example shows how you can take advantage of using CSS3 selectors.
+
+	$('ul li:first-child').css('color', 'crimson');
+
+
+Although it's possible to do this in JavaScript using:
+
+	$('ul li:first').css('color', 'crimson');
+
+
+This will be slower, however it will also work in older browsers such as IE6 if this is a requirement.
+
+[Demo](/demos/Day-022.html).
