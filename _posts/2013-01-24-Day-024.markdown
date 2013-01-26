@@ -22,4 +22,6 @@ In the above code, you set a `variable` (I'll cover this in more depth in a furt
 
 The `variable` will be equal to the result of the 5 + 5. You then call jQuery, look for a `.span` element in the DOM with a class of `addition`. Then use the `.text` method to add the variable answer to that element.
 
-[Demo](/demos/Day-022.html).
+Similarly it's possible to do subtraction, multiplication and division.
+
+Check out this [demo](/demos/Day-024.html) for more examples.

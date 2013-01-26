@@ -4,7 +4,7 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-01-26T15:41:13+00:00</updated>
+	<updated>2013-01-26T15:51:04+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
@@ -27,7 +27,9 @@ $('span.addition').text(addition);
 
 &lt;p&gt;The &lt;code&gt;variable&lt;/code&gt; will be equal to the result of the 5 + 5. You then call jQuery, look for a &lt;code&gt;.span&lt;/code&gt; element in the DOM with a class of &lt;code&gt;addition&lt;/code&gt;. Then use the &lt;code&gt;.text&lt;/code&gt; method to add the variable answer to that element.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/demos/Day-022.html&quot;&gt;Demo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Similarly it's possible to do subtraction, multiplication and division.&lt;/p&gt;
+
+&lt;p&gt;Check out this &lt;a href=&quot;/demos/Day-024.html&quot;&gt;demo&lt;/a&gt; for more examples.&lt;/p&gt;
 </content>
 	</entry>
 	
