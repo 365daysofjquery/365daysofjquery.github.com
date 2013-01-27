@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Day 005 - Let's get ready to jQuery</title>
+	<title>Day 025 - Arithmetic Operators (Part 2)</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="365 Days of jQuery">
@@ -72,7 +72,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 005 - Let's get ready to jQuery</h1>
+			<h1>Day 025 - Arithmetic Operators (Part 2)</h1>
 		</p>
 	</div>
 </div>
@@ -86,10 +86,10 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Day-004" title="Previous Post: Day 004 - No Conflict"> <i class="icon-chevron-left"></i>
+			<a href="/Day-024" title="Previous Post: Day 024 - Arithmetic Operators"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Day-006" title="Next Post: Day 006 - Tools - Writing"> <i class="icon-chevron-right"></i>
+			<a href="/Day-026" title="Next Post: Day 026 - Arithmetic Operators (Part 3)"> <i class="icon-chevron-right"></i>
 			</a>
 			
 		</p>
@@ -102,33 +102,28 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p>Let's head over to the H5BP <a href="https://github.com/h5bp/html5-boilerplate/blob/master/index.html">index.html</a>.</p>
+			<p>As well as standard addition, subtraction, multiplication and division, there's also a few others that are a bit more complicated.</p>
 
-<p>Notice all the script tags are at the bottom? So, why is this?</p>
+<p><code>%</code> known as 'modulus', will return the value remainder as an integer of the diving two operands.</p>
 
-<p>When a page is rendered you'll be able to view the source of that page. The code generated is the Document Object Model often referred to as the <code>DOM</code>.</p>
+<p>Eh!? You what?</p>
 
-<p>When you're loading a page this code is rendered from top to bottom. If we were to render the page in slo-mo and we had all the script tags at the top the DOM would have to effectively stop whilst it grabs all the code from the scripts. Whilst it's doing this the user will be looking at a blank screen, not good. So to improve the perceived page load time it's worth keeping scripts at the bottom.</p>
+<p>Yeah :p</p>
 
-<p>However, there may be instances where you need to include a script file at the top of the DOM or where other JavaScript code is being called from a difference source, but doing this will then mean that the script isn't aware of the code that's below it as the JavaScript has already been executed.</p>
+<p>Let's look at a few examples, it's actually a lot easier than it sounds.</p>
 
-<p>This is where <code>$(document).ready()</code> comes to use and will ensure that the code will only execute when the DOM is ready. The examples in <a href="/Day-004">Day 004</a> take advantage of <code>$(document).ready()</code> and also show an alternative way of writing this code.</p>
-
-<p>Here's a handy snippet using the alternative way for Sublime Text 2:</p>
-
-<pre><code># Self Invoking Anonymous Function Snippet for Sublime Text 2:
-
-&lt;snippet&gt;
-    &lt;content&gt;&lt;![CDATA[(function() \{
-    $0
-\})();]]&gt;&lt;/content&gt;
-    &lt;tabTrigger&gt;siaf&lt;/tabTrigger&gt;
-    &lt;scope&gt;source.js,source.js.embedded.html&lt;/scope&gt;
-    &lt;description&gt;Self Invoking Anonymous Function&lt;/description&gt;
-&lt;/snippet&gt;
+<pre><code>14 % 5 = 4
+20 % 5 = 0
+200 % 5 = 0
 </code></pre>
 
-<p>Not sure what Sublime Text 2 or a snippet is? Fear not! Head on over to <a href="/Day-006">Day 006</a>.</p>
+<p>5, goes into 10 two times, with a remainder of 4.</p>
+
+<p>5, goes into 20 four times, with a remainder of 0.</p>
+
+<p>5, goes into 200 forty times, with a remainder of 0.</p>
+
+<p>Check out this <a href="/demos/Day-025.html">demo</a> for more examples.</p>
 
 		</div>
 	</div>
@@ -139,11 +134,11 @@
 	<div class="container">
 		<p class="pull-right">
 			
-			<a href="/Day-004" title="Previous Post: Day 004 - No Conflict">&laquo; Previous Blog Post</a>
+			<a href="/Day-024" title="Previous Post: Day 024 - Arithmetic Operators">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Day-006" title="Next Post: Day 006 - Tools - Writing">Next Blog Post &raquo;</a>
+			<a href="/Day-026" title="Next Post: Day 026 - Arithmetic Operators (Part 3)">Next Blog Post &raquo;</a>
 			
 		</p>
 		<p>Page last generated on January 27, 2013</p>

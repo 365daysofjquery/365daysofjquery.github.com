@@ -1,0 +1,51 @@
+---
+layout: post
+title: Day 027 - Numbers and Strings
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 27
+published: true
+summary: Day 027
+---
+
+In [Day 021](/Day-021), we used the following code.
+
+	$('ul li').eq(3).css('color', 'green');
+
+
+And in the [demo for Day 025](/demos/Day-025.html).
+
+	console.log('14 % 5 = ' + 14 % 5);
+
+
+Notice what's going on with `'`. Wrapping a number in `'` will convert it to a `string`.
+
+Have look a at this [demo](/demos/Day-027.html).
+
+	var a = '10';
+	var b = 10;
+
+	$('p.concatenate').text(a + b);
+
+
+Here you're setting two variables:
+
+`a` as a `string`.
+
+`b` as a `number`.
+
+
+Then calling jQuery, searching the DOM for a `p` tag, with a class of `Number` and applying some text which is the value of `a + b`.
+
+In this instance as `a` is a `string` and `b` a `Number`, rather than the expected 10 + 10 value being added together to give us `20` it will concatenate the values together to give us `1010`.
+
+So, what if you did want to add these values rather than concatenating them? It's possible to convert the `string` to a `Number` by adding `Number` and wrapping the variable in `(` `)`.
+
+	$('p.addition').text(Number(a) + b);
+
+
+Call jQuery, search for a `p` tag with a class of `addition` add the text of the value of the variable `a` as a `Number`, now add that to the value of the variable `b` giving you `20`.
+
+Hey presto!

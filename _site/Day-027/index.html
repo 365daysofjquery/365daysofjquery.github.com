@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Day 005 - Let's get ready to jQuery</title>
+	<title>Day 027 - Numbers and Strings</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="365 Days of jQuery">
@@ -72,7 +72,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 005 - Let's get ready to jQuery</h1>
+			<h1>Day 027 - Numbers and Strings</h1>
 		</p>
 	</div>
 </div>
@@ -86,12 +86,9 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Day-004" title="Previous Post: Day 004 - No Conflict"> <i class="icon-chevron-left"></i>
+			<a href="/Day-026" title="Previous Post: Day 026 - Arithmetic Operators (Part 3)"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Day-006" title="Next Post: Day 006 - Tools - Writing"> <i class="icon-chevron-right"></i>
-			</a>
-			
 		</p>
 	</div>
 </div>
@@ -102,33 +99,44 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p>Let's head over to the H5BP <a href="https://github.com/h5bp/html5-boilerplate/blob/master/index.html">index.html</a>.</p>
+			<p>In <a href="/Day-021">Day 021</a>, we used the following code.</p>
 
-<p>Notice all the script tags are at the bottom? So, why is this?</p>
-
-<p>When a page is rendered you'll be able to view the source of that page. The code generated is the Document Object Model often referred to as the <code>DOM</code>.</p>
-
-<p>When you're loading a page this code is rendered from top to bottom. If we were to render the page in slo-mo and we had all the script tags at the top the DOM would have to effectively stop whilst it grabs all the code from the scripts. Whilst it's doing this the user will be looking at a blank screen, not good. So to improve the perceived page load time it's worth keeping scripts at the bottom.</p>
-
-<p>However, there may be instances where you need to include a script file at the top of the DOM or where other JavaScript code is being called from a difference source, but doing this will then mean that the script isn't aware of the code that's below it as the JavaScript has already been executed.</p>
-
-<p>This is where <code>$(document).ready()</code> comes to use and will ensure that the code will only execute when the DOM is ready. The examples in <a href="/Day-004">Day 004</a> take advantage of <code>$(document).ready()</code> and also show an alternative way of writing this code.</p>
-
-<p>Here's a handy snippet using the alternative way for Sublime Text 2:</p>
-
-<pre><code># Self Invoking Anonymous Function Snippet for Sublime Text 2:
-
-&lt;snippet&gt;
-    &lt;content&gt;&lt;![CDATA[(function() \{
-    $0
-\})();]]&gt;&lt;/content&gt;
-    &lt;tabTrigger&gt;siaf&lt;/tabTrigger&gt;
-    &lt;scope&gt;source.js,source.js.embedded.html&lt;/scope&gt;
-    &lt;description&gt;Self Invoking Anonymous Function&lt;/description&gt;
-&lt;/snippet&gt;
+<pre><code>$('ul li').eq(3).css('color', 'green');
 </code></pre>
 
-<p>Not sure what Sublime Text 2 or a snippet is? Fear not! Head on over to <a href="/Day-006">Day 006</a>.</p>
+<p>And in the <a href="/demos/Day-025.html">demo for Day 025</a>.</p>
+
+<pre><code>console.log('14 % 5 = ' + 14 % 5);
+</code></pre>
+
+<p>Notice what's going on with <code>'</code>. Wrapping a number in <code>'</code> will convert it to a <code>string</code>.</p>
+
+<p>Have look a at this <a href="/demos/Day-027.html">demo</a>.</p>
+
+<pre><code>var a = '10';
+var b = 10;
+
+$('p.concatenate').text(a + b);
+</code></pre>
+
+<p>Here you're setting two variables:</p>
+
+<p><code>a</code> as a <code>string</code>.</p>
+
+<p><code>b</code> as a <code>number</code>.</p>
+
+<p>Then calling jQuery, searching the DOM for a <code>p</code> tag, with a class of <code>Number</code> and applying some text which is the value of <code>a + b</code>.</p>
+
+<p>In this instance as <code>a</code> is a <code>string</code> and <code>b</code> a <code>Number</code>, rather than the expected 10 + 10 value being added together to give us <code>20</code> it will concatenate the values together to give us <code>1010</code>.</p>
+
+<p>So, what if you did want to add these values rather than concatenating them? It's possible to convert the <code>string</code> to a <code>Number</code> by adding <code>Number</code> and wrapping the variable in <code>(</code> <code>)</code>.</p>
+
+<pre><code>$('p.addition').text(Number(a) + b);
+</code></pre>
+
+<p>Call jQuery, search for a <code>p</code> tag with a class of <code>addition</code> add the text of the value of the variable <code>a</code> as a <code>Number</code>, now add that to the value of the variable <code>b</code> giving you <code>20</code>.</p>
+
+<p>Hey presto!</p>
 
 		</div>
 	</div>
@@ -139,12 +147,10 @@
 	<div class="container">
 		<p class="pull-right">
 			
-			<a href="/Day-004" title="Previous Post: Day 004 - No Conflict">&laquo; Previous Blog Post</a>
+			<a href="/Day-026" title="Previous Post: Day 026 - Arithmetic Operators (Part 3)">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Day-006" title="Next Post: Day 006 - Tools - Writing">Next Blog Post &raquo;</a>
-			
 		</p>
 		<p>Page last generated on January 27, 2013</p>
 	</div>

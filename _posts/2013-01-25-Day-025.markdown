@@ -1,0 +1,35 @@
+---
+layout: post
+title: Day 025 - Arithmetic Operators (Part 2)
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 25
+published: true
+summary: Day 025
+---
+
+As well as standard addition, subtraction, multiplication and division, there's also a few others that are a bit more complicated.
+
+`%` known as 'modulus', will return the value remainder as an integer of the diving two operands.
+
+Eh!? You what?
+
+Yeah :p
+
+Let's look at a few examples, it's actually a lot easier than it sounds.
+
+	14 % 5 = 4
+	20 % 5 = 0
+	200 % 5 = 0
+
+
+5, goes into 10 two times, with a remainder of 4.
+
+5, goes into 20 four times, with a remainder of 0.
+
+5, goes into 200 forty times, with a remainder of 0.
+
+
+Check out this [demo](/demos/Day-025.html) for more examples.

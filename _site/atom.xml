@@ -4,18 +4,123 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-01-26T15:51:04+00:00</updated>
+	<updated>2013-01-27T12:43:51+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
 	</author>
 	
 	<entry>
+		<title>Day 027 - Numbers and Strings</title>
+		<link href="http://365daysofjquery.github.com/Day-027"/>
+		<updated>2013-01-27T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-027</id>
+		<content type="html">&lt;p&gt;In &lt;a href=&quot;/Day-021&quot;&gt;Day 021&lt;/a&gt;, we used the following code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('ul li').eq(3).css('color', 'green');
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And in the &lt;a href=&quot;/demos/Day-025.html&quot;&gt;demo for Day 025&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;console.log('14 % 5 = ' + 14 % 5);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Notice what's going on with &lt;code&gt;'&lt;/code&gt;. Wrapping a number in &lt;code&gt;'&lt;/code&gt; will convert it to a &lt;code&gt;string&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Have look a at this &lt;a href=&quot;/demos/Day-027.html&quot;&gt;demo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var a = '10';
+var b = 10;
+
+$('p.concatenate').text(a + b);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here you're setting two variables:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;a&lt;/code&gt; as a &lt;code&gt;string&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;b&lt;/code&gt; as a &lt;code&gt;number&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then calling jQuery, searching the DOM for a &lt;code&gt;p&lt;/code&gt; tag, with a class of &lt;code&gt;Number&lt;/code&gt; and applying some text which is the value of &lt;code&gt;a + b&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;In this instance as &lt;code&gt;a&lt;/code&gt; is a &lt;code&gt;string&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt; a &lt;code&gt;Number&lt;/code&gt;, rather than the expected 10 + 10 value being added together to give us &lt;code&gt;20&lt;/code&gt; it will concatenate the values together to give us &lt;code&gt;1010&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;So, what if you did want to add these values rather than concatenating them? It's possible to convert the &lt;code&gt;string&lt;/code&gt; to a &lt;code&gt;Number&lt;/code&gt; by adding &lt;code&gt;Number&lt;/code&gt; and wrapping the variable in &lt;code&gt;(&lt;/code&gt; &lt;code&gt;)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('p.addition').text(Number(a) + b);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Call jQuery, search for a &lt;code&gt;p&lt;/code&gt; tag with a class of &lt;code&gt;addition&lt;/code&gt; add the text of the value of the variable &lt;code&gt;a&lt;/code&gt; as a &lt;code&gt;Number&lt;/code&gt;, now add that to the value of the variable &lt;code&gt;b&lt;/code&gt; giving you &lt;code&gt;20&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hey presto!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Day 026 - Arithmetic Operators (Part 3)</title>
+		<link href="http://365daysofjquery.github.com/Day-026"/>
+		<updated>2013-01-26T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-026</id>
+		<content type="html">&lt;p&gt;You can also increment and decrement values.&lt;/p&gt;
+
+&lt;p&gt;You can use either of these as a prefix or postfix operator.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var i = 10;
+
+var a = ++i;
+var b = i++;
+var c = --i;
+var d = i--;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Increment prefix:   &lt;code&gt;a&lt;/code&gt; would be equal to &lt;code&gt;11&lt;/code&gt; and &lt;code&gt;i&lt;/code&gt; equal to &lt;code&gt;11&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Increment postfix:  &lt;code&gt;b&lt;/code&gt; would be equal to &lt;code&gt;11&lt;/code&gt; and &lt;code&gt;i&lt;/code&gt; equal to &lt;code&gt;12&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Decrement prefix:   &lt;code&gt;c&lt;/code&gt; would be equal to &lt;code&gt;9&lt;/code&gt; and &lt;code&gt;i&lt;/code&gt; equal to &lt;code&gt;9&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Decrement postfix:  &lt;code&gt;d&lt;/code&gt; would be equal to &lt;code&gt;9&lt;/code&gt; and &lt;code&gt;i&lt;/code&gt; equal to &lt;code&gt;8&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/demos/Day-026.html&quot;&gt;Demo&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Day 025 - Arithmetic Operators (Part 2)</title>
+		<link href="http://365daysofjquery.github.com/Day-025"/>
+		<updated>2013-01-25T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-025</id>
+		<content type="html">&lt;p&gt;As well as standard addition, subtraction, multiplication and division, there's also a few others that are a bit more complicated.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;%&lt;/code&gt; known as 'modulus', will return the value remainder as an integer of the diving two operands.&lt;/p&gt;
+
+&lt;p&gt;Eh!? You what?&lt;/p&gt;
+
+&lt;p&gt;Yeah :p&lt;/p&gt;
+
+&lt;p&gt;Let's look at a few examples, it's actually a lot easier than it sounds.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;14 % 5 = 4
+20 % 5 = 0
+200 % 5 = 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;5, goes into 10 two times, with a remainder of 4.&lt;/p&gt;
+
+&lt;p&gt;5, goes into 20 four times, with a remainder of 0.&lt;/p&gt;
+
+&lt;p&gt;5, goes into 200 forty times, with a remainder of 0.&lt;/p&gt;
+
+&lt;p&gt;Check out this &lt;a href=&quot;/demos/Day-025.html&quot;&gt;demo&lt;/a&gt; for more examples.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>Day 024 - Arithmetic Operators</title>
 		<link href="http://365daysofjquery.github.com/Day-024"/>
 		<updated>2013-01-24T00:00:00+00:00</updated>
 		<id>http://365daysofjquery.github.com/Day-024</id>
-		<content type="html">&lt;p&gt;In &lt;a href=&quot;/Day-021&quot;&gt;Day-21&lt;/a&gt;, you used an &lt;code&gt;integer&lt;/code&gt; to select a specific &lt;code&gt;li&lt;/code&gt;.&lt;/p&gt;
+		<content type="html">&lt;p&gt;In &lt;a href=&quot;/Day-021&quot;&gt;Day 021&lt;/a&gt;, you used an &lt;code&gt;integer&lt;/code&gt; to select a specific &lt;code&gt;li&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;With an &lt;code&gt;integer&lt;/code&gt; it's possible to use 'Arithmetic Operators'.&lt;/p&gt;
 
@@ -97,7 +202,7 @@ $('span.addition').text(addition);
 
 &lt;p&gt;Notice here, you don't wrap the number in &lt;code&gt;'&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;This is something that can take a while to get to grips with. In this instance the number added to the &lt;code&gt;.eq&lt;/code&gt; method is an &lt;code&gt;integer&lt;/code&gt;. Rather than passing a &lt;code&gt;selector&lt;/code&gt; that jQuery can search the DOM for, here the &lt;code&gt;.eq&lt;/code&gt; method requires an integer as a 'plain Number type'.&lt;/p&gt;
+&lt;p&gt;This is something that can take a while to get to grips with. In this instance the number added to the &lt;code&gt;.eq&lt;/code&gt; method is an &lt;code&gt;integer&lt;/code&gt;. Rather than passing a &lt;code&gt;selector&lt;/code&gt; as a &lt;code&gt;string&lt;/code&gt; that jQuery can search the DOM for, here the &lt;code&gt;.eq&lt;/code&gt; method requires an integer as a 'plain Number type'. More about &lt;a href=&quot;/Day-027&quot;&gt;numbers and strings in Day 027&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/demos/Day-021.html&quot;&gt;Demo&lt;/a&gt;.&lt;/p&gt;
 </content>
@@ -108,7 +213,7 @@ $('span.addition').text(addition);
 		<link href="http://365daysofjquery.github.com/Day-020"/>
 		<updated>2013-01-20T00:00:00+00:00</updated>
 		<id>http://365daysofjquery.github.com/Day-020</id>
-		<content type="html">&lt;p&gt;In &lt;a href=&quot;/Day-018&quot;&gt;Day-18&lt;/a&gt;, you looked at how to select children, but what if you wanted to select all specific elements?&lt;/p&gt;
+		<content type="html">&lt;p&gt;In &lt;a href=&quot;/Day-018&quot;&gt;Day 018&lt;/a&gt;, you looked at how to select children, but what if you wanted to select all specific elements?&lt;/p&gt;
 
 &lt;p&gt;In this instance the &lt;code&gt;.find&lt;/code&gt; method comes in handy.&lt;/p&gt;
 

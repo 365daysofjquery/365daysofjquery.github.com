@@ -10,7 +10,7 @@ published: true
 summary: Day 024
 ---
 
-In [Day-21](/Day-021), you used an `integer` to select a specific `li`.
+In [Day 021](/Day-021), you used an `integer` to select a specific `li`.
 
 With an `integer` it's possible to use 'Arithmetic Operators'.
 
