@@ -1,0 +1,24 @@
+---
+layout: post
+title: Day 030 - Operand, Operator and Operation
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 30
+published: true
+summary: Day 030
+---
+
+Here's a simple arithmetic expression:
+
+	2 + 3 = 5
+
+
+In this instance `2` is one of the inputs (quantities), this is an `operand`.
+
+The `+` is an addition `operator`, followed by another `operand` 3.
+
+The `operand`, `operator` and final `operand` make up an `operation`.
+
+The result, also known as sum or value of the `operation` is 5.

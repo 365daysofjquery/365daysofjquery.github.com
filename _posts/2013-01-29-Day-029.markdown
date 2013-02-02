@@ -1,0 +1,19 @@
+---
+layout: post
+title: Day 029 - Boolean
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 29
+published: true
+summary: Day 029
+---
+
+Simply put a `boolean` returns either a `true` or `false` value.
+
+You'll find it very handy if you want to action code dependent on whether a value is `true` or `false`.
+
+For example if you had a site where users could log in, you could write some conditional code to check if the user was logged in.
+
+If the statement came back `true` you could display their name, if it came back `false`, you could prompt them to log in or sign up.

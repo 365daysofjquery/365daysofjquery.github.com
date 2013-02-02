@@ -1,0 +1,42 @@
+---
+layout: post
+title: Day 028 - Comparison Operators
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 28
+published: true
+summary: Day 028
+---
+
+As well as ['Arithmetic Operators'](/Day-024), there's 'Comparison Operators'.
+
+As the name suggests, these are used to make comparisons.
+
+Here's some examples:
+
+	'Equal' ==
+
+	'Not Equal' !=
+
+	'Strict Equal' ===
+
+	'Strict Not Equal' !==
+
+	'Greater Than' >
+
+	'Greater Than or Equal' >=
+
+	'Less Than' <
+
+	'Less Than or Equal' <=
+
+This [demo](/demos/Day-028.html) shows them in action.
+
+Pay careful attention to the difference between using 'Strict'.
+
+	1 == '1' true
+	1 === '1' false
+
+Here `==` using a number and a string will return `true` whilst using `===` will return false.

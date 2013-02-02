@@ -4,11 +4,86 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-01-27T12:43:51+00:00</updated>
+	<updated>2013-02-02T11:52:37+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
 	</author>
+	
+	<entry>
+		<title>Day 030 - Operand, Operator and Operation</title>
+		<link href="http://365daysofjquery.github.com/Day-030"/>
+		<updated>2013-01-30T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-030</id>
+		<content type="html">&lt;p&gt;Here's a simple arithmetic expression:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;2 + 3 = 5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this instance &lt;code&gt;2&lt;/code&gt; is one of the inputs (quantities), this is an &lt;code&gt;operand&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;+&lt;/code&gt; is an addition &lt;code&gt;operator&lt;/code&gt;, followed by another &lt;code&gt;operand&lt;/code&gt; 3.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;operand&lt;/code&gt;, &lt;code&gt;operator&lt;/code&gt; and final &lt;code&gt;operand&lt;/code&gt; make up an &lt;code&gt;operation&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The result, also known as sum or value of the &lt;code&gt;operation&lt;/code&gt; is 5.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Day 029 - Boolean</title>
+		<link href="http://365daysofjquery.github.com/Day-029"/>
+		<updated>2013-01-29T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-029</id>
+		<content type="html">&lt;p&gt;Simply put a &lt;code&gt;boolean&lt;/code&gt; returns either a &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt; value.&lt;/p&gt;
+
+&lt;p&gt;You'll find it very handy if you want to action code dependent on whether a value is &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For example if you had a site where users could log in, you could write some conditional code to check if the user was logged in.&lt;/p&gt;
+
+&lt;p&gt;If the statement came back &lt;code&gt;true&lt;/code&gt; you could display their name, if it came back &lt;code&gt;false&lt;/code&gt;, you could prompt them to log in or sign up.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Day 028 - Comparison Operators</title>
+		<link href="http://365daysofjquery.github.com/Day-028"/>
+		<updated>2013-01-28T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-028</id>
+		<content type="html">&lt;p&gt;As well as &lt;a href=&quot;/Day-024&quot;&gt;'Arithmetic Operators'&lt;/a&gt;, there's 'Comparison Operators'.&lt;/p&gt;
+
+&lt;p&gt;As the name suggests, these are used to make comparisons.&lt;/p&gt;
+
+&lt;p&gt;Here's some examples:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;'Equal' ==
+
+'Not Equal' !=
+
+'Strict Equal' ===
+
+'Strict Not Equal' !==
+
+'Greater Than' &amp;gt;
+
+'Greater Than or Equal' &amp;gt;=
+
+'Less Than' &amp;lt;
+
+'Less Than or Equal' &amp;lt;=
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This &lt;a href=&quot;/demos/Day-028.html&quot;&gt;demo&lt;/a&gt; shows them in action.&lt;/p&gt;
+
+&lt;p&gt;Pay careful attention to the difference between using 'Strict'.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1 == '1' true
+1 === '1' false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here &lt;code&gt;==&lt;/code&gt; using a number and a string will return &lt;code&gt;true&lt;/code&gt; whilst using &lt;code&gt;===&lt;/code&gt; will return false.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Day 027 - Numbers and Strings</title>

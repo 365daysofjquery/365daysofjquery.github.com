@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Day 011 - Recap</title>
+	<title>Day 028 - Comparison Operators</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="365 Days of jQuery">
@@ -72,7 +72,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 011 - Recap</h1>
+			<h1>Day 028 - Comparison Operators</h1>
 		</p>
 	</div>
 </div>
@@ -86,10 +86,10 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Day-010" title="Previous Post: Day 010 - Tools - Libraries"> <i class="icon-chevron-left"></i>
+			<a href="/Day-027" title="Previous Post: Day 027 - Numbers and Strings"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Day-012" title="Next Post: Day 012 - Manipulating CSS"> <i class="icon-chevron-right"></i>
+			<a href="/Day-029" title="Next Post: Day 029 - Boolean"> <i class="icon-chevron-right"></i>
 			</a>
 			
 		</p>
@@ -102,13 +102,38 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p>Right! You still with me?!</p>
+			<p>As well as <a href="/Day-024">'Arithmetic Operators'</a>, there's 'Comparison Operators'.</p>
 
-<p>Let's have a quick recap to remind yourself (myself) what you've done so far.</p>
+<p>As the name suggests, these are used to make comparisons.</p>
 
-<p>So now, you should know how to download jQuery, how Google's CDN can help load jQuery, the difference between using <code>$</code> and <code>jQuery</code>, how to avoid conflicts with other libraries and have some idea of tools that can help you out.</p>
+<p>Here's some examples:</p>
 
-<p>Ok, so now you've covered the basics, now let's get stuck into some code in <a href="/Day-012">Day 012</a>.</p>
+<pre><code>'Equal' ==
+
+'Not Equal' !=
+
+'Strict Equal' ===
+
+'Strict Not Equal' !==
+
+'Greater Than' &gt;
+
+'Greater Than or Equal' &gt;=
+
+'Less Than' &lt;
+
+'Less Than or Equal' &lt;=
+</code></pre>
+
+<p>This <a href="/demos/Day-028.html">demo</a> shows them in action.</p>
+
+<p>Pay careful attention to the difference between using 'Strict'.</p>
+
+<pre><code>1 == '1' true
+1 === '1' false
+</code></pre>
+
+<p>Here <code>==</code> using a number and a string will return <code>true</code> whilst using <code>===</code> will return false.</p>
 
 		</div>
 	</div>
@@ -119,11 +144,11 @@
 	<div class="container">
 		<p class="pull-right">
 			
-			<a href="/Day-010" title="Previous Post: Day 010 - Tools - Libraries">&laquo; Previous Blog Post</a>
+			<a href="/Day-027" title="Previous Post: Day 027 - Numbers and Strings">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Day-012" title="Next Post: Day 012 - Manipulating CSS">Next Blog Post &raquo;</a>
+			<a href="/Day-029" title="Next Post: Day 029 - Boolean">Next Blog Post &raquo;</a>
 			
 		</p>
 		<p>Page last generated on February  2, 2013</p>
