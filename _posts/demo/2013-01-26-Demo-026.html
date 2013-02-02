@@ -1,0 +1,28 @@
+---
+layout: demo
+title: Demo 026 - Arithmetic Operators (Part 3)
+category: Demo
+tags: jQuery
+year: 2013
+month: 01
+day: 26
+published: true
+summary: Demo 026
+---
+
+<div class="maths"></div>
+
+<script>
+
+	var i = 10;
+
+		a = ++i;
+		b = i++;
+		c = --i;
+		d = i--;
+
+	console.log(a,b,c,d,i);
+
+	$('.maths').html('<p> a = ' + a + ', b = ' + b + ', c = ' + c + ', d = ' + d + ', i = ' + i + '</p>');
+
+</script>

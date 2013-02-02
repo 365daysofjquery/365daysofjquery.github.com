@@ -6,6 +6,34 @@ body {
 	background: #fff;
 }
 
+/*	Demos
+-------------------------------------------------- */
+/* darkgrey    = #101010 */
+/* medgrey     = #333333 */
+/* lightgrey   = #999999 */
+/* green       = #84da52 */
+/* orange      = #fd963f */
+/* blue        = #66daec */
+/* purple      = #977ff7 */
+/* pink        = #f51b47 */
+
+.demo {
+	background: #101010;
+}
+
+.demo h1 {
+	color: #84da52;
+}
+
+.demo p {
+	color: #999;
+}
+
+.demo hr {
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+}
+
 /*	Larger arrow buttons
 -------------------------------------------------- */
 .icon-chevron-left,

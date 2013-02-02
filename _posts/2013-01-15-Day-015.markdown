@@ -17,4 +17,4 @@ Here, we call jQuery, search for a h1 tag and add some text into it.
 	$('h1').text('here is some text');
 
 
-[Demo](/demos/Day-015.html)
+[Demo](/Demo-015)

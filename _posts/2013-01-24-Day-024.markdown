@@ -24,4 +24,4 @@ The `variable` will be equal to the result of the 5 + 5. You then call jQuery, l
 
 Similarly it's possible to do subtraction, multiplication and division.
 
-Check out this [demo](/demos/Day-024.html) for more examples.
+Check out this [demo](/Demo-024.html) for more examples.

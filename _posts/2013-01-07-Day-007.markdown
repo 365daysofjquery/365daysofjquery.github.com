@@ -12,7 +12,7 @@ summary: Day 007
 
 Ok, so now you've gone over some of the basics, let's get a bit of code working.
 
-Copy the following code or view the [demo](/demos/Day-007.html):
+Copy the following code or view the [demo](/Demo-007):
 
 	<html>
 	<head>

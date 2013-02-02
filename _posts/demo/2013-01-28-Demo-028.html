@@ -1,0 +1,78 @@
+---
+layout: demo
+title: Demo 028 - Comparison Operators
+category: Demo
+tags: jQuery
+year: 2013
+month: 01
+day: 28
+published: true
+summary: Demo 028
+---
+
+<p>'Equal' ==</p>
+<p>'Not Equal' !=</p>
+<p>'Strict Equal' ===</p>
+<p>'Strict Not Equal' !==</p>
+<p>'Greater Than' &gt;</p>
+<p>'Greater Than or Equal' &gt;=</p>
+<p>'Less Than' &lt;</p>
+<p>'Less Than or Equal' &lt;=</p>
+
+<span></span>
+
+<script>
+
+	var oneNumber	= 1 == 1;		// true
+	var oneString	= 1 == '1';		// true
+
+	var twoNumber	= 1 != 1;		// false
+	var twoString	= 1 != '1';		// false
+
+	var threeNumber	= 1 === 1;		// true
+	var threeString	= 1 === '1';	// true
+
+	var fourNumber	= 1 !== 1;		// false
+	var fourString	= 1 !== '1';	// false
+
+	var fiveNumber	= 1 < 1;		// false
+	var fiveString	= 1 < '1';		// false
+
+	var sixNumber	= 1 <= 1;		// true
+	var sixString	= 1 <= '1';		// true
+
+	var sevenNumber	= 1 > 1;		// false
+	var sevenString	= 1 > '1';		// false
+
+	var eightNumber	= 1 >= 1;		// true
+	var eightString	= 1 >= '1';		// true
+
+	$('span').html(
+
+		'1 == 1' + ' ' + oneNumber + '<br/>' +
+		'1 == \'1\'' + ' ' + oneString + '<br/>' +
+
+		'1 != 1' + ' ' + twoNumber + '<br/>' +
+		'1 != \'1\'' + ' ' + twoString + '<br/>' +
+
+		'1 === 1' + ' ' + threeNumber + '<br/>' +
+		'1 === \'1\'' + ' ' + threeString + '<br/>' +
+
+		'1 !== 1' + ' ' + fourNumber + '<br/>' +
+		'1 !== \'1\'' + ' ' + fourString + '<br/>' +
+
+		'1 < 1' + ' ' + fiveNumber + '<br/>' +
+		'1 < \'1\'' + ' ' + fiveString + '<br/>' +
+
+		'1 <= 1' + ' ' + sixNumber + '<br/>' +
+		'1 <= \'1\'' + ' ' + sixString + '<br/>' +
+
+		'1 > 1' + ' ' + sevenNumber + '<br/>' +
+		'1 > \'1\'' + ' ' + sevenString + '<br/>' +
+
+		'1 >= 1' + ' ' + eightNumber + '<br/>' +
+		'1 >= \'1\'' + ' ' + eightString
+
+	)
+
+</script>

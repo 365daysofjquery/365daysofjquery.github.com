@@ -1,0 +1,52 @@
+---
+layout: demo
+title: Demo 020 - Find
+category: Demo
+tags: jQuery
+year: 2013
+month: 01
+day: 20
+published: true
+summary: Demo 020
+---
+
+<h2>Children</h2>
+
+<ul class="one">
+	<li>One</li>
+	<li>Two</li>
+	<li>Three</li>
+	<ul class="two">
+		<li>One</li>
+		<li>Two</li>
+		<li>Three</li>
+		<li>Four</li>
+		<li>Five</li>
+	</ul>
+	<li>Four</li>
+	<li>Five</li>
+</ul>
+
+<h2>Find</h2>
+
+<ul class="three">
+	<li>One</li>
+	<li>Two</li>
+	<li>Three</li>
+	<ul class="four">
+		<li>One</li>
+		<li>Two</li>
+		<li>Three</li>
+		<li>Four</li>
+		<li>Five</li>
+	</ul>
+	<li>Four</li>
+	<li>Five</li>
+</ul>
+
+<script>
+
+	$('ul.one').children('li').css('color', 'blue');
+	$('ul.three').find('li').css('color', 'fuchsia');
+
+</script>

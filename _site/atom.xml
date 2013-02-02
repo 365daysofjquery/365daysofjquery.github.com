@@ -4,7 +4,7 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-02-02T11:52:37+00:00</updated>
+	<updated>2013-02-02T15:27:41+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
@@ -46,6 +46,79 @@
 	</entry>
 	
 	<entry>
+		<title>Demo 028 - Comparison Operators</title>
+		<link href="http://365daysofjquery.github.com/Demo-028"/>
+		<updated>2013-01-28T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-028</id>
+		<content type="html">&lt;p&gt;'Equal' ==&lt;/p&gt;
+&lt;p&gt;'Not Equal' !=&lt;/p&gt;
+&lt;p&gt;'Strict Equal' ===&lt;/p&gt;
+&lt;p&gt;'Strict Not Equal' !==&lt;/p&gt;
+&lt;p&gt;'Greater Than' &amp;gt;&lt;/p&gt;
+&lt;p&gt;'Greater Than or Equal' &amp;gt;=&lt;/p&gt;
+&lt;p&gt;'Less Than' &amp;lt;&lt;/p&gt;
+&lt;p&gt;'Less Than or Equal' &amp;lt;=&lt;/p&gt;
+
+&lt;span&gt;&lt;/span&gt;
+
+&lt;script&gt;
+
+	var oneNumber	= 1 == 1;		// true
+	var oneString	= 1 == '1';		// true
+
+	var twoNumber	= 1 != 1;		// false
+	var twoString	= 1 != '1';		// false
+
+	var threeNumber	= 1 === 1;		// true
+	var threeString	= 1 === '1';	// true
+
+	var fourNumber	= 1 !== 1;		// false
+	var fourString	= 1 !== '1';	// false
+
+	var fiveNumber	= 1 &lt; 1;		// false
+	var fiveString	= 1 &lt; '1';		// false
+
+	var sixNumber	= 1 &lt;= 1;		// true
+	var sixString	= 1 &lt;= '1';		// true
+
+	var sevenNumber	= 1 &gt; 1;		// false
+	var sevenString	= 1 &gt; '1';		// false
+
+	var eightNumber	= 1 &gt;= 1;		// true
+	var eightString	= 1 &gt;= '1';		// true
+
+	$('span').html(
+
+		'1 == 1' + ' ' + oneNumber + '&lt;br/&gt;' +
+		'1 == \'1\'' + ' ' + oneString + '&lt;br/&gt;' +
+
+		'1 != 1' + ' ' + twoNumber + '&lt;br/&gt;' +
+		'1 != \'1\'' + ' ' + twoString + '&lt;br/&gt;' +
+
+		'1 === 1' + ' ' + threeNumber + '&lt;br/&gt;' +
+		'1 === \'1\'' + ' ' + threeString + '&lt;br/&gt;' +
+
+		'1 !== 1' + ' ' + fourNumber + '&lt;br/&gt;' +
+		'1 !== \'1\'' + ' ' + fourString + '&lt;br/&gt;' +
+
+		'1 &lt; 1' + ' ' + fiveNumber + '&lt;br/&gt;' +
+		'1 &lt; \'1\'' + ' ' + fiveString + '&lt;br/&gt;' +
+
+		'1 &lt;= 1' + ' ' + sixNumber + '&lt;br/&gt;' +
+		'1 &lt;= \'1\'' + ' ' + sixString + '&lt;br/&gt;' +
+
+		'1 &gt; 1' + ' ' + sevenNumber + '&lt;br/&gt;' +
+		'1 &gt; \'1\'' + ' ' + sevenString + '&lt;br/&gt;' +
+
+		'1 &gt;= 1' + ' ' + eightNumber + '&lt;br/&gt;' +
+		'1 &gt;= \'1\'' + ' ' + eightString
+
+	)
+
+&lt;/script&gt;</content>
+	</entry>
+	
+	<entry>
 		<title>Day 028 - Comparison Operators</title>
 		<link href="http://365daysofjquery.github.com/Day-028"/>
 		<updated>2013-01-28T00:00:00+00:00</updated>
@@ -73,7 +146,7 @@
 'Less Than or Equal' &amp;lt;=
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;This &lt;a href=&quot;/demos/Day-028.html&quot;&gt;demo&lt;/a&gt; shows them in action.&lt;/p&gt;
+&lt;p&gt;This &lt;a href=&quot;/Demo-028.html&quot;&gt;demo&lt;/a&gt; shows them in action.&lt;/p&gt;
 
 &lt;p&gt;Pay careful attention to the difference between using 'Strict'.&lt;/p&gt;
 
@@ -86,6 +159,29 @@
 	</entry>
 	
 	<entry>
+		<title>Demo 027 - Numbers and Strings</title>
+		<link href="http://365daysofjquery.github.com/Demo-027"/>
+		<updated>2013-01-27T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-027</id>
+		<content type="html">&lt;h2&gt;Concatenate&lt;/h2&gt;
+&lt;p class=&quot;concatenate&quot;&gt;&lt;/p&gt;
+
+&lt;h2&gt;Addition&lt;/h2&gt;
+&lt;p class=&quot;addition&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+
+	var a = '10';
+	var b = 10;
+
+	$('p.concatenate').text(a + b);
+
+	$('p.addition').text(Number(a) + b);
+
+&lt;/script&gt;</content>
+	</entry>
+	
+	<entry>
 		<title>Day 027 - Numbers and Strings</title>
 		<link href="http://365daysofjquery.github.com/Day-027"/>
 		<updated>2013-01-27T00:00:00+00:00</updated>
@@ -95,14 +191,14 @@
 &lt;pre&gt;&lt;code&gt;$('ul li').eq(3).css('color', 'green');
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;And in the &lt;a href=&quot;/demos/Day-025.html&quot;&gt;demo for Day 025&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And in the &lt;a href=&quot;/Demo-025&quot;&gt;demo for Day 025&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;console.log('14 % 5 = ' + 14 % 5);
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Notice what's going on with &lt;code&gt;'&lt;/code&gt;. Wrapping a number in &lt;code&gt;'&lt;/code&gt; will convert it to a &lt;code&gt;string&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Have look a at this &lt;a href=&quot;/demos/Day-027.html&quot;&gt;demo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Have look a at this &lt;a href=&quot;/Demo-027&quot;&gt;demo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;var a = '10';
 var b = 10;
@@ -132,6 +228,29 @@ $('p.concatenate').text(a + b);
 	</entry>
 	
 	<entry>
+		<title>Demo 026 - Arithmetic Operators (Part 3)</title>
+		<link href="http://365daysofjquery.github.com/Demo-026"/>
+		<updated>2013-01-26T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-026</id>
+		<content type="html">&lt;div class=&quot;maths&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+
+	var i = 10;
+
+		a = ++i;
+		b = i++;
+		c = --i;
+		d = i--;
+
+	console.log(a,b,c,d,i);
+
+	$('.maths').html('&lt;p&gt; a = ' + a + ', b = ' + b + ', c = ' + c + ', d = ' + d + ', i = ' + i + '&lt;/p&gt;');
+
+&lt;/script&gt;</content>
+	</entry>
+	
+	<entry>
 		<title>Day 026 - Arithmetic Operators (Part 3)</title>
 		<link href="http://365daysofjquery.github.com/Day-026"/>
 		<updated>2013-01-26T00:00:00+00:00</updated>
@@ -156,8 +275,36 @@ var d = i--;
 
 &lt;p&gt;Decrement postfix:  &lt;code&gt;d&lt;/code&gt; would be equal to &lt;code&gt;9&lt;/code&gt; and &lt;code&gt;i&lt;/code&gt; equal to &lt;code&gt;8&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/demos/Day-026.html&quot;&gt;Demo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/Demo-026&quot;&gt;Demo&lt;/a&gt;.&lt;/p&gt;
 </content>
+	</entry>
+	
+	<entry>
+		<title>Demo 025 - Arithmetic Operators (Part 2)</title>
+		<link href="http://365daysofjquery.github.com/Demo-025"/>
+		<updated>2013-01-25T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-025</id>
+		<content type="html">&lt;p&gt;14 % 5 = &lt;span class=&quot;modulusOne&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;20 % 5 = &lt;span class=&quot;modulusTwo&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;200 % 5 = &lt;span class=&quot;modulusThree&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;script&gt;
+
+	var modulusOne = 14 % 5;
+	console.log('14 % 5 = ' + 14 % 5);
+	$('span.modulusOne').text(modulusOne);
+
+	var modulusTwo = 20 % 5;
+	console.log('20 % 5 = ' + 20 % 5);
+	$('span.modulusTwo').text(modulusTwo);
+
+	var modulusThree = 200 % 5;
+	console.log('200 % 5 = ' + 200 % 5);
+	$('span.modulusThree').text(modulusThree);
+
+&lt;/script&gt;</content>
 	</entry>
 	
 	<entry>
@@ -186,8 +333,38 @@ var d = i--;
 
 &lt;p&gt;5, goes into 200 forty times, with a remainder of 0.&lt;/p&gt;
 
-&lt;p&gt;Check out this &lt;a href=&quot;/demos/Day-025.html&quot;&gt;demo&lt;/a&gt; for more examples.&lt;/p&gt;
+&lt;p&gt;Check out this &lt;a href=&quot;/Demo-025&quot;&gt;demo&lt;/a&gt; for more examples.&lt;/p&gt;
 </content>
+	</entry>
+	
+	<entry>
+		<title>Demo 024 - Arithmetic Operators</title>
+		<link href="http://365daysofjquery.github.com/Demo-024"/>
+		<updated>2013-01-24T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-024</id>
+		<content type="html">&lt;p&gt;5 + 5 = &lt;span class=&quot;addition&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;5 - 5 = &lt;span class=&quot;subtraction&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;5 * 5 = &lt;span class=&quot;multiplication&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;5 / 5 = &lt;span class=&quot;division&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;script&gt;
+
+	var addition = 5 + 5;
+	$('span.addition').text(addition);
+
+	var subtraction = 5 - 5;
+	$('span.subtraction').text(subtraction);
+
+	var multiplication = 5 * 5;
+	$('span.multiplication').text(multiplication);
+
+	var division = 5 / 5;
+	$('span.division').text(division);
+
+&lt;/script&gt;</content>
 	</entry>
 	
 	<entry>
@@ -209,8 +386,37 @@ $('span.addition').text(addition);
 
 &lt;p&gt;Similarly it's possible to do subtraction, multiplication and division.&lt;/p&gt;
 
-&lt;p&gt;Check out this &lt;a href=&quot;/demos/Day-024.html&quot;&gt;demo&lt;/a&gt; for more examples.&lt;/p&gt;
+&lt;p&gt;Check out this &lt;a href=&quot;/Demo-024.html&quot;&gt;demo&lt;/a&gt; for more examples.&lt;/p&gt;
 </content>
+	</entry>
+	
+	<entry>
+		<title>Demo 023 - Next and Previous</title>
+		<link href="http://365daysofjquery.github.com/Demo-023"/>
+		<updated>2013-01-23T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-023</id>
+		<content type="html">&lt;ul class=&quot;one&quot;&gt;
+	&lt;li&gt;One&lt;/li&gt;
+	&lt;li&gt;Two&lt;/li&gt;
+	&lt;li&gt;Three&lt;/li&gt;
+	&lt;ul class=&quot;two&quot;&gt;
+		&lt;li&gt;One&lt;/li&gt;
+		&lt;li&gt;Two&lt;/li&gt;
+		&lt;li&gt;Three&lt;/li&gt;
+		&lt;li&gt;Four&lt;/li&gt;
+		&lt;li&gt;Five&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;li&gt;Four&lt;/li&gt;
+	&lt;li&gt;Five&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script&gt;
+
+	$('ul li:first-child').next().css('color', 'crimson');
+
+	$('ul li:last-child').prev().css('color', 'blue');
+
+&lt;/script&gt;</content>
 	</entry>
 	
 	<entry>
@@ -229,8 +435,35 @@ $('span.addition').text(addition);
 
 &lt;p&gt;Similarly, it's possible to use &lt;code&gt;.prev&lt;/code&gt; to select the previous element.&lt;/p&gt;
 
-&lt;p&gt;Take a look at this &lt;a href=&quot;/demos/Day-023.html&quot;&gt;demo&lt;/a&gt; and inspect the elements for a closer look.&lt;/p&gt;
+&lt;p&gt;Take a look at this &lt;a href=&quot;/Demo-023&quot;&gt;demo&lt;/a&gt; and inspect the elements for a closer look.&lt;/p&gt;
 </content>
+	</entry>
+	
+	<entry>
+		<title>Demo 022 - Selecting with CSS</title>
+		<link href="http://365daysofjquery.github.com/Demo-022"/>
+		<updated>2013-01-22T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-022</id>
+		<content type="html">&lt;ul class=&quot;one&quot;&gt;
+	&lt;li&gt;One&lt;/li&gt;
+	&lt;li&gt;Two&lt;/li&gt;
+	&lt;li&gt;Three&lt;/li&gt;
+	&lt;ul class=&quot;two&quot;&gt;
+		&lt;li&gt;One&lt;/li&gt;
+		&lt;li&gt;Two&lt;/li&gt;
+		&lt;li&gt;Three&lt;/li&gt;
+		&lt;li&gt;Four&lt;/li&gt;
+		&lt;li&gt;Five&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;li&gt;Four&lt;/li&gt;
+	&lt;li&gt;Five&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script&gt;
+
+	$('ul li:first-child').css('color', 'crimson');
+
+&lt;/script&gt;</content>
 	</entry>
 	
 	<entry>
@@ -250,8 +483,29 @@ $('span.addition').text(addition);
 
 &lt;p&gt;This will be slower, however it will also work in older browsers such as IE6 if this is a requirement.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/demos/Day-022.html&quot;&gt;Demo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/Demo-022&quot;&gt;Demo&lt;/a&gt;.&lt;/p&gt;
 </content>
+	</entry>
+	
+	<entry>
+		<title>Demo 021 - Ground Zero</title>
+		<link href="http://365daysofjquery.github.com/Demo-021"/>
+		<updated>2013-01-21T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-021</id>
+		<content type="html">&lt;ul&gt;
+	&lt;li&gt;One&lt;/li&gt;
+	&lt;li&gt;Two&lt;/li&gt;
+	&lt;li&gt;Three&lt;/li&gt;
+	&lt;li&gt;Four&lt;/li&gt;
+	&lt;li&gt;Five&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script&gt;
+
+	$('ul li').eq(0).css('color', 'red');
+	$('ul li').eq(3).css('color', 'green');
+
+&lt;/script&gt;</content>
 	</entry>
 	
 	<entry>
@@ -279,8 +533,55 @@ $('span.addition').text(addition);
 
 &lt;p&gt;This is something that can take a while to get to grips with. In this instance the number added to the &lt;code&gt;.eq&lt;/code&gt; method is an &lt;code&gt;integer&lt;/code&gt;. Rather than passing a &lt;code&gt;selector&lt;/code&gt; as a &lt;code&gt;string&lt;/code&gt; that jQuery can search the DOM for, here the &lt;code&gt;.eq&lt;/code&gt; method requires an integer as a 'plain Number type'. More about &lt;a href=&quot;/Day-027&quot;&gt;numbers and strings in Day 027&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/demos/Day-021.html&quot;&gt;Demo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/Demo-021&quot;&gt;Demo&lt;/a&gt;.&lt;/p&gt;
 </content>
+	</entry>
+	
+	<entry>
+		<title>Demo 020 - Find</title>
+		<link href="http://365daysofjquery.github.com/Demo-020"/>
+		<updated>2013-01-20T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-020</id>
+		<content type="html">&lt;h2&gt;Children&lt;/h2&gt;
+
+&lt;ul class=&quot;one&quot;&gt;
+	&lt;li&gt;One&lt;/li&gt;
+	&lt;li&gt;Two&lt;/li&gt;
+	&lt;li&gt;Three&lt;/li&gt;
+	&lt;ul class=&quot;two&quot;&gt;
+		&lt;li&gt;One&lt;/li&gt;
+		&lt;li&gt;Two&lt;/li&gt;
+		&lt;li&gt;Three&lt;/li&gt;
+		&lt;li&gt;Four&lt;/li&gt;
+		&lt;li&gt;Five&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;li&gt;Four&lt;/li&gt;
+	&lt;li&gt;Five&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Find&lt;/h2&gt;
+
+&lt;ul class=&quot;three&quot;&gt;
+	&lt;li&gt;One&lt;/li&gt;
+	&lt;li&gt;Two&lt;/li&gt;
+	&lt;li&gt;Three&lt;/li&gt;
+	&lt;ul class=&quot;four&quot;&gt;
+		&lt;li&gt;One&lt;/li&gt;
+		&lt;li&gt;Two&lt;/li&gt;
+		&lt;li&gt;Three&lt;/li&gt;
+		&lt;li&gt;Four&lt;/li&gt;
+		&lt;li&gt;Five&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;li&gt;Four&lt;/li&gt;
+	&lt;li&gt;Five&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script&gt;
+
+	$('ul.one').children('li').css('color', 'blue');
+	$('ul.three').find('li').css('color', 'fuchsia');
+
+&lt;/script&gt;</content>
 	</entry>
 	
 	<entry>
@@ -299,7 +600,7 @@ $('span.addition').text(addition);
 
 &lt;p&gt;Here, you'll call jQuery, search for a &lt;code&gt;ul&lt;/code&gt; with a class of &lt;code&gt;three&lt;/code&gt;, then find all the &lt;code&gt;li&lt;/code&gt; elements and apply a CSS colour value.&lt;/p&gt;
 
-&lt;p&gt;If you take a look at this &lt;a href=&quot;/demos/Day-020.html&quot;&gt;demo&lt;/a&gt;.
+&lt;p&gt;If you take a look at this &lt;a href=&quot;/Demo-020&quot;&gt;demo&lt;/a&gt;.
 Using the &lt;code&gt;children&lt;/code&gt; method, CSS only gets applied to the children.
 Using &lt;code&gt;find&lt;/code&gt;, the CSS gets applied to all the &lt;code&gt;li&lt;/code&gt;.&lt;/p&gt;
 
@@ -341,6 +642,34 @@ Using &lt;code&gt;find&lt;/code&gt;, the CSS gets applied to all the &lt;code&gt
 	</entry>
 	
 	<entry>
+		<title>Demo 018 - Children</title>
+		<link href="http://365daysofjquery.github.com/Demo-018"/>
+		<updated>2013-01-18T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-018</id>
+		<content type="html">&lt;ul class=&quot;one&quot;&gt;
+	&lt;li&gt;One&lt;/li&gt;
+	&lt;li&gt;Two&lt;/li&gt;
+	&lt;li&gt;Three&lt;/li&gt;
+	&lt;li&gt;Four&lt;/li&gt;
+	&lt;li&gt;Five&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class=&quot;two&quot;&gt;
+	&lt;li&gt;One&lt;/li&gt;
+	&lt;li&gt;Two&lt;/li&gt;
+	&lt;li&gt;Three&lt;/li&gt;
+	&lt;li&gt;Four&lt;/li&gt;
+	&lt;li&gt;Five&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script&gt;
+
+	$('ul.one').children('li').css('color', 'blue');
+
+&lt;/script&gt;</content>
+	</entry>
+	
+	<entry>
 		<title>Day 018 - Children</title>
 		<link href="http://365daysofjquery.github.com/Day-018"/>
 		<updated>2013-01-18T00:00:00+00:00</updated>
@@ -364,8 +693,22 @@ Using &lt;code&gt;find&lt;/code&gt;, the CSS gets applied to all the &lt;code&gt
 
 &lt;p&gt;This will search for a &lt;code&gt;ul&lt;/code&gt; which has a class of &lt;code&gt;one&lt;/code&gt;, then any &lt;code&gt;li&lt;/code&gt; that are direct children, will have the CSS value changed to blue.&lt;/p&gt;
 
-&lt;p&gt;For a closer look, you can open up this &lt;a href=&quot;/demos/Day-018.html&quot;&gt;demo&lt;/a&gt; and inspect the code.&lt;/p&gt;
+&lt;p&gt;For a closer look, you can open up this &lt;a href=&quot;/Demo-018&quot;&gt;demo&lt;/a&gt; and inspect the code.&lt;/p&gt;
 </content>
+	</entry>
+	
+	<entry>
+		<title>Demo 017 - Adding HTML</title>
+		<link href="http://365daysofjquery.github.com/Demo-017"/>
+		<updated>2013-01-17T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-017</id>
+		<content type="html">&lt;div class=&quot;html-code&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+
+	$('.html-code').html('&lt;h1&gt;Here Is Some HTML&lt;/h1&gt;');
+
+&lt;/script&gt;</content>
 	</entry>
 	
 	<entry>
@@ -383,8 +726,22 @@ Using &lt;code&gt;find&lt;/code&gt;, the CSS gets applied to all the &lt;code&gt
 &lt;pre&gt;&lt;code&gt;$('body').html('&amp;lt;h1&amp;gt;Here\'s Some HTML&amp;lt;h1&amp;gt;');
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;a href=&quot;/demos/Day-017.html&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/Demo-017&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
 </content>
+	</entry>
+	
+	<entry>
+		<title>Demo 016 - Adding Text - Apostrophe</title>
+		<link href="http://365daysofjquery.github.com/Demo-016"/>
+		<updated>2013-01-16T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-016</id>
+		<content type="html">&lt;h2&gt;&lt;/h2&gt;
+
+&lt;script&gt;
+
+	$('h2').text('here\'s some text');
+
+&lt;/script&gt;</content>
 	</entry>
 	
 	<entry>
@@ -409,8 +766,22 @@ Using &lt;code&gt;find&lt;/code&gt;, the CSS gets applied to all the &lt;code&gt
 &lt;pre&gt;&lt;code&gt;$('h1').text('here\'s some text');
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;a href=&quot;/demos/Day-016.html&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/Demo-016&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
 </content>
+	</entry>
+	
+	<entry>
+		<title>Demo 015 - Adding Text</title>
+		<link href="http://365daysofjquery.github.com/Demo-015"/>
+		<updated>2013-01-15T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-015</id>
+		<content type="html">&lt;h2&gt;&lt;/h2&gt;
+
+&lt;script&gt;
+
+	$('h2').text('here is some text');
+
+&lt;/script&gt;</content>
 	</entry>
 	
 	<entry>
@@ -425,7 +796,7 @@ Using &lt;code&gt;find&lt;/code&gt;, the CSS gets applied to all the &lt;code&gt
 &lt;pre&gt;&lt;code&gt;$('h1').text('here is some text');
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;a href=&quot;/demos/Day-015.html&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/Demo-015&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
 </content>
 	</entry>
 	
@@ -465,6 +836,39 @@ Using &lt;code&gt;find&lt;/code&gt;, the CSS gets applied to all the &lt;code&gt
 	</entry>
 	
 	<entry>
+		<title>Demo 013 - Adding a Class</title>
+		<link href="http://365daysofjquery.github.com/Demo-013"/>
+		<updated>2013-01-13T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-013</id>
+		<content type="html">&lt;style type=&quot;text/css&quot;&gt;
+
+	h2 {
+		background: yellow;
+		border: 5px solid orange;
+		color: red;
+		font-size: 30px;
+		padding: 10px;
+		margin: 10px;
+	}
+
+&lt;/style&gt;
+
+&lt;h2&gt;
+	Here's some text in a h2 tag
+&lt;/h2&gt;
+
+&lt;h3&gt;
+	Here's some text in a h3 tag
+&lt;/h3&gt;
+
+&lt;script&gt;
+
+	$('h2').addClass('this-is-a-h2');
+
+&lt;/script&gt;</content>
+	</entry>
+	
+	<entry>
 		<title>Day 013 - Adding a Class</title>
 		<link href="http://365daysofjquery.github.com/Day-013"/>
 		<updated>2013-01-13T00:00:00+00:00</updated>
@@ -478,10 +882,73 @@ Using &lt;code&gt;find&lt;/code&gt;, the CSS gets applied to all the &lt;code&gt
 
 &lt;p&gt;Here, the code, again calls jQuery, it then looks for a &lt;code&gt;h1&lt;/code&gt;, then tells jQuery you'd like to add a class and lastly tells jQuery what you'd like that class to be called, in this case &lt;code&gt;this-is-a-h1&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Viewing the &lt;a href=&quot;/demos/Day-013.html&quot;&gt;demo&lt;/a&gt; and inspecting the h1, you'll see that although there's no class on the h1 in the original source code, jQuery adds the class name.&lt;/p&gt;
+&lt;p&gt;Viewing the &lt;a href=&quot;/Demo-013&quot;&gt;demo&lt;/a&gt; and inspecting the h1, you'll see that although there's no class on the h1 in the original source code, jQuery adds the class name.&lt;/p&gt;
 
 &lt;p&gt;You can now keep apply all the required styles in CSS by referencing the class name.&lt;/p&gt;
 </content>
+	</entry>
+	
+	<entry>
+		<title>Demo 012 - Manipulating CSS</title>
+		<link href="http://365daysofjquery.github.com/Demo-012"/>
+		<updated>2013-01-12T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-012</id>
+		<content type="html">&lt;style type=&quot;text/css&quot;&gt;
+
+	.manipulating-css div {
+		margin: 0 0 20px;
+	}
+
+&lt;/style&gt;
+
+&lt;div class=&quot;manipulating-css&quot;&gt;
+
+	&lt;div class=&quot;red&quot;&gt;
+		This text is red.
+	&lt;/div&gt;
+
+	&lt;div class=&quot;blue&quot;&gt;
+		This text is blue.
+	&lt;/div&gt;
+
+	&lt;div class=&quot;small-text&quot;&gt;
+		This text has a font-size of 11px.
+	&lt;/div&gt;
+
+	&lt;div class=&quot;big-text&quot;&gt;
+		This text has a font-size of 30px.
+	&lt;/div&gt;
+
+	&lt;div class=&quot;red-big-text&quot;&gt;
+		This text is red and has a font-size of 30px.
+	&lt;/div&gt;
+
+	&lt;div class=&quot;blue-big-text-margin&quot;&gt;
+		This text is blue, has a font-size of 30px and a margin of 10px.
+	&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;script&gt;
+
+	$('div.red').css('color', 'red');
+	$('div.blue').css('color', 'blue');
+
+	$('div.small-text').css('font-size', '11px');
+	$('div.big-text').css('font-size', '30px');
+
+	$('div.red-big-text').css({
+		'color': 'red',
+		'font-size': 30
+	});
+
+	$('div.blue-big-text-margin').css({
+		'color': 'blue',
+		'font-size': 30,
+		'margin': 10
+	});
+
+&lt;/script&gt;</content>
 	</entry>
 	
 	<entry>
@@ -493,7 +960,7 @@ Using &lt;code&gt;find&lt;/code&gt;, the CSS gets applied to all the &lt;code&gt
 
 &lt;p&gt;Here you'll take some text in divs and learn how to manipulate these via CSS. Although it's possible to do this, sometimes it can be better to add or change a class name, we'll look at this in &lt;a href=&quot;/Day-013&quot;&gt;Day 013&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;But for now take a look at this &lt;a href=&quot;/demos/Day-012.html&quot;&gt;demo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;But for now take a look at this &lt;a href=&quot;/Demo-012&quot;&gt;demo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Take the code:&lt;/p&gt;
 
@@ -649,13 +1116,29 @@ You'll also need a way to open and navigate the files you're working on.&lt;/p&g
 	</entry>
 	
 	<entry>
+		<title>Demo 007 - Tools - Reading</title>
+		<link href="http://365daysofjquery.github.com/Demo-007"/>
+		<updated>2013-01-07T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-007</id>
+		<content type="html">&lt;button&gt;Button&lt;/button&gt;
+
+&lt;script&gt;
+
+	$('button').click(function(){
+		console.log('button is clicked');
+	});
+
+&lt;/script&gt;</content>
+	</entry>
+	
+	<entry>
 		<title>Day 007 - Tools - Reading</title>
 		<link href="http://365daysofjquery.github.com/Day-007"/>
 		<updated>2013-01-07T00:00:00+00:00</updated>
 		<id>http://365daysofjquery.github.com/Day-007</id>
 		<content type="html">&lt;p&gt;Ok, so now you've gone over some of the basics, let's get a bit of code working.&lt;/p&gt;
 
-&lt;p&gt;Copy the following code or view the &lt;a href=&quot;/demos/Day-007.html&quot;&gt;demo&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Copy the following code or view the &lt;a href=&quot;/Demo-007&quot;&gt;demo&lt;/a&gt;:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;
 &amp;lt;head&amp;gt;

@@ -30,4 +30,4 @@ Notice here, you don't wrap the number in `'`.
 
 This is something that can take a while to get to grips with. In this instance the number added to the `.eq` method is an `integer`. Rather than passing a `selector` as a `string` that jQuery can search the DOM for, here the `.eq` method requires an integer as a 'plain Number type'. More about [numbers and strings in Day 027](/Day-027).
 
-[Demo](/demos/Day-021.html).
+[Demo](/Demo-021).

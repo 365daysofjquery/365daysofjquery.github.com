@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Demo 018 - Children</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A personal project to help myself and hopefully others have a better understanding of jQuery and create some cool stuff">
+	<meta name="author" content="365 Days of jQuery">
+
+	<!-- Styles -->
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="/css/docs.css" rel="stylesheet">
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicon and Apple Touch Icons -->
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="shortcut icon" href="/favicon.png">
+	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
+
+	<!-- Apple Mobile Title -->
+	<meta name="apple-mobile-web-app-title" content="365 jQuery">
+
+</head>
+
+<body class="language-javascript demo">
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand" href="http://365daysofjquery.github.com">365 Days of jQuery</a>
+			<div class="nav-collapse">
+				<ul class="nav">
+					<li>
+						<a href="http://365daysofjquery.github.com"><i class="icon-home"></i>
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="http://github.com/365daysofjquery" rel="tooltip" title="GitHub">GitHub</a>
+					</li>
+					<li>
+						<a href="http://www.twitter.com/365daysofjquery" rel="tooltip" title="Twitter">Twitter</a>
+					</li>
+					<li>
+						<a href="/contributing.html" rel="tooltip" title="Contributing">Contributing</a>
+					</li>
+					<li>
+						<a href="/atom.xml" rel="tooltip" title="RSS">RSS</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container demo">
+	<div class="content">
+		<!-- jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery-1.9.0.min.js"><\/script>')</script>
+
+<!-- fuelux, used in responsive tab -->
+<script src="//fuelcdn.com/fuelux/2.1/loader.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/loader.min.js"><\/script>')</script>
+
+<!-- Twitter -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<!-- Prism -->
+<script src="/js/prism.js"></script>
+
+<div class="row">
+	<div class="span9 column">
+		<p>
+			<h1>Demo 018 - Children</h1>
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="span3 column">
+		<h5>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="365daysofjquery">Tweet</a>
+			<g:plusone size="medium"></g:plusone>
+		</h5>
+	</div>
+	<div class="span6 column">
+		<p class="pull-right">
+			
+			<a href="/Day-018" title="Previous Post: Day 018 - Children"> <i class="icon-chevron-left"></i>
+			</a>
+			   
+			<a href="/Day-019" title="Next Post: Day 019 - jQuery 1.9"> <i class="icon-chevron-right"></i>
+			</a>
+			
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="span9 column">
+		<hr>
+	</div>
+</div>
+		<div class="row">
+			<div class="span9 columns">
+				<ul class="one">
+	<li>One</li>
+	<li>Two</li>
+	<li>Three</li>
+	<li>Four</li>
+	<li>Five</li>
+</ul>
+
+<ul class="two">
+	<li>One</li>
+	<li>Two</li>
+	<li>Three</li>
+	<li>Four</li>
+	<li>Five</li>
+</ul>
+
+<script>
+
+	$('ul.one').children('li').css('color', 'blue');
+
+</script>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Google Plus -->
+<script type="text/javascript">
+	(function() {
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	})();
+</script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37431058-1']);
+	_gaq.push(['_setDomainName', 'github.com']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+</html>

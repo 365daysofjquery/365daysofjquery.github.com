@@ -14,7 +14,7 @@ Ok, coding time!
 
 Here you'll take some text in divs and learn how to manipulate these via CSS. Although it's possible to do this, sometimes it can be better to add or change a class name, we'll look at this in [Day 013](/Day-013).
 
-But for now take a look at this [demo](/demos/Day-012.html).
+But for now take a look at this [demo](/Demo-012).
 
 
 Take the code:

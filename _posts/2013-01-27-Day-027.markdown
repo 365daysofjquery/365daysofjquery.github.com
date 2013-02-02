@@ -15,14 +15,14 @@ In [Day 021](/Day-021), we used the following code.
 	$('ul li').eq(3).css('color', 'green');
 
 
-And in the [demo for Day 025](/demos/Day-025.html).
+And in the [demo for Day 025](/Demo-025).
 
 	console.log('14 % 5 = ' + 14 % 5);
 
 
 Notice what's going on with `'`. Wrapping a number in `'` will convert it to a `string`.
 
-Have look a at this [demo](/demos/Day-027.html).
+Have look a at this [demo](/Demo-027).
 
 	var a = '10';
 	var b = 10;

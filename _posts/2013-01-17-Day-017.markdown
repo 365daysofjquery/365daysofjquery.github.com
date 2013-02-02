@@ -20,4 +20,4 @@ Similarly when using `'` you'll need to add a `\` before it.
 	$('body').html('<h1>Here\'s Some HTML<h1>');
 
 
-[Demo](/demos/Day-017.html)
+[Demo](/Demo-017)

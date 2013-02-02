@@ -21,7 +21,7 @@ Take this example:
 
 Here, you'll call jQuery, search for a `ul` with a class of `three`, then find all the `li` elements and apply a CSS colour value.
 
-If you take a look at this [demo](/demos/Day-020.html).
+If you take a look at this [demo](/Demo-020).
 Using the `children` method, CSS only gets applied to the children.
 Using `find`, the CSS gets applied to all the `li`.
 

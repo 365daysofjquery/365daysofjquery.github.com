@@ -32,4 +32,4 @@ Let's look at a few examples, it's actually a lot easier than it sounds.
 5, goes into 200 forty times, with a remainder of 0.
 
 
-Check out this [demo](/demos/Day-025.html) for more examples.
+Check out this [demo](/Demo-025) for more examples.

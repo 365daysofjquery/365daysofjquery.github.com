@@ -29,4 +29,4 @@ Take a look at this code.
 
 This will search for a `ul` which has a class of `one`, then any `li` that are direct children, will have the CSS value changed to blue.
 
-For a closer look, you can open up this [demo](/demos/Day-018.html) and inspect the code.
+For a closer look, you can open up this [demo](/Demo-018) and inspect the code.

@@ -1,11 +1,16 @@
----
-layout: default
----
-<div class="content">
-	{% include demo_header.html %}
-	<div class="row">
-		<div class="span9 columns">
-			{{ content }}
+{% include demo_head.html %}
+
+{% include navigation.html %}
+
+<div class="container demo">
+	<div class="content">
+		{% include demo_header.html %}
+		<div class="row">
+			<div class="span9 columns">
+				{{ content }}
+			</div>
 		</div>
 	</div>
 </div>
+
+{% include demo_footer.html %}

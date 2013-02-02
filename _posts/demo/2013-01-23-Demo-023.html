@@ -1,0 +1,34 @@
+---
+layout: demo
+title: Demo 023 - Next and Previous
+category: Demo
+tags: jQuery
+year: 2013
+month: 01
+day: 23
+published: true
+summary: Demo 023
+---
+
+<ul class="one">
+	<li>One</li>
+	<li>Two</li>
+	<li>Three</li>
+	<ul class="two">
+		<li>One</li>
+		<li>Two</li>
+		<li>Three</li>
+		<li>Four</li>
+		<li>Five</li>
+	</ul>
+	<li>Four</li>
+	<li>Five</li>
+</ul>
+
+<script>
+
+	$('ul li:first-child').next().css('color', 'crimson');
+
+	$('ul li:last-child').prev().css('color', 'blue');
+
+</script>

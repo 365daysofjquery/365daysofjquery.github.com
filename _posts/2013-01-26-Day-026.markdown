@@ -31,4 +31,4 @@ Decrement prefix:	`c` would be equal to `9` and `i` equal to `9`.
 Decrement postfix:	`d` would be equal to `9` and `i` equal to `8`.
 
 
-[Demo](/demos/Day-026.html).
+[Demo](/Demo-026).

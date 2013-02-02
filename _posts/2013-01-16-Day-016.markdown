@@ -27,4 +27,4 @@ To rectify this and display the `'` as text you can add `\` before like so:
 	$('h1').text('here\'s some text');
 
 
-[Demo](/demos/Day-016.html)
+[Demo](/Demo-016)
