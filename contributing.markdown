@@ -19,7 +19,8 @@ Once you have a GitHub account, there's a few ways you can help contribute.
 
 ## Super Simple Way
 
-<object width="420" height="315"><param name="movie" value="http://www.youtube.com/v/atMzOPmPwOA?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/atMzOPmPwOA?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+{% youtube atMzOPmPwOA %}
+
 
 ### GitHub
 
