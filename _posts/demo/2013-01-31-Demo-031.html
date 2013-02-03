@@ -1,0 +1,71 @@
+---
+layout: demo
+title: Demo 031 - Comparison Operators
+category: Demo
+tags: jQuery
+year: 2013
+month: 01
+day: 31
+published: true
+summary: Demo 031
+---
+
+<p>'Logical AND' &amp;&amp;</p>
+<p>'Logical OR' ||</p>
+<p>'Logical NOT' !</p>
+
+<div class="results"></div>
+
+<script>
+
+	var and1	= true && true;		// true
+	var and2	= true && false;	// false
+	var and3	= false && true;	// false
+	var and4	= false && false;	// false
+	var and5	= 1 && 1;	// 1
+	var and6	= 1 && 2;	// 2
+	var and7	= 2 && 1;	// 1
+	var and8	= 2 && 2;	// 2
+
+	var or1	= true || true;		// true
+	var or2	= true || false;	// true
+	var or3	= false || true;	// true
+	var or4	= false || false;	// false
+	var or5	= 1 || 1;	// 1
+	var or6	= 1 || 2;	// 1
+	var or7	= 2 || 1;	// 2
+	var or8	= 2 || 2;	// 2
+
+	var not1	= !true;	// false
+	var not2	= !false;	// true
+	var not3	= !1;		// false
+	var not4	= !2;		// false
+
+	$('.results').html(
+
+		'true && true' + ' = ' + and1 + '<br/>' +
+		'true && false' + ' = ' + and2 + '<br/>' +
+		'false && true' + ' = ' + and3 + '<br/>' +
+		'false && false' + ' = ' + and4 + '<br/>' +
+		'1 && 1' + ' = ' + and5 + '<br/>' +
+		'1 && 2' + ' = ' + and6 + '<br/>' +
+		'2 && 1' + ' = ' + and7 + '<br/>' +
+		'2 && 2' + ' = ' + and8 + '<br/>' +
+
+		'true || true' + ' = ' + or1 + '<br/>' +
+		'true || false' + ' = ' + or2 + '<br/>' +
+		'false || true' + ' = ' + or3 + '<br/>' +
+		'false || false' + ' = ' + or4 + '<br/>' +
+		'1 || 1' + ' = ' + or5 + '<br/>' +
+		'1 || 2' + ' = ' + or6 + '<br/>' +
+		'2 || 1' + ' = ' + or7 + '<br/>' +
+		'2 || 2' + ' = ' + or8 + '<br/>' +
+
+		'!true' + ' = ' + not1 + '<br/>' +
+		'!false' + ' = ' + not2 + '<br/>' +
+		'!1' + ' = ' + not3 + '<br/>' +
+		'!2' + ' = ' + not4
+
+	)
+
+</script>

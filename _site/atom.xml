@@ -4,11 +4,97 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-02-02T15:27:41+00:00</updated>
+	<updated>2013-02-03T13:23:39+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
 	</author>
+	
+	<entry>
+		<title>Demo 031 - Comparison Operators</title>
+		<link href="http://365daysofjquery.github.com/Demo-031"/>
+		<updated>2013-01-31T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-031</id>
+		<content type="html">&lt;p&gt;'Logical AND' &amp;amp;&amp;amp;&lt;/p&gt;
+&lt;p&gt;'Logical OR' ||&lt;/p&gt;
+&lt;p&gt;'Logical NOT' !&lt;/p&gt;
+
+&lt;div class=&quot;results&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+
+	var and1	= true &amp;&amp; true;		// true
+	var and2	= true &amp;&amp; false;	// false
+	var and3	= false &amp;&amp; true;	// false
+	var and4	= false &amp;&amp; false;	// false
+	var and5	= 1 &amp;&amp; 1;	// 1
+	var and6	= 1 &amp;&amp; 2;	// 2
+	var and7	= 2 &amp;&amp; 1;	// 1
+	var and8	= 2 &amp;&amp; 2;	// 2
+
+	var or1	= true || true;		// true
+	var or2	= true || false;	// true
+	var or3	= false || true;	// true
+	var or4	= false || false;	// false
+	var or5	= 1 || 1;	// 1
+	var or6	= 1 || 2;	// 1
+	var or7	= 2 || 1;	// 2
+	var or8	= 2 || 2;	// 2
+
+	var not1	= !true;	// false
+	var not2	= !false;	// true
+	var not3	= !1;		// false
+	var not4	= !2;		// false
+
+	$('.results').html(
+
+		'true &amp;&amp; true' + ' = ' + and1 + '&lt;br/&gt;' +
+		'true &amp;&amp; false' + ' = ' + and2 + '&lt;br/&gt;' +
+		'false &amp;&amp; true' + ' = ' + and3 + '&lt;br/&gt;' +
+		'false &amp;&amp; false' + ' = ' + and4 + '&lt;br/&gt;' +
+		'1 &amp;&amp; 1' + ' = ' + and5 + '&lt;br/&gt;' +
+		'1 &amp;&amp; 2' + ' = ' + and6 + '&lt;br/&gt;' +
+		'2 &amp;&amp; 1' + ' = ' + and7 + '&lt;br/&gt;' +
+		'2 &amp;&amp; 2' + ' = ' + and8 + '&lt;br/&gt;' +
+
+		'true || true' + ' = ' + or1 + '&lt;br/&gt;' +
+		'true || false' + ' = ' + or2 + '&lt;br/&gt;' +
+		'false || true' + ' = ' + or3 + '&lt;br/&gt;' +
+		'false || false' + ' = ' + or4 + '&lt;br/&gt;' +
+		'1 || 1' + ' = ' + or5 + '&lt;br/&gt;' +
+		'1 || 2' + ' = ' + or6 + '&lt;br/&gt;' +
+		'2 || 1' + ' = ' + or7 + '&lt;br/&gt;' +
+		'2 || 2' + ' = ' + or8 + '&lt;br/&gt;' +
+
+		'!true' + ' = ' + not1 + '&lt;br/&gt;' +
+		'!false' + ' = ' + not2 + '&lt;br/&gt;' +
+		'!1' + ' = ' + not3 + '&lt;br/&gt;' +
+		'!2' + ' = ' + not4
+
+	)
+
+&lt;/script&gt;</content>
+	</entry>
+	
+	<entry>
+		<title>Day 031 - Logical Operators</title>
+		<link href="http://365daysofjquery.github.com/Day-031"/>
+		<updated>2013-01-31T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-031</id>
+		<content type="html">&lt;p&gt;Logical Operators can be used with &lt;a href=&quot;/Day-029&quot;&gt;'boolean values'&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here they are:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;'Logical AND' &amp;amp;&amp;amp;
+
+'Logical OR' ||
+
+'Logical NOT' !
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Check out some examples in the &lt;a href=&quot;/Demo-031&quot;&gt;demo&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Day 030 - Operand, Operator and Operation</title>
@@ -146,7 +232,7 @@
 'Less Than or Equal' &amp;lt;=
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;This &lt;a href=&quot;/Demo-028.html&quot;&gt;demo&lt;/a&gt; shows them in action.&lt;/p&gt;
+&lt;p&gt;This &lt;a href=&quot;/Demo-028&quot;&gt;demo&lt;/a&gt; shows them in action.&lt;/p&gt;
 
 &lt;p&gt;Pay careful attention to the difference between using 'Strict'.&lt;/p&gt;
 
@@ -386,7 +472,7 @@ $('span.addition').text(addition);
 
 &lt;p&gt;Similarly it's possible to do subtraction, multiplication and division.&lt;/p&gt;
 
-&lt;p&gt;Check out this &lt;a href=&quot;/Demo-024.html&quot;&gt;demo&lt;/a&gt; for more examples.&lt;/p&gt;
+&lt;p&gt;Check out this &lt;a href=&quot;/Demo-024&quot;&gt;demo&lt;/a&gt; for more examples.&lt;/p&gt;
 </content>
 	</entry>
 	
@@ -1100,7 +1186,7 @@ You'll also need a way to open and navigate the files you're working on.&lt;/p&g
 
 &lt;p&gt;&lt;a href=&quot;http://qsapp.com/&quot;&gt;http://qsapp.com/&lt;/a&gt; allows you to bring up a small popup and start typing to find things you most often use.&lt;/p&gt;
 
-&lt;object width=&quot;420&quot; height=&quot;315&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/d0MvL_CkmnY?version=3&amp;amp;hl=en_US&amp;amp;rel=0&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot;&gt;&lt;/param&gt;&lt;embed src=&quot;http://www.youtube.com/v/d0MvL_CkmnY?version=3&amp;amp;hl=en_US&amp;amp;rel=0&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;420&quot; height=&quot;315&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/d0MvL_CkmnY?color=white&amp;theme=light&quot;&gt;&lt;/iframe&gt;
 
 
 &lt;h2&gt;Spectacle&lt;/h2&gt;

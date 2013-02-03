@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Day 019 - jQuery 1.9</title>
+	<title>Demo 031 - Comparison Operators</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="A personal project to help myself and hopefully others have a better understanding of jQuery and create some cool stuff">
 	<meta name="author" content="365 Days of jQuery">
@@ -12,7 +12,6 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
 	<link href="/css/docs.css" rel="stylesheet">
-	<link href="/css/prism.css" rel="stylesheet">
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -32,9 +31,9 @@
 
 </head>
 
-<body class="language-javascript">
+<body class="language-javascript demo">
 
-	<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">
 			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -67,12 +66,27 @@
 		</div>
 	</div>
 </div>
-	<div class="container">
-		<div class="content">
-	<div class="row">
+
+<div class="container demo">
+	<div class="content">
+		<!-- jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery-1.9.0.min.js"><\/script>')</script>
+
+<!-- fuelux, used in responsive tab -->
+<script src="//fuelcdn.com/fuelux/2.1/loader.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/loader.min.js"><\/script>')</script>
+
+<!-- Twitter -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<!-- Prism -->
+<script src="/js/prism.js"></script>
+
+<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 019 - jQuery 1.9</h1>
+			<h1>Demo 031 - Comparison Operators</h1>
 		</p>
 	</div>
 </div>
@@ -86,12 +100,9 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Demo-018" title="Previous Post: Demo 018 - Children"> <i class="icon-chevron-left"></i>
+			<a href="/Day-031" title="Previous Post: Day 031 - Logical Operators"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Day-020" title="Next Post: Day 020 - Find"> <i class="icon-chevron-right"></i>
-			</a>
-			
 		</p>
 	</div>
 </div>
@@ -100,67 +111,71 @@
 		<hr>
 	</div>
 </div>
-	<div class="row">
-		<div class="span9 columns">
-			<p>Hold the page! <a href="http://code.jquery.com/jquery-1.9.0.js">jQuery 1.9.0</a> has been released!</p>
+		<div class="row">
+			<div class="span9 columns">
+				<p>'Logical AND' &amp;&amp;</p>
+<p>'Logical OR' ||</p>
+<p>'Logical NOT' !</p>
 
-<h2>What Does This Mean?</h2>
+<div class="results"></div>
 
-<p>It means lots of awesome people have done lots of awesome work and made jQuery even more awesome.</p>
+<script>
 
-<h2>Should I Upgrade?</h2>
+	var and1	= true && true;		// true
+	var and2	= true && false;	// false
+	var and3	= false && true;	// false
+	var and4	= false && false;	// false
+	var and5	= 1 && 1;	// 1
+	var and6	= 1 && 2;	// 2
+	var and7	= 2 && 1;	// 1
+	var and8	= 2 && 2;	// 2
 
-<p>Yup! But be careful!</p>
+	var or1	= true || true;		// true
+	var or2	= true || false;	// true
+	var or3	= false || true;	// true
+	var or4	= false || false;	// false
+	var or5	= 1 || 1;	// 1
+	var or6	= 1 || 2;	// 1
+	var or7	= 2 || 1;	// 2
+	var or8	= 2 || 2;	// 2
 
-<h2>Why Should I Be Careful?</h2>
+	var not1	= !true;	// false
+	var not2	= !false;	// true
+	var not3	= !1;		// false
+	var not4	= !2;		// false
 
-<p>Check out the upgrade guide on the jQuery site <a href="http://jquery.com/upgrade-guide/1.9/#changes-of-note-in-jquery-1-9">http://jquery.com/upgrade-guide/1.9/#changes-of-note-in-jquery-1-9</a>.</p>
+	$('.results').html(
 
-<p>If you're a beginner don't worry too much if none of that seems to make sense. We'll go over it in later days.</p>
+		'true && true' + ' = ' + and1 + '<br/>' +
+		'true && false' + ' = ' + and2 + '<br/>' +
+		'false && true' + ' = ' + and3 + '<br/>' +
+		'false && false' + ' = ' + and4 + '<br/>' +
+		'1 && 1' + ' = ' + and5 + '<br/>' +
+		'1 && 2' + ' = ' + and6 + '<br/>' +
+		'2 && 1' + ' = ' + and7 + '<br/>' +
+		'2 && 2' + ' = ' + and8 + '<br/>' +
 
-<p>There's been quite a few significant changes in this release and it's important to note that certain things have been deprecated. This means upgrading could potentially break you previous code.</p>
+		'true || true' + ' = ' + or1 + '<br/>' +
+		'true || false' + ' = ' + or2 + '<br/>' +
+		'false || true' + ' = ' + or3 + '<br/>' +
+		'false || false' + ' = ' + or4 + '<br/>' +
+		'1 || 1' + ' = ' + or5 + '<br/>' +
+		'1 || 2' + ' = ' + or6 + '<br/>' +
+		'2 || 1' + ' = ' + or7 + '<br/>' +
+		'2 || 2' + ' = ' + or8 + '<br/>' +
 
-<p>As well as the upgrade to jQuery itself, there's also a 'jQuery Migrate' project <a href="https://github.com/jquery/jquery-migrate">https://github.com/jquery/jquery-migrate</a>. The project is great for testing.</p>
+		'!true' + ' = ' + not1 + '<br/>' +
+		'!false' + ' = ' + not2 + '<br/>' +
+		'!1' + ' = ' + not3 + '<br/>' +
+		'!2' + ' = ' + not4
 
-<p>"This project can be used to detect and restore APIs, features or functionality that have been deprecated in jQuery and removed as of version 1.9." - taken from <a href="https://github.com/jquery/jquery-migrate">https://github.com/jquery/jquery-migrate</a></p>
+	)
 
-<p>If you now test over your code and keep an eye on your console logs any code that has been deprecated will be logged. You can then reevaluate your code and change accordingly to be fully jQuery 1.9.0 compatible.</p>
-
-<p>Of course after you've done this, I'd always recommend checking over everything again locally before pushing live.</p>
-
+</script>
+			</div>
 		</div>
 	</div>
 </div>
-	</div>
-
-<footer class="footer">
-	<div class="container">
-		<p class="pull-right">
-			
-			<a href="/Demo-018" title="Previous Post: Demo 018 - Children">&laquo; Previous Blog Post</a>
-			  |
-			<a href="#">Back to top</a>
-			|  
-			<a href="/Day-020" title="Next Post: Day 020 - Find">Next Blog Post &raquo;</a>
-			
-		</p>
-		<p>Page last generated on February  3, 2013</p>
-	</div>
-</footer>
-
-<!-- jQuery -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/jquery-1.9.0.min.js"><\/script>')</script>
-
-<!-- fuelux, used in responsive tab -->
-<script src="//fuelcdn.com/fuelux/2.1/loader.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/loader.min.js"><\/script>')</script>
-
-<!-- Twitter -->
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-<!-- Prism -->
-<script src="/js/prism.js"></script>
 
 <!-- Google Plus -->
 <script type="text/javascript">

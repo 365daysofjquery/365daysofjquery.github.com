@@ -1,0 +1,24 @@
+---
+layout: post
+title: Day 031 - Logical Operators
+category: Coding
+tags: jQuery
+year: 2013
+month: 01
+day: 31
+published: true
+summary: Day 031
+---
+
+Logical Operators can be used with ['boolean values'](/Day-029).
+
+Here they are:
+
+	'Logical AND' &&
+
+	'Logical OR' ||
+
+	'Logical NOT' !
+
+
+Check out some examples in the [demo](/Demo-031).

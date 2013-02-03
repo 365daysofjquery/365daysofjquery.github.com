@@ -32,7 +32,7 @@ Here's some examples:
 
 	'Less Than or Equal' <=
 
-This [demo](/Demo-028.html) shows them in action.
+This [demo](/Demo-028) shows them in action.
 
 Pay careful attention to the difference between using 'Strict'.
 
