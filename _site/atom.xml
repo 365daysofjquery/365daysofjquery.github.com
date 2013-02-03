@@ -4,11 +4,27 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-02-03T13:23:39+00:00</updated>
+	<updated>2013-02-03T16:19:46+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
 	</author>
+	
+	<entry>
+		<title>Day 032 - String Operators</title>
+		<link href="http://365daysofjquery.github.com/Day-032"/>
+		<updated>2013-02-01T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-032</id>
+		<content type="html">&lt;p&gt;As well as the &lt;a href=&quot;/Day-024&quot;&gt;Arithmetic Operator&lt;/a&gt; '+' it's also possible to use as a string operator to concatenate strings together.&lt;/p&gt;
+
+&lt;p&gt;Inspecting the code for various demos, you'll see code such as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;'true &amp;amp;&amp;amp; true' + ' = ' + and1 + '&amp;lt;br/&amp;gt;'
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this instance, the result concatenates the strings.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Demo 031 - Comparison Operators</title>

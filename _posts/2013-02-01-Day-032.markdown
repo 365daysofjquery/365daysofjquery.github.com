@@ -1,0 +1,20 @@
+---
+layout: post
+title: Day 032 - String Operators
+category: Coding
+tags: jQuery
+year: 2013
+month: 02
+day: 01
+published: true
+summary: Day 032
+---
+
+As well as the [Arithmetic Operator](/Day-024) '+' it's also possible to use as a string operator to concatenate strings together.
+
+Inspecting the code for various demos, you'll see code such as:
+
+	'true && true' + ' = ' + and1 + '<br/>'
+
+
+In this instance, the result concatenates the strings.
