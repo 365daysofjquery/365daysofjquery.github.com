@@ -1,4 +1,3 @@
 auto: true
 markdown: rdiscount
 permalink: /:title
-plugins: ./_plugins
