@@ -24,9 +24,9 @@ In this case the string will be converted to a number, giving you 10.
 
 It's also possible to do the same thing using the 'Unary Plus Operator' like so:
 
-	5 + +5
+	5 + +'5'
 
 
-Although `+5` is less code, you might want to use `Number('5')` if you're still new to the 'Unary Plus Operator' as it's more descriptive.
+Although `+'5'` is less code, you might want to use `Number('5')` if you're still new to the 'Unary Plus Operator' as it's more descriptive.
 
 [Demo](/Demo-033).

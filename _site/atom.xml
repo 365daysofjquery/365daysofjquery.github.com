@@ -4,7 +4,7 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-02-06T20:21:48+00:00</updated>
+	<updated>2013-02-06T20:32:57+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
@@ -22,7 +22,7 @@
 &lt;p&gt;5 + Number('5') = &lt;span class=&quot;number&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
 &lt;h2&gt;Unary Plus Operator&lt;/h2&gt;
-&lt;p&gt;5 + +5 = &lt;span class=&quot;unary-plus&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;5 + +'5' = &lt;span class=&quot;unary-plus&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
 &lt;script&gt;
 
@@ -40,7 +40,7 @@
 
 	$('.unary-plus').html(
 
-		5 + +5
+		5 + +'5'
 
 	)
 
@@ -66,10 +66,10 @@
 
 &lt;p&gt;It's also possible to do the same thing using the 'Unary Plus Operator' like so:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;5 + +5
+&lt;pre&gt;&lt;code&gt;5 + +'5'
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Although &lt;code&gt;+5&lt;/code&gt; is less code, you might want to use &lt;code&gt;Number('5')&lt;/code&gt; if you're still new to the 'Unary Plus Operator' as it's more descriptive.&lt;/p&gt;
+&lt;p&gt;Although &lt;code&gt;+'5'&lt;/code&gt; is less code, you might want to use &lt;code&gt;Number('5')&lt;/code&gt; if you're still new to the 'Unary Plus Operator' as it's more descriptive.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/Demo-033&quot;&gt;Demo&lt;/a&gt;.&lt;/p&gt;
 </content>
