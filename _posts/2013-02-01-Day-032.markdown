@@ -17,4 +17,6 @@ Inspecting the code for various demos, you'll see code such as:
 	'true && true' + ' = ' + and1 + '<br/>'
 
 
-In this instance, the result concatenates the strings.
+In this instance, the result concatenates the strings, so everything wrapped in `''` will be output, notice that `and1` isn't wrapped in `''` therefore it's not a string, in this case it will return the value of the variable.
+
+Inspect this [demo](/Demo-031) for [Day-031](/Day-031) for a closer look.

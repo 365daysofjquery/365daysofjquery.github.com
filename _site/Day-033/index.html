@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Day 023 - Next and Previous</title>
+	<title>Day 033 - Unary Plus Operator</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="A personal project to help myself and hopefully others have a better understanding of jQuery and create some cool stuff">
 	<meta name="author" content="365 Days of jQuery">
@@ -72,7 +72,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 023 - Next and Previous</h1>
+			<h1>Day 033 - Unary Plus Operator</h1>
 		</p>
 	</div>
 </div>
@@ -86,10 +86,10 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Demo-022" title="Previous Post: Demo 022 - Selecting with CSS"> <i class="icon-chevron-left"></i>
+			<a href="/Day-032" title="Previous Post: Day 032 - String Operators"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Demo-023" title="Next Post: Demo 023 - Next and Previous"> <i class="icon-chevron-right"></i>
+			<a href="/Demo-033" title="Next Post: Demo 033 - Unary Plus Operator"> <i class="icon-chevron-right"></i>
 			</a>
 			
 		</p>
@@ -102,18 +102,26 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p>Here you'll learn how it's possible to use <code>.next</code> and <code>.prev</code> to select elements.</p>
+			<p>In the <a href="/Day-032">previous day</a> you looked at how it's possible to concatenate strings, but what if you want a string to work as a number?</p>
 
-<p>Take the following example:</p>
-
-<pre><code>$('ul li:first-child').next().css('color', 'crimson');
+<pre><code>5 + '5'
 </code></pre>
 
-<p>Here you look for the first <code>li</code> element then using the <code>.next</code> method, select the next element.</p>
+<p>Will give you the number 5, then concatenate 5, giving you 55.</p>
 
-<p>Similarly, it's possible to use <code>.prev</code> to select the previous element.</p>
+<pre><code>5 + Number('5')
+</code></pre>
 
-<p>Take a look at this <a href="/Demo-023">demo</a> and inspect the elements for a closer look.</p>
+<p>In this case the string will be converted to a number, giving you 10.</p>
+
+<p>It's also possible to do the same thing using the 'Unary Plus Operator' like so:</p>
+
+<pre><code>5 + +5
+</code></pre>
+
+<p>Although <code>+5</code> is less code, you might want to use <code>Number('5')</code> if you're still new to the 'Unary Plus Operator' as it's more descriptive.</p>
+
+<p><a href="/Demo-033">Demo</a>.</p>
 
 		</div>
 	</div>
@@ -124,11 +132,11 @@
 	<div class="container">
 		<p class="pull-right">
 			
-			<a href="/Demo-022" title="Previous Post: Demo 022 - Selecting with CSS">&laquo; Previous Blog Post</a>
+			<a href="/Day-032" title="Previous Post: Day 032 - String Operators">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Demo-023" title="Next Post: Demo 023 - Next and Previous">Next Blog Post &raquo;</a>
+			<a href="/Demo-033" title="Next Post: Demo 033 - Unary Plus Operator">Next Blog Post &raquo;</a>
 			
 		</p>
 		<p>Page last generated on February  6, 2013</p>

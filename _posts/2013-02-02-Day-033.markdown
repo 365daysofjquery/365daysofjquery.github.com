@@ -1,0 +1,32 @@
+---
+layout: post
+title: Day 033 - Unary Plus Operator
+category: Coding
+tags: jQuery
+year: 2013
+month: 02
+day: 02
+published: true
+summary: Day 033
+---
+
+In the [previous day](/Day-032) you looked at how it's possible to concatenate strings, but what if you want a string to work as a number?
+
+	5 + '5'
+
+
+Will give you the number 5, then concatenate 5, giving you 55.
+
+	5 + Number('5')
+
+
+In this case the string will be converted to a number, giving you 10.
+
+It's also possible to do the same thing using the 'Unary Plus Operator' like so:
+
+	5 + +5
+
+
+Although `+5` is less code, you might want to use `Number('5')` if you're still new to the 'Unary Plus Operator' as it's more descriptive.
+
+[Demo](/Demo-033).

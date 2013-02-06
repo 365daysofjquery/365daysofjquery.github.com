@@ -1,0 +1,42 @@
+---
+layout: demo
+title: Demo 033 - Unary Plus Operator
+category: Demo
+tags: jQuery
+year: 2013
+month: 02
+day: 02
+published: true
+summary: Demo 033
+---
+
+<h2>String</h2>
+<p>5 + '5' = <span class="string"></span></p>
+
+<h2>Number</h2>
+<p>5 + Number('5') = <span class="number"></span></p>
+
+<h2>Unary Plus Operator</h2>
+<p>5 + +5 = <span class="unary-plus"></span></p>
+
+<script>
+
+	$('.string').html(
+
+		5 + '5'
+
+	)
+
+	$('.number').html(
+
+		5 + Number('5')
+
+	)
+
+	$('.unary-plus').html(
+
+		5 + +5
+
+	)
+
+</script>

@@ -4,11 +4,76 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-02-03T17:08:00+00:00</updated>
+	<updated>2013-02-06T20:21:48+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
 	</author>
+	
+	<entry>
+		<title>Demo 033 - Unary Plus Operator</title>
+		<link href="http://365daysofjquery.github.com/Demo-033"/>
+		<updated>2013-02-03T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-033</id>
+		<content type="html">&lt;h2&gt;String&lt;/h2&gt;
+&lt;p&gt;5 + '5' = &lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2&gt;Number&lt;/h2&gt;
+&lt;p&gt;5 + Number('5') = &lt;span class=&quot;number&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2&gt;Unary Plus Operator&lt;/h2&gt;
+&lt;p&gt;5 + +5 = &lt;span class=&quot;unary-plus&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;script&gt;
+
+	$('.string').html(
+
+		5 + '5'
+
+	)
+
+	$('.number').html(
+
+		5 + Number('5')
+
+	)
+
+	$('.unary-plus').html(
+
+		5 + +5
+
+	)
+
+&lt;/script&gt;</content>
+	</entry>
+	
+	<entry>
+		<title>Day 033 - Unary Plus Operator</title>
+		<link href="http://365daysofjquery.github.com/Day-033"/>
+		<updated>2013-02-02T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-033</id>
+		<content type="html">&lt;p&gt;In the &lt;a href=&quot;/Day-032&quot;&gt;previous day&lt;/a&gt; you looked at how it's possible to concatenate strings, but what if you want a string to work as a number?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;5 + '5'
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Will give you the number 5, then concatenate 5, giving you 55.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;5 + Number('5')
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this case the string will be converted to a number, giving you 10.&lt;/p&gt;
+
+&lt;p&gt;It's also possible to do the same thing using the 'Unary Plus Operator' like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;5 + +5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Although &lt;code&gt;+5&lt;/code&gt; is less code, you might want to use &lt;code&gt;Number('5')&lt;/code&gt; if you're still new to the 'Unary Plus Operator' as it's more descriptive.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/Demo-033&quot;&gt;Demo&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Day 032 - String Operators</title>
@@ -22,7 +87,9 @@
 &lt;pre&gt;&lt;code&gt;'true &amp;amp;&amp;amp; true' + ' = ' + and1 + '&amp;lt;br/&amp;gt;'
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;In this instance, the result concatenates the strings.&lt;/p&gt;
+&lt;p&gt;In this instance, the result concatenates the strings, so everything wrapped in &lt;code&gt;''&lt;/code&gt; will be output, notice that &lt;code&gt;and1&lt;/code&gt; isn't wrapped in &lt;code&gt;''&lt;/code&gt; therefore it's not a string, in this case it will return the value of the variable.&lt;/p&gt;
+
+&lt;p&gt;Inspect this &lt;a href=&quot;/Demo-031&quot;&gt;demo&lt;/a&gt; for &lt;a href=&quot;/Day-031&quot;&gt;Day-031&lt;/a&gt; for a closer look.&lt;/p&gt;
 </content>
 	</entry>
 	
