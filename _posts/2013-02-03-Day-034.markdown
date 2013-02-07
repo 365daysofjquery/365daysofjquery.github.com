@@ -1,0 +1,26 @@
+---
+layout: post
+title: Day 034 - Performance Testing
+category: Coding
+tags: jQuery
+year: 2013
+month: 02
+day: 03
+published: true
+summary: Day 034
+---
+
+<http://jsperf.com/>
+
+This site is awesome. It allows you to easily setup and run benchmark tests.
+
+Here's difference in performance for [Day-33](/Day-033).
+
+<http://jsperf.com/number-vs-operator>
+
+Test1 has the code using `number`.
+
+Test2 has the code using `operator`.
+
+	number		5 + Number('5')		24,572,246		±0.86%		10% slower
+	operator	5 + +'5'			27,193,087		±0.62%		fastest

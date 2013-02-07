@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Day 003 - Give me some dollar!</title>
+	<title>Day 034 - Performance Testing</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="A personal project to help myself and hopefully others have a better understanding of jQuery and create some cool stuff">
 	<meta name="author" content="365 Days of jQuery">
@@ -72,7 +72,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 003 - Give me some dollar!</h1>
+			<h1>Day 034 - Performance Testing</h1>
 		</p>
 	</div>
 </div>
@@ -86,12 +86,9 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Day-002" title="Previous Post: Day 002 - Using Google's CDN to serve jQuery"> <i class="icon-chevron-left"></i>
+			<a href="/Demo-033" title="Previous Post: Demo 033 - Unary Plus Operator"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Day-004" title="Next Post: Day 004 - No Conflict"> <i class="icon-chevron-right"></i>
-			</a>
-			
 		</p>
 	</div>
 </div>
@@ -102,18 +99,21 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p>If you've looked at any jQuery code, one of the first things you'll notice is the dollar symbol <code>$</code>.</p>
+			<p><a href="http://jsperf.com/">http://jsperf.com/</a></p>
 
-<p>The <code>$</code> symbol is an alias for <code>jQuery</code>.</p>
+<p>This site is awesome. It allows you to easily setup and run benchmark tests.</p>
 
-<p>This is sometimes referred to as <a href="http://en.wikipedia.org/wiki/Syntactic_sugar">Syntactic Sugar</a>.
-Whilst writing jQuery code you could write <code>jQuery(doSomething)</code> or <code>$(doSomething)</code>. This is incredibly helpful, meaning that every time you want to call the jQuery object you can simply type <code>$</code>, rather than <code>jQuery</code>.</p>
+<p>Here's difference in performance for <a href="/Day-033">Day-33</a>.</p>
 
-<p>It's important to note that <code>$</code> isn't unique to jQuery and although <a href="http://trends.builtwith.com/javascript">it is the most popular JavaScript library</a>, there are others that use the <code>$</code> symbol as well.</p>
+<p><a href="http://jsperf.com/number-vs-operator">http://jsperf.com/number-vs-operator</a></p>
 
-<p>There's a few times, particularly when using a CMS such as WordPress or Joomla, that various plugins get installed, some of these plugins may use another JavaScript library such as MooTools. In such instances where multiple JavaScript libraries are being used the <code>$</code> symbol can then have undesired results.</p>
+<p>Test1 has the code using <code>number</code>.</p>
 
-<p>Fortunately there's <code>jQuery.noConflict()</code> which I'll elaborate on in <a href="/Day-004">Day 004</a>.</p>
+<p>Test2 has the code using <code>operator</code>.</p>
+
+<pre><code>number      5 + Number('5')     24,572,246      ±0.86%     10% slower
+operator    5 + +'5'            27,193,087      ±0.62%     fastest
+</code></pre>
 
 		</div>
 	</div>
@@ -124,12 +124,10 @@ Whilst writing jQuery code you could write <code>jQuery(doSomething)</code> or <
 	<div class="container">
 		<p class="pull-right">
 			
-			<a href="/Day-002" title="Previous Post: Day 002 - Using Google's CDN to serve jQuery">&laquo; Previous Blog Post</a>
+			<a href="/Demo-033" title="Previous Post: Demo 033 - Unary Plus Operator">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Day-004" title="Next Post: Day 004 - No Conflict">Next Blog Post &raquo;</a>
-			
 		</p>
 		<p>Page last generated on February  7, 2013</p>
 	</div>

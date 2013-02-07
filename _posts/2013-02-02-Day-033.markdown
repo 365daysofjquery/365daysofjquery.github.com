@@ -30,3 +30,5 @@ It's also possible to do the same thing using the 'Unary Plus Operator' like so:
 Although `+'5'` is less code, you might want to use `Number('5')` if you're still new to the 'Unary Plus Operator' as it's more descriptive.
 
 [Demo](/Demo-033).
+
+Hey... wouldn't it be awesome if there was some sort of site that would all you to work out the performance between using the `number` and `operator` methods and anything JavaScript related for that matter... Head on over to [Day-34](/Day-034).

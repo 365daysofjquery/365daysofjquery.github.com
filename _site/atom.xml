@@ -4,16 +4,39 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-02-06T20:32:57+00:00</updated>
+	<updated>2013-02-07T19:03:40+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
 	</author>
 	
 	<entry>
+		<title>Day 034 - Performance Testing</title>
+		<link href="http://365daysofjquery.github.com/Day-034"/>
+		<updated>2013-02-03T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-034</id>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://jsperf.com/&quot;&gt;http://jsperf.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This site is awesome. It allows you to easily setup and run benchmark tests.&lt;/p&gt;
+
+&lt;p&gt;Here's difference in performance for &lt;a href=&quot;/Day-033&quot;&gt;Day-33&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jsperf.com/number-vs-operator&quot;&gt;http://jsperf.com/number-vs-operator&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Test1 has the code using &lt;code&gt;number&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Test2 has the code using &lt;code&gt;operator&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;number      5 + Number('5')     24,572,246      ±0.86%     10% slower
+operator    5 + +'5'            27,193,087      ±0.62%     fastest
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>Demo 033 - Unary Plus Operator</title>
 		<link href="http://365daysofjquery.github.com/Demo-033"/>
-		<updated>2013-02-03T00:00:00+00:00</updated>
+		<updated>2013-02-02T00:00:00+00:00</updated>
 		<id>http://365daysofjquery.github.com/Demo-033</id>
 		<content type="html">&lt;h2&gt;String&lt;/h2&gt;
 &lt;p&gt;5 + '5' = &lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -72,6 +95,8 @@
 &lt;p&gt;Although &lt;code&gt;+'5'&lt;/code&gt; is less code, you might want to use &lt;code&gt;Number('5')&lt;/code&gt; if you're still new to the 'Unary Plus Operator' as it's more descriptive.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/Demo-033&quot;&gt;Demo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hey... wouldn't it be awesome if there was some sort of site that would all you to work out the performance between using the &lt;code&gt;number&lt;/code&gt; and &lt;code&gt;operator&lt;/code&gt; methods and anything JavaScript related for that matter... Head on over to &lt;a href=&quot;/Day-034&quot;&gt;Day-34&lt;/a&gt;.&lt;/p&gt;
 </content>
 	</entry>
 	
