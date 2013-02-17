@@ -4,11 +4,28 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-02-07T19:03:40+00:00</updated>
+	<updated>2013-02-17T14:57:24+00:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
 	</author>
+	
+	<entry>
+		<title>Day 035 - The Times They Are a-Changin'</title>
+		<link href="http://365daysofjquery.github.com/Day-035"/>
+		<updated>2013-02-04T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-035</id>
+		<content type="html">&lt;p&gt;Sorry for the lack of updates recently.&lt;/p&gt;
+
+&lt;p&gt;This has been due to two things, firstly I've not been well and secondly at &lt;a href=&quot;http://twitter.com/edgeconf&quot;&gt;@edgeconf&lt;/a&gt; I was chatting to &lt;a href=&quot;http://twitter.com/rem&quot;&gt;@rem&lt;/a&gt; regarding his thoughts on 365 Days of jQuery.&lt;/p&gt;
+
+&lt;p&gt;Remy mentioned it's a long time to devote solely to one JavaScript library. He suggested calling it '365 Days of Anything'. Being somewhat of a web hero of mine I'm inclined to agree with him.&lt;/p&gt;
+
+&lt;p&gt;It's my intention to keep 365 Days of jQuery going, but to concentrate on other areas as well, I'm currently looking at starting up an event &lt;a href=&quot;http://www.simonowendesign.co.uk/manchester-front-end-web-development-meetup/&quot;&gt;#McrFRED&lt;/a&gt; and hope to have more information on this soon.&lt;/p&gt;
+
+&lt;p&gt;As always, any contributions and pull requests via GitHub would be great.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Day 034 - Performance Testing</title>

@@ -1,0 +1,21 @@
+---
+layout: post
+title: Day 035 - The Times They Are a-Changin'
+category: Coding
+tags: jQuery
+year: 2013
+month: 02
+day: 04
+published: true
+summary: Day 035
+---
+
+Sorry for the lack of updates recently.
+
+This has been due to two things, firstly I've not been well and secondly at [@edgeconf](http://twitter.com/edgeconf) I was chatting to [@rem](http://twitter.com/rem) regarding his thoughts on 365 Days of jQuery.
+
+Remy mentioned it's a long time to devote solely to one JavaScript library. He suggested calling it '365 Days of Anything'. Being somewhat of a web hero of mine I'm inclined to agree with him.
+
+It's my intention to keep 365 Days of jQuery going, but to concentrate on other areas as well, I'm currently looking at starting up an event [#McrFRED](http://www.simonowendesign.co.uk/manchester-front-end-web-development-meetup/) and hope to have more information on this soon.
+
+As always, any contributions and pull requests via GitHub would be great.
