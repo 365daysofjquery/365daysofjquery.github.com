@@ -1,0 +1,21 @@
+---
+layout: post
+title: Day 036 - Arrays
+category: Coding
+tags: jQuery
+year: 2013
+month: 02
+day: 05
+published: true
+summary: Day 036
+---
+
+Arrays look a bit like this:
+
+	var myArray = ['Array element one', 'Array element two', 'Array element three'];
+
+They are zero-indexed, meaning that in this case `Array element one` = `0`.
+
+In the [Demo](/Demo-036), if you inspect the console it's possible to call the array using:
+
+	console.log(myArray[0]);

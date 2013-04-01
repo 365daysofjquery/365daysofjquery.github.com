@@ -4,11 +4,56 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-02-17T14:57:24+00:00</updated>
+	<updated>2013-04-01T11:07:34+01:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
 	</author>
+	
+	<entry>
+		<title>Demo 036 - Arrays</title>
+		<link href="http://365daysofjquery.github.com/Demo-036"/>
+		<updated>2013-02-05T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-036</id>
+		<content type="html">&lt;p&gt;var myArray = ['Array element one', 'Array element two', 'Array element three'];&lt;/p&gt;
+
+&lt;p&gt;View the console to see the results for the following:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;console.log(myArray[0]);&lt;/li&gt;
+	&lt;li&gt;console.log(myArray[1]);&lt;/li&gt;
+	&lt;li&gt;console.log(myArray[2]);&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script&gt;
+
+	var myArray = ['Array element one', 'Array element two', 'Array element three'];
+
+	console.log(myArray[0]);
+	console.log(myArray[1]);
+	console.log(myArray[2]);
+
+&lt;/script&gt;</content>
+	</entry>
+	
+	<entry>
+		<title>Day 036 - Arrays</title>
+		<link href="http://365daysofjquery.github.com/Day-036"/>
+		<updated>2013-02-05T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-036</id>
+		<content type="html">&lt;p&gt;Arrays look a bit like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var myArray = ['Array element one', 'Array element two', 'Array element three'];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;They are zero-indexed, meaning that in this case &lt;code&gt;Array element one&lt;/code&gt; = &lt;code&gt;0&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;/Demo-036&quot;&gt;Demo&lt;/a&gt;, if you inspect the console it's possible to call the array using:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;console.log(myArray[0]);
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Day 035 - The Times They Are a-Changin'</title>

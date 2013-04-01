@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Day 015 - Adding Text</title>
+	<title>Day 036 - Arrays</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="A personal project to help myself and hopefully others have a better understanding of jQuery and create some cool stuff">
 	<meta name="author" content="365 Days of jQuery">
@@ -72,7 +72,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 015 - Adding Text</h1>
+			<h1>Day 036 - Arrays</h1>
 		</p>
 	</div>
 </div>
@@ -86,10 +86,10 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Day-014" title="Previous Post: Day 014 - camelCase"> <i class="icon-chevron-left"></i>
+			<a href="/Day-035" title="Previous Post: Day 035 - The Times They Are a-Changin'"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Demo-015" title="Next Post: Demo 015 - Adding Text"> <i class="icon-chevron-right"></i>
+			<a href="/Demo-036" title="Next Post: Demo 036 - Arrays"> <i class="icon-chevron-right"></i>
 			</a>
 			
 		</p>
@@ -102,14 +102,17 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p>Most of the time text will come from HTML content, but on some occassions you might find it handy to write something in jQuery.</p>
+			<p>Arrays look a bit like this:</p>
 
-<p>Here, we call jQuery, search for a h1 tag and add some text into it.</p>
-
-<pre><code>$('h1').text('here is some text');
+<pre><code>var myArray = ['Array element one', 'Array element two', 'Array element three'];
 </code></pre>
 
-<p><a href="/Demo-015">Demo</a></p>
+<p>They are zero-indexed, meaning that in this case <code>Array element one</code> = <code>0</code>.</p>
+
+<p>In the <a href="/Demo-036">Demo</a>, if you inspect the console it's possible to call the array using:</p>
+
+<pre><code>console.log(myArray[0]);
+</code></pre>
 
 		</div>
 	</div>
@@ -120,11 +123,11 @@
 	<div class="container">
 		<p class="pull-right">
 			
-			<a href="/Day-014" title="Previous Post: Day 014 - camelCase">&laquo; Previous Blog Post</a>
+			<a href="/Day-035" title="Previous Post: Day 035 - The Times They Are a-Changin'">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Demo-015" title="Next Post: Demo 015 - Adding Text">Next Blog Post &raquo;</a>
+			<a href="/Demo-036" title="Next Post: Demo 036 - Arrays">Next Blog Post &raquo;</a>
 			
 		</p>
 		<p>Page last generated on April  1, 2013</p>
