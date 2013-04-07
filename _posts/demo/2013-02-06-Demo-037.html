@@ -1,0 +1,24 @@
+---
+layout: demo
+title: Demo 037 - After and Before
+category: Demo
+tags: jQuery
+year: 2013
+month: 02
+day: 06
+published: true
+summary: Demo 037
+---
+
+<ul>
+	<li class="one">List Item One</li>
+	<li class="three">List Item Three</li>
+	<li class="five">List Item Five</li>
+</ul>
+
+<script>
+
+	$('ul li.one').after('<li class="two">List Item Two</li>');
+	$('ul li.five').before('<li class="four">List Item Four</li>');
+
+</script>

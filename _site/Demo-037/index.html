@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Day 004 - No Conflict</title>
+	<title>Demo 037 - After and Before</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="A personal project to help myself and hopefully others have a better understanding of jQuery and create some cool stuff">
 	<meta name="author" content="365 Days of jQuery">
@@ -12,7 +12,6 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
 	<link href="/css/docs.css" rel="stylesheet">
-	<link href="/css/prism.css" rel="stylesheet">
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -32,9 +31,9 @@
 
 </head>
 
-<body class="language-javascript">
+<body class="language-javascript demo">
 
-	<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">
 			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -67,12 +66,27 @@
 		</div>
 	</div>
 </div>
-	<div class="container">
-		<div class="content">
-	<div class="row">
+
+<div class="container demo">
+	<div class="content">
+		<!-- jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery-1.9.0.min.js"><\/script>')</script>
+
+<!-- fuelux, used in responsive tab -->
+<script src="//fuelcdn.com/fuelux/2.1/loader.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/loader.min.js"><\/script>')</script>
+
+<!-- Twitter -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<!-- Prism -->
+<script src="/js/prism.js"></script>
+
+<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 004 - No Conflict</h1>
+			<h1>Demo 037 - After and Before</h1>
 		</p>
 	</div>
 </div>
@@ -86,12 +100,9 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Day-003" title="Previous Post: Day 003 - Give me some dollar!"> <i class="icon-chevron-left"></i>
+			<a href="/Day-037" title="Previous Post: Day 037 - After and Before"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Day-005" title="Next Post: Day 005 - Let's get ready to jQuery"> <i class="icon-chevron-right"></i>
-			</a>
-			
 		</p>
 	</div>
 </div>
@@ -100,91 +111,24 @@
 		<hr>
 	</div>
 </div>
-	<div class="row">
-		<div class="span9 columns">
-			<p>As mentioned previously if you open up the <a href="http://code.jquery.com/jquery-1.9.0.js">development version of jQuery</a> and search for <code>:</code> plus what you're looking for, in this case <code>noConflict:</code>, you'll see:</p>
+		<div class="row">
+			<div class="span9 columns">
+				<ul>
+	<li class="one">List Item One</li>
+	<li class="three">List Item Three</li>
+	<li class="five">List Item Five</li>
+</ul>
 
-<pre><code>noConflict: function( deep ) {
-    if ( window.$ === jQuery ) {
-        window.$ = _$;
-    }
+<script>
 
-    if ( deep &amp;&amp; window.jQuery === jQuery ) {
-        window.jQuery = _jQuery;
-    }
+	$('ul li.one').after('<li class="two">List Item Two</li>');
+	$('ul li.five').before('<li class="four">List Item Four</li>');
 
-    return jQuery;
-}
-</code></pre>
-
-<p>It's also worth noting the jQuery API site has just had a sweet update and searching for noConflict, you'll find:
-<a href="http://api.jquery.com/jQuery.noConflict/">http://api.jquery.com/jQuery.noConflict/</a></p>
-
-<p>There's a few times, especially in WordPress builds where I've seen people fix multiple JavaScript libraries by constantly defining jQuery:</p>
-
-<pre><code>jQuery.noConflict();
-jQuery(function() {
-    // more code referencing jQuery
-});
-</code></pre>
-
-<p>This can be improved using the following code to set <code>$</code> back as an alias <code>jQuery</code>.</p>
-
-<pre><code>jQuery.noConflict();
-// setting $ to alias to jQuery again
-jQuery(document).ready(function($){
-    $(function() {
-        // now you can continue to use $ as an alias to jQuery
-    });
-});
-</code></pre>
-
-<p>Another alternative that's worth mentioning is using the following code which is essentially doing the same job.
-It is less descriptive, so not that great if you're a beginner trying to figure what is going on, but when you do, it's less code and widely used.</p>
-
-<pre><code>jQuery.noConflict();
-(function($) {
-    $(function() {
-        // now you can continue to use $ as an alias to jQuery
-    });
-})(jQuery);
-</code></pre>
-
-<p>More on <code>$(document).ready()</code> in <a href="/Day-005">Day 005</a>.</p>
-
+</script>
+			</div>
 		</div>
 	</div>
 </div>
-	</div>
-
-<footer class="footer">
-	<div class="container">
-		<p class="pull-right">
-			
-			<a href="/Day-003" title="Previous Post: Day 003 - Give me some dollar!">&laquo; Previous Blog Post</a>
-			  |
-			<a href="#">Back to top</a>
-			|  
-			<a href="/Day-005" title="Next Post: Day 005 - Let's get ready to jQuery">Next Blog Post &raquo;</a>
-			
-		</p>
-		<p>Page last generated on April  7, 2013</p>
-	</div>
-</footer>
-
-<!-- jQuery -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/jquery-1.9.0.min.js"><\/script>')</script>
-
-<!-- fuelux, used in responsive tab -->
-<script src="//fuelcdn.com/fuelux/2.1/loader.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/loader.min.js"><\/script>')</script>
-
-<!-- Twitter -->
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-<!-- Prism -->
-<script src="/js/prism.js"></script>
 
 <!-- Google Plus -->
 <script type="text/javascript">

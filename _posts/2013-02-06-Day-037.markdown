@@ -1,0 +1,33 @@
+---
+layout: post
+title: Day 037 - After and Before
+category: Coding
+tags: jQuery
+year: 2013
+month: 02
+day: 06
+published: true
+summary: Day 037
+---
+
+To add content after or before, you can simply use `.after` and `.before`.
+
+In our HTML if we have:
+
+	<ul>
+		<li class="one">List Item One</li>
+		<li class="three">List Item Three</li>
+		<li class="five">List Item Five</li>
+	</ul>
+
+Then with jQuery we add:
+
+	$('ul li.one').after('<li class="two">List Item Two</li>');
+	$('ul li.five').before('<li class="four">List Item Four</li>');
+
+
+The first line adds a list item with a class of `two` after the list item with a class of `one`.
+
+The second line adds a list item with a class of `four` before the list item with a class `five`.
+
+Here's the results [Demo](/Demo-037).
