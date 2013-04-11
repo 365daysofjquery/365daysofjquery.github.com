@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Day 015 - Adding Text</title>
+	<title>Day 038 - Append and Prepend</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="A personal project to help myself and hopefully others have a better understanding of jQuery and create some cool stuff">
 	<meta name="author" content="365 Days of jQuery">
@@ -72,7 +72,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 015 - Adding Text</h1>
+			<h1>Day 038 - Append and Prepend</h1>
 		</p>
 	</div>
 </div>
@@ -86,10 +86,10 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Day-014" title="Previous Post: Day 014 - camelCase"> <i class="icon-chevron-left"></i>
+			<a href="/Demo-037" title="Previous Post: Demo 037 - After and Before"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Demo-015" title="Next Post: Demo 015 - Adding Text"> <i class="icon-chevron-right"></i>
+			<a href="/Demo-038" title="Next Post: Demo 038 - Append and Prepend"> <i class="icon-chevron-right"></i>
 			</a>
 			
 		</p>
@@ -102,14 +102,28 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p>Most of the time text will come from HTML content, but on some occassions you might find it handy to write something in jQuery.</p>
+			<p>As well as using <code>.after</code> and <code>.before</code>, it's possible to <code>.append</code> and <code>.prepend</code>.</p>
 
-<p>Here, we call jQuery, search for a h1 tag and add some text into it.</p>
+<p>Here's an example, in our HTML if we have:</p>
 
-<pre><code>$('h1').text('here is some text');
+<pre><code>&lt;ul&gt;
+    &lt;li class="one"&gt;List Item One&lt;/li&gt;
+    &lt;li class="three"&gt;List Item Three&lt;/li&gt;
+    &lt;li class="five"&gt;List Item Five&lt;/li&gt;
+&lt;/ul&gt;
 </code></pre>
 
-<p><a href="/Demo-015">Demo</a></p>
+<p>Then with jQuery we add:</p>
+
+<pre><code>$('ul li.one').append('&lt;span class="two"&gt;"List Item Two"&lt;/span&gt;');
+$('ul li.five').prepend('&lt;span class="four"&gt;"List Item Four"&lt;/span&gt;');
+</code></pre>
+
+<p>The first line appends a span element to the list item with a class of <code>one</code>.</p>
+
+<p>The second line prepends a span element to the list item with a class <code>five</code>.</p>
+
+<p>Check out the <a href="/Demo-038">Demo</a> and inspect the elements to see exactly where the span elements lie.</p>
 
 		</div>
 	</div>
@@ -120,11 +134,11 @@
 	<div class="container">
 		<p class="pull-right">
 			
-			<a href="/Day-014" title="Previous Post: Day 014 - camelCase">&laquo; Previous Blog Post</a>
+			<a href="/Demo-037" title="Previous Post: Demo 037 - After and Before">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Demo-015" title="Next Post: Demo 015 - Adding Text">Next Blog Post &raquo;</a>
+			<a href="/Demo-038" title="Next Post: Demo 038 - Append and Prepend">Next Blog Post &raquo;</a>
 			
 		</p>
 		<p>Page last generated on April 11, 2013</p>

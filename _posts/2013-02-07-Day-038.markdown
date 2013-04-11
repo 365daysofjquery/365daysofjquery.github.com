@@ -1,0 +1,33 @@
+---
+layout: post
+title: Day 038 - Append and Prepend
+category: Coding
+tags: jQuery
+year: 2013
+month: 02
+day: 07
+published: true
+summary: Day 038
+---
+
+As well as using `.after` and `.before`, it's possible to `.append` and `.prepend`.
+
+Here's an example, in our HTML if we have:
+
+	<ul>
+		<li class="one">List Item One</li>
+		<li class="three">List Item Three</li>
+		<li class="five">List Item Five</li>
+	</ul>
+
+Then with jQuery we add:
+
+	$('ul li.one').append('<span class="two">"List Item Two"</span>');
+	$('ul li.five').prepend('<span class="four">"List Item Four"</span>');
+
+
+The first line appends a span element to the list item with a class of `one`.
+
+The second line prepends a span element to the list item with a class `five`.
+
+Check out the [Demo](/Demo-038) and inspect the elements to see exactly where the span elements lie.

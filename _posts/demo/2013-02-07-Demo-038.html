@@ -1,0 +1,24 @@
+---
+layout: demo
+title: Demo 038 - Append and Prepend
+category: Demo
+tags: jQuery
+year: 2013
+month: 02
+day: 07
+published: true
+summary: Demo 038
+---
+
+<ul>
+	<li class="one">List Item One</li>
+	<li class="three">List Item Three</li>
+	<li class="five">List Item Five</li>
+</ul>
+
+<script>
+
+	$('ul li.one').append('<span class="two">"List Item Two"</span>');
+	$('ul li.five').prepend('<span class="four">"List Item Four"</span>');
+
+</script>
