@@ -1,177 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<h3>HEAD</h3>
 
-<head>
-	<meta charset="utf-8">
-	<title>Day 036 - Arrays</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="A personal project to help myself and hopefully others have a better understanding of jQuery and create some cool stuff">
-	<meta name="author" content="365 Days of jQuery">
+<h3>3.0.1 (April 12, 2013)</h3>
 
-	<!-- Styles -->
-	<link href="/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
-	<link href="/css/docs.css" rel="stylesheet">
-	<link href="/css/prism.css" rel="stylesheet">
+<ul>
+<li>Version 28.0.1474.0 canary</li>
+<li>Update sprites that have changed e.g. 'treeRightTriangleWhite.png' to 'disclosureTriangleSmallRightWhite.png'.</li>
+<li>Create <a href="https://github.com/simonowendesign/chrome-dev-tools-images">https://github.com/simonowendesign/chrome-dev-tools-images</a> to keep track of image sprites.</li>
+<li>Add CHANGELOG.</li>
+</ul>
 
-	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 
-	<!-- Favicon and Apple Touch Icons -->
-	<link rel="shortcut icon" href="/favicon.ico">
-	<link rel="shortcut icon" href="/favicon.png">
-	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
+<h3>3.0.0 (Dec 18, 2012)</h3>
 
-	<!-- Apple Mobile Title -->
-	<meta name="apple-mobile-web-app-title" content="365 jQuery">
+<ul>
+<li>Update to latest Chrome Canary.</li>
+</ul>
 
-</head>
-
-<body class="language-javascript">
-
-	<div class="navbar navbar-fixed-top">
-	<div class="navbar-inner">
-		<div class="container">
-			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</a>
-			<a class="brand" href="http://365daysofjquery.github.com">365 Days of jQuery</a>
-			<div class="nav-collapse">
-				<ul class="nav">
-					<li>
-						<a href="http://365daysofjquery.github.com"><i class="icon-home"></i>
-							Home
-						</a>
-					</li>
-					<li>
-						<a href="http://github.com/365daysofjquery" rel="tooltip" title="GitHub">GitHub</a>
-					</li>
-					<li>
-						<a href="http://www.twitter.com/365daysofjquery" rel="tooltip" title="Twitter">Twitter</a>
-					</li>
-					<li>
-						<a href="/contributing.html" rel="tooltip" title="Contributing">Contributing</a>
-					</li>
-					<li>
-						<a href="/atom.xml" rel="tooltip" title="RSS">RSS</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
-	<div class="container">
-		<div class="content">
-	<div class="row">
-	<div class="span9 column">
-		<p>
-			<h1>Day 036 - Arrays</h1>
-		</p>
-	</div>
-</div>
-<div class="row">
-	<div class="span3 column">
-		<h5>
-			<a href="https://twitter.com/share" class="twitter-share-button" data-via="365daysofjquery">Tweet</a>
-			<g:plusone size="medium"></g:plusone>
-		</h5>
-	</div>
-	<div class="span6 column">
-		<p class="pull-right">
-			
-			<a href="/Day-035" title="Previous Post: Day 035 - The Times They Are a-Changin'"> <i class="icon-chevron-left"></i>
-			</a>
-			   
-			<a href="/Demo-036" title="Next Post: Demo 036 - Arrays"> <i class="icon-chevron-right"></i>
-			</a>
-			
-		</p>
-	</div>
-</div>
-<div class="row">
-	<div class="span9 column">
-		<hr>
-	</div>
-</div>
-	<div class="row">
-		<div class="span9 columns">
-			<p>Arrays look a bit like this:</p>
-
-<pre><code>var myArray = ['Array element one', 'Array element two', 'Array element three'];
-</code></pre>
-
-<p>They are zero-indexed, meaning that in this case <code>Array element one</code> = <code>0</code>.</p>
-
-<p>In the <a href="/Demo-036">Demo</a>, if you inspect the console it's possible to call the array using:</p>
-
-<pre><code>console.log(myArray[0]);
-</code></pre>
-
-		</div>
-	</div>
-</div>
-	</div>
-
-<footer class="footer">
-	<div class="container">
-		<p class="pull-right">
-			
-			<a href="/Day-035" title="Previous Post: Day 035 - The Times They Are a-Changin'">&laquo; Previous Blog Post</a>
-			  |
-			<a href="#">Back to top</a>
-			|  
-			<a href="/Demo-036" title="Next Post: Demo 036 - Arrays">Next Blog Post &raquo;</a>
-			
-		</p>
-		<p>Page last generated on April 11, 2013</p>
-	</div>
-</footer>
-
-<!-- jQuery -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/jquery-1.9.0.min.js"><\/script>')</script>
-
-<!-- fuelux, used in responsive tab -->
-<script src="//fuelcdn.com/fuelux/2.1/loader.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/loader.min.js"><\/script>')</script>
-
-<!-- Twitter -->
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-<!-- Prism -->
-<script src="/js/prism.js"></script>
-
-<!-- Google Plus -->
-<script type="text/javascript">
-	(function() {
-		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-		po.src = 'https://apis.google.com/js/plusone.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-	})();
-</script>
-
-<!-- Google Analytics -->
-<script type="text/javascript">
-
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-37431058-1']);
-	_gaq.push(['_setDomainName', 'github.com']);
-	_gaq.push(['_trackPageview']);
-
-	(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
-
-</script>
-
-</body>
-</html>

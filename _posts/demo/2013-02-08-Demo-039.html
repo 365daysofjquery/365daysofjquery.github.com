@@ -1,0 +1,29 @@
+---
+layout: demo
+title: Demo 039 - Click
+category: Demo
+tags: jQuery
+year: 2013
+month: 02
+day: 08
+published: true
+summary: Demo 039
+---
+
+<style>
+
+	.clickMe {
+		cursor: pointer;
+	}
+
+</style>
+
+<div class="clickMe">Click me to make me red!</div>
+
+<script>
+
+	$('div.clickMe').click(function(){
+		$('div.clickMe').css('color','red');
+	});
+
+</script>

@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Day 026 - Arithmetic Operators (Part 3)</title>
+	<title>Demo 039 - Click</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="A personal project to help myself and hopefully others have a better understanding of jQuery and create some cool stuff">
 	<meta name="author" content="365 Days of jQuery">
@@ -12,7 +12,6 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
 	<link href="/css/docs.css" rel="stylesheet">
-	<link href="/css/prism.css" rel="stylesheet">
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -32,9 +31,9 @@
 
 </head>
 
-<body class="language-javascript">
+<body class="language-javascript demo">
 
-	<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">
 			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -67,12 +66,27 @@
 		</div>
 	</div>
 </div>
-	<div class="container">
-		<div class="content">
-	<div class="row">
+
+<div class="container demo">
+	<div class="content">
+		<!-- jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery-1.9.0.min.js"><\/script>')</script>
+
+<!-- fuelux, used in responsive tab -->
+<script src="//fuelcdn.com/fuelux/2.1/loader.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/loader.min.js"><\/script>')</script>
+
+<!-- Twitter -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<!-- Prism -->
+<script src="/js/prism.js"></script>
+
+<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 026 - Arithmetic Operators (Part 3)</h1>
+			<h1>Demo 039 - Click</h1>
 		</p>
 	</div>
 </div>
@@ -86,12 +100,9 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Demo-025" title="Previous Post: Demo 025 - Arithmetic Operators (Part 2)"> <i class="icon-chevron-left"></i>
+			<a href="/Day-039" title="Previous Post: Day 039 - Click"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Demo-026" title="Next Post: Demo 026 - Arithmetic Operators (Part 3)"> <i class="icon-chevron-right"></i>
-			</a>
-			
 		</p>
 	</div>
 </div>
@@ -100,63 +111,29 @@
 		<hr>
 	</div>
 </div>
-	<div class="row">
-		<div class="span9 columns">
-			<p>You can also increment and decrement values.</p>
+		<div class="row">
+			<div class="span9 columns">
+				<style>
 
-<p>You can use either of these as a prefix or postfix operator.</p>
+	.clickMe {
+		cursor: pointer;
+	}
 
-<pre><code>var i = 10;
+</style>
 
-var a = ++i;
-var b = i++;
-var c = --i;
-var d = i--;
-</code></pre>
+<div class="clickMe">Click me to make me red!</div>
 
-<p>Increment prefix:   <code>a</code> would be equal to <code>11</code> and <code>i</code> equal to <code>11</code>.</p>
+<script>
 
-<p>Increment postfix:  <code>b</code> would be equal to <code>11</code> and <code>i</code> equal to <code>12</code>.</p>
+	$('div.clickMe').click(function(){
+		$('div.clickMe').css('color','red');
+	});
 
-<p>Decrement prefix:   <code>c</code> would be equal to <code>9</code> and <code>i</code> equal to <code>9</code>.</p>
-
-<p>Decrement postfix:  <code>d</code> would be equal to <code>9</code> and <code>i</code> equal to <code>8</code>.</p>
-
-<p><a href="/Demo-026">Demo</a>.</p>
-
+</script>
+			</div>
 		</div>
 	</div>
 </div>
-	</div>
-
-<footer class="footer">
-	<div class="container">
-		<p class="pull-right">
-			
-			<a href="/Demo-025" title="Previous Post: Demo 025 - Arithmetic Operators (Part 2)">&laquo; Previous Blog Post</a>
-			  |
-			<a href="#">Back to top</a>
-			|  
-			<a href="/Demo-026" title="Next Post: Demo 026 - Arithmetic Operators (Part 3)">Next Blog Post &raquo;</a>
-			
-		</p>
-		<p>Page last generated on April 13, 2013</p>
-	</div>
-</footer>
-
-<!-- jQuery -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/jquery-1.9.0.min.js"><\/script>')</script>
-
-<!-- fuelux, used in responsive tab -->
-<script src="//fuelcdn.com/fuelux/2.1/loader.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/loader.min.js"><\/script>')</script>
-
-<!-- Twitter -->
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-<!-- Prism -->
-<script src="/js/prism.js"></script>
 
 <!-- Google Plus -->
 <script type="text/javascript">

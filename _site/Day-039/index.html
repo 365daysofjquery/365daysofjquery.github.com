@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Day 026 - Arithmetic Operators (Part 3)</title>
+	<title>Day 039 - Click</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="A personal project to help myself and hopefully others have a better understanding of jQuery and create some cool stuff">
 	<meta name="author" content="365 Days of jQuery">
@@ -72,7 +72,7 @@
 	<div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Day 026 - Arithmetic Operators (Part 3)</h1>
+			<h1>Day 039 - Click</h1>
 		</p>
 	</div>
 </div>
@@ -86,10 +86,10 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Demo-025" title="Previous Post: Demo 025 - Arithmetic Operators (Part 2)"> <i class="icon-chevron-left"></i>
+			<a href="/Demo-038" title="Previous Post: Demo 038 - Append and Prepend"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Demo-026" title="Next Post: Demo 026 - Arithmetic Operators (Part 3)"> <i class="icon-chevron-right"></i>
+			<a href="/Demo-039" title="Next Post: Demo 039 - Click"> <i class="icon-chevron-right"></i>
 			</a>
 			
 		</p>
@@ -102,27 +102,23 @@
 </div>
 	<div class="row">
 		<div class="span9 columns">
-			<p>You can also increment and decrement values.</p>
+			<p>In <a href="/Day-012">Day 012</a>, we used <code>.css</code> to manipulate elements when the page loads, in order to have the changes made when a user clicks an element, it's possible to use <code>.click</code>.</p>
 
-<p>You can use either of these as a prefix or postfix operator.</p>
+<p><code>.click</code> is triggered when the mouse button is depressed and then released whilst inside the element.</p>
 
-<pre><code>var i = 10;
+<p>Here's an example, in our HTML if we have:</p>
 
-var a = ++i;
-var b = i++;
-var c = --i;
-var d = i--;
+<pre><code>&lt;div class="clickMe"&gt;Click me to make me red!&lt;/div&gt;
 </code></pre>
 
-<p>Increment prefix:   <code>a</code> would be equal to <code>11</code> and <code>i</code> equal to <code>11</code>.</p>
+<p>Then with jQuery we add:</p>
 
-<p>Increment postfix:  <code>b</code> would be equal to <code>11</code> and <code>i</code> equal to <code>12</code>.</p>
+<pre><code>$('div.clickMe').click(function(){
+    $('div.clickMe').css('color','red');
+});
+</code></pre>
 
-<p>Decrement prefix:   <code>c</code> would be equal to <code>9</code> and <code>i</code> equal to <code>9</code>.</p>
-
-<p>Decrement postfix:  <code>d</code> would be equal to <code>9</code> and <code>i</code> equal to <code>8</code>.</p>
-
-<p><a href="/Demo-026">Demo</a>.</p>
+<p>Check out the <a href="/Demo-039">Demo</a> to see it in action.</p>
 
 		</div>
 	</div>
@@ -133,11 +129,11 @@ var d = i--;
 	<div class="container">
 		<p class="pull-right">
 			
-			<a href="/Demo-025" title="Previous Post: Demo 025 - Arithmetic Operators (Part 2)">&laquo; Previous Blog Post</a>
+			<a href="/Demo-038" title="Previous Post: Demo 038 - Append and Prepend">&laquo; Previous Blog Post</a>
 			  |
 			<a href="#">Back to top</a>
 			|  
-			<a href="/Demo-026" title="Next Post: Demo 026 - Arithmetic Operators (Part 3)">Next Blog Post &raquo;</a>
+			<a href="/Demo-039" title="Next Post: Demo 039 - Click">Next Blog Post &raquo;</a>
 			
 		</p>
 		<p>Page last generated on April 13, 2013</p>

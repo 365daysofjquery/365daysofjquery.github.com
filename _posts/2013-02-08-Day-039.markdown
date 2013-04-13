@@ -1,0 +1,27 @@
+---
+layout: post
+title: Day 039 - Click
+category: Coding
+tags: jQuery
+year: 2013
+month: 02
+day: 08
+published: true
+summary: Day 039
+---
+
+In [Day 012](/Day-012), we used `.css` to manipulate elements when the page loads, in order to have the changes made when a user clicks an element, it's possible to use `.click`.
+
+`.click` is triggered when the mouse button is depressed and then released whilst inside the element.
+
+Here's an example, in our HTML if we have:
+
+	<div class="clickMe">Click me to make me red!</div>
+
+Then with jQuery we add:
+
+	$('div.clickMe').click(function(){
+		$('div.clickMe').css('color','red');
+	});
+
+Check out the [Demo](/Demo-039) to see it in action.
