@@ -4,11 +4,71 @@
 	<title>365 Days of jQuery</title>
 	<link href="http://365daysofjquery.github.com/atom.xml" rel="self"/>
 	<link href="http://365daysofjquery.github.com/"/>
-	<updated>2013-04-13T14:05:13+01:00</updated>
+	<updated>2013-04-13T14:26:01+01:00</updated>
 	<id>http://365daysofjquery.github.com</id>
 	<author>
 		<name>365 Days of jQuery</name>
 	</author>
+	
+	<entry>
+		<title>Demo 040 - Toggle Class</title>
+		<link href="http://365daysofjquery.github.com/Demo-040"/>
+		<updated>2013-02-09T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Demo-040</id>
+		<content type="html">&lt;style&gt;
+
+	.clickMe {
+		cursor: pointer;
+	}
+	.on {
+		color: red;
+	}
+
+&lt;/style&gt;
+
+&lt;div class=&quot;clickMe&quot;&gt;Click me to toggle!&lt;/div&gt;
+
+&lt;script&gt;
+
+	$('div.clickMe').click(function(){
+		$('div.clickMe').toggleClass('on');
+	});
+
+&lt;/script&gt;</content>
+	</entry>
+	
+	<entry>
+		<title>Day 040 - Toggle Class</title>
+		<link href="http://365daysofjquery.github.com/Day-040"/>
+		<updated>2013-02-09T00:00:00+00:00</updated>
+		<id>http://365daysofjquery.github.com/Day-040</id>
+		<content type="html">&lt;p&gt;In &lt;a href=&quot;/Day-039&quot;&gt;Day 039&lt;/a&gt;, we learnt about &lt;code&gt;.click&lt;/code&gt; and how it's possible to change CSS once. If you'd like to toggle an effect we can use &lt;code&gt;.toggleClass&lt;/code&gt;. Rather than in the previous demo where we added the CSS within the JavaScript, this time we'll toggle a class and then apply those styles using CSS. It's usually best practice to use this method as it helps to keep the code maintainable.&lt;/p&gt;
+
+&lt;p&gt;Here's an example, in our CSS we have:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.clickMe {
+    cursor: pointer;
+}
+.on {
+    color: red;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In our HTML we have:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;clickMe&quot;&amp;gt;Click me to toggle!&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then with jQuery we add:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$('div.clickMe').click(function(){
+    $('div.clickMe').toggleClass('on');
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;/Demo-040&quot;&gt;Demo&lt;/a&gt; to see it in action.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Demo 039 - Click</title>

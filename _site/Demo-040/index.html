@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Demo 039 - Click</title>
+	<title>Demo 040 - Toggle Class</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="A personal project to help myself and hopefully others have a better understanding of jQuery and create some cool stuff">
 	<meta name="author" content="365 Days of jQuery">
@@ -86,7 +86,7 @@
 <div class="row">
 	<div class="span9 column">
 		<p>
-			<h1>Demo 039 - Click</h1>
+			<h1>Demo 040 - Toggle Class</h1>
 		</p>
 	</div>
 </div>
@@ -100,12 +100,9 @@
 	<div class="span6 column">
 		<p class="pull-right">
 			
-			<a href="/Day-039" title="Previous Post: Day 039 - Click"> <i class="icon-chevron-left"></i>
+			<a href="/Day-040" title="Previous Post: Day 040 - Toggle Class"> <i class="icon-chevron-left"></i>
 			</a>
 			   
-			<a href="/Day-040" title="Next Post: Day 040 - Toggle Class"> <i class="icon-chevron-right"></i>
-			</a>
-			
 		</p>
 	</div>
 </div>
@@ -121,15 +118,18 @@
 	.clickMe {
 		cursor: pointer;
 	}
+	.on {
+		color: red;
+	}
 
 </style>
 
-<div class="clickMe">Click me to make me red!</div>
+<div class="clickMe">Click me to toggle!</div>
 
 <script>
 
 	$('div.clickMe').click(function(){
-		$('div.clickMe').css('color','red');
+		$('div.clickMe').toggleClass('on');
 	});
 
 </script>

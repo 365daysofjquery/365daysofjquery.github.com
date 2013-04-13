@@ -1,0 +1,36 @@
+---
+layout: post
+title: Day 040 - Toggle Class
+category: Coding
+tags: jQuery
+year: 2013
+month: 02
+day: 09
+published: true
+summary: Day 040
+---
+
+In [Day 039](/Day-039), we learnt about `.click` and how it's possible to change CSS once. If you'd like to toggle an effect we can use `.toggleClass`. Rather than in the previous demo where we added the CSS within the JavaScript, this time we'll toggle a class and then apply those styles using CSS. It's usually best practice to use this method as it helps to keep the code maintainable.
+
+Here's an example, in our CSS we have:
+
+	.clickMe {
+		cursor: pointer;
+	}
+	.on {
+		color: red;
+	}
+
+
+In our HTML we have:
+
+	<div class="clickMe">Click me to toggle!</div>
+
+
+Then with jQuery we add:
+
+	$('div.clickMe').click(function(){
+		$('div.clickMe').toggleClass('on');
+	});
+
+Check out the [Demo](/Demo-040) to see it in action.

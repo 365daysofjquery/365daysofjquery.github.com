@@ -1,0 +1,32 @@
+---
+layout: demo
+title: Demo 040 - Toggle Class
+category: Demo
+tags: jQuery
+year: 2013
+month: 02
+day: 09
+published: true
+summary: Demo 040
+---
+
+<style>
+
+	.clickMe {
+		cursor: pointer;
+	}
+	.on {
+		color: red;
+	}
+
+</style>
+
+<div class="clickMe">Click me to toggle!</div>
+
+<script>
+
+	$('div.clickMe').click(function(){
+		$('div.clickMe').toggleClass('on');
+	});
+
+</script>
