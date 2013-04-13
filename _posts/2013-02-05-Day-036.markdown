@@ -1,12 +1,21 @@
-### HEAD
+---
+layout: post
+title: Day 036 - Arrays
+category: Coding
+tags: jQuery
+year: 2013
+month: 02
+day: 05
+published: true
+summary: Day 036
+---
 
-### 3.0.1 (April 12, 2013)
+Arrays look a bit like this:
 
-* Version 28.0.1474.0 canary
-* Update sprites that have changed e.g. 'treeRightTriangleWhite.png' to 'disclosureTriangleSmallRightWhite.png'.
-* Create <https://github.com/simonowendesign/chrome-dev-tools-images> to keep track of image sprites.
-* Add CHANGELOG.
+	var myArray = ['Array element one', 'Array element two', 'Array element three'];
 
-### 3.0.0 (Dec 18, 2012)
+They are zero-indexed, meaning that in this case `Array element one` = `0`.
 
-* Update to latest Chrome Canary.
+In the [Demo](/Demo-036), if you inspect the console it's possible to call the array using:
+
+	console.log(myArray[0]);
